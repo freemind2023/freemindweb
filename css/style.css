@@ -447,8 +447,9 @@ p { line-height: 1.7; }
 }
 
 .nav-mobile.open {
-  max-height: 80vh;
+  max-height: 85vh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .nav-mobile-inner {
@@ -492,12 +493,12 @@ p { line-height: 1.7; }
 .mobile-sub-links {
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--transition-slow);
+  transition: max-height 500ms ease;
   padding-left: var(--spacing-md);
 }
 
 .mobile-sub-links.open {
-  max-height: 400px;
+  max-height: 1200px; /* enough for all 30 services + category headers */
 }
 
 .mobile-sub-links a {
@@ -1119,6 +1120,8 @@ p { line-height: 1.7; }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  touch-action: pan-x;
+  cursor: grab;
 }
 
 .services-tabs::-webkit-scrollbar {

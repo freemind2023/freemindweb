@@ -84,22 +84,27 @@
       }
     });
 
-    // Close when a mobile link is clicked
+    // Close nav when a link is clicked (but allow a short delay for tab switching)
     mobileNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-        hamburger.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
+        setTimeout(() => {
+          mobileNav.classList.remove('open');
+          hamburger.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+        }, 100);
       });
     });
   }
 
-  // Mobile accordion categories
+  // Mobile accordion categories — toggle sub-links open/close
   categoryBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent outside-click handler from firing
       const subLinks = btn.nextElementSibling;
-      const isOpen = subLinks && subLinks.classList.toggle('open');
+      if (!subLinks) return;
+      const isOpen = subLinks.classList.toggle('open');
       btn.classList.toggle('active', isOpen);
+      btn.setAttribute('aria-expanded', isOpen.toString());
     });
   });
 
