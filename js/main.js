@@ -318,6 +318,52 @@
     }, 3300); // fires after wit-line-3 animation completes
   }
 
+  /* ── 14. Touch / Click Ripple Effect ───────────────────── */
+  function spawnRipple(x, y) {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+    // Outer ring
+    const ring = document.createElement('div');
+    ring.className = 'touch-ripple';
+    ring.style.left = x + 'px';
+    ring.style.top  = y + 'px';
+    document.body.appendChild(ring);
+
+    // Inner dot burst
+    const dot = document.createElement('div');
+    dot.className = 'touch-ripple-dot';
+    dot.style.left = x + 'px';
+    dot.style.top  = y + 'px';
+    document.body.appendChild(dot);
+
+    // Secondary larger ring (delayed)
+    const ring2 = document.createElement('div');
+    ring2.className = 'touch-ripple touch-ripple-2';
+    ring2.style.left = x + 'px';
+    ring2.style.top  = y + 'px';
+    document.body.appendChild(ring2);
+
+    // Cleanup after animation
+    setTimeout(() => {
+      ring.remove();
+      dot.remove();
+      ring2.remove();
+    }, 900);
+  }
+
+  // Touch events (mobile)
+  document.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    spawnRipple(touch.clientX, touch.clientY);
+  }, { passive: true });
+
+  // Click events (desktop)
+  document.addEventListener('click', (e) => {
+    // Skip if it's a button/link to avoid double-fire confusion
+    if (e.target.closest('button, a, input, select, textarea')) return;
+    spawnRipple(e.clientX, e.clientY);
+  });
+
   /* ── Initial scroll state ───────────────────────────────── */
   handleScroll();
 
