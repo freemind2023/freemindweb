@@ -331,10 +331,22 @@
       <div class="container">
         <div class="podcast-banner-inner">
 
-          <!-- Left: Label + Title -->
+          <!-- Left: Label + Title + Visualizer row on mobile -->
           <div class="podcast-banner-left">
             <span class="podcast-banner-label">Now Playing</span>
-            <h2 class="podcast-banner-title">Free Talk</h2>
+
+            <!-- Title row: title + mini visualizer side by side on mobile -->
+            <div class="podcast-title-row">
+              <h2 class="podcast-banner-title">Free Talk</h2>
+              <!-- Visualizer shown inline on mobile -->
+              <div class="podcast-visualizer podcast-visualizer-mobile" aria-hidden="true">
+                <div class="podcast-wave">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+
             <p class="podcast-banner-desc">
               Raw conversations on publishing, building, leadership, and what it really takes
               to put your knowledge into the world. Hosted by Free Mind Consultancy.
@@ -347,8 +359,8 @@
             </div>
           </div>
 
-          <!-- Center: Pulse Visualizer (CSS only) -->
-          <div class="podcast-visualizer" aria-hidden="true">
+          <!-- Center: Full Visualizer (desktop only) -->
+          <div class="podcast-visualizer podcast-visualizer-desktop" aria-hidden="true">
             <div class="podcast-wave">
               <span></span><span></span><span></span><span></span><span></span>
               <span></span><span></span><span></span><span></span><span></span>

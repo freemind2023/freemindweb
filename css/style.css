@@ -576,7 +576,10 @@ p { line-height: 1.7; }
   flex-direction: column;
   gap: 4px;
   margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-sm);
   text-align: center;
+  /* Ensure it never appears above the logo due to animation opacity */
+  min-height: 64px;
 }
 
 .wit-line-1 {
@@ -817,11 +820,28 @@ p { line-height: 1.7; }
 }
 
 /* Center: Visualizer */
+/* Podcast title + wave in one row (used on mobile) */
+.podcast-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .podcast-visualizer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+/* Mobile-only inline visualizer (hidden on desktop) */
+.podcast-visualizer-mobile {
+  display: none;
+}
+
+/* Desktop-only center visualizer */
+.podcast-visualizer-desktop {
+  display: flex;
 }
 
 .podcast-mic-icon {
@@ -2119,31 +2139,75 @@ p { line-height: 1.7; }
 
   .podcast-banner-inner {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 0;
   }
 
-  .podcast-visualizer {
+  /* Hide the center desktop visualizer on mobile */
+  .podcast-visualizer-desktop {
     display: none;
   }
 
-  .podcast-banner-right {
-    align-items: flex-start;
-  }
-
-  .podcast-badge-links {
+  /* Show the inline mobile visualizer next to title */
+  .podcast-visualizer-mobile {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
   }
 
-  .podcast-badge {
-    min-width: unset;
-    flex: 1;
-    padding: 10px 14px;
+  .podcast-visualizer-mobile .podcast-wave {
+    height: 24px;
+    gap: 2px;
+  }
+
+  .podcast-visualizer-mobile .podcast-wave span {
+    width: 2px;
+  }
+
+  .podcast-title-row {
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
   }
 
   .podcast-banner-title {
-    font-size: 36px;
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .podcast-banner-left {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 24px;
+  }
+
+  /* Right column: full width, left aligned */
+  .podcast-banner-right {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .podcast-listen-label {
+    margin-bottom: 12px;
+  }
+
+  /* Badges side by side, equal width */
+  .podcast-badge-links {
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .podcast-badge {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 14px;
+    justify-content: center;
+  }
+
+  .podcast-badge span {
+    font-size: 12px;
   }
 
   /* ── Stats Bar ── */

@@ -210,6 +210,13 @@
 
 } /* end prefers-reduced-motion */
 
+/* ── Mobile: faster wit-line reveal, no long wait ────────── */
+@media (max-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .wit-line-1 { animation-delay: 1.0s; }
+  .wit-line-2 { animation-delay: 1.3s; }
+  .wit-line-3 { animation-delay: 1.6s; }
+}
+
 /* ── Non-animated fallback for reduced-motion users ──────── */
 @media (prefers-reduced-motion: reduce) {
   .fade-up,
