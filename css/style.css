@@ -996,66 +996,67 @@ p { line-height: 1.7; }
 
 /* ── Koelai Section ───────────────────────────────────────── */
 .koelai-section {
-  padding: var(--spacing-4xl) 0;
+  padding: 80px 0;
   overflow: hidden;
   background: var(--color-bg);
 }
 
 .koelai-inner {
   display: grid;
-  grid-template-columns: 380px 1fr;
-  gap: 72px;
+  grid-template-columns: 300px 1fr;
+  gap: 80px;
   align-items: center;
 }
 
-/* ── Voice Circle + Rings ──────────────────────────────────── */
+/* ── Left: Circle + Rings ──────────────────────────────────── */
 .koelai-visual {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: 20px;
   position: relative;
+  min-height: 300px;
+  justify-content: center;
 }
 
 .koelai-voice-rings {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
   pointer-events: none;
 }
 
 .kvr {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid currentColor;
-  color: var(--color-border);
+  border: 1.5px solid var(--color-border);
   opacity: 0;
-  animation: voiceRing 3s ease-out infinite;
+  transform: translate(-50%, -50%);
+  animation: voiceRing 3.2s ease-out infinite;
 }
 
 .kvr-1 { width: 260px; height: 260px; animation-delay: 0s; }
-.kvr-2 { width: 320px; height: 320px; animation-delay: 0.7s; }
-.kvr-3 { width: 380px; height: 380px; animation-delay: 1.4s; }
-.kvr-4 { width: 440px; height: 440px; animation-delay: 2.1s; }
+.kvr-2 { width: 320px; height: 320px; animation-delay: 0.8s; }
+.kvr-3 { width: 380px; height: 380px; animation-delay: 1.6s; }
+.kvr-4 { width: 440px; height: 440px; animation-delay: 2.4s; }
 
 @keyframes voiceRing {
-  0%   { opacity: 0.6; transform: scale(0.7); }
-  100% { opacity: 0;   transform: scale(1); }
+  0%   { opacity: 0.7; transform: translate(-50%, -50%) scale(0.75); }
+  100% { opacity: 0;   transform: translate(-50%, -50%) scale(1); }
 }
 
 .koelai-circle {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--color-border);
-  box-shadow:
-    0 0 0 8px rgba(255,255,255,0.03),
-    0 20px 60px rgba(0,0,0,0.4);
+  box-shadow: 0 0 0 10px rgba(255,255,255,0.03), 0 24px 64px rgba(0,0,0,0.5);
   position: relative;
-  z-index: 1;
+  z-index: 2;
   flex-shrink: 0;
 }
 
@@ -1065,7 +1066,6 @@ p { line-height: 1.7; }
   object-fit: cover;
   object-position: center top;
   display: block;
-  filter: grayscale(0.15);
 }
 
 .koelai-live-pill {
@@ -1075,12 +1075,13 @@ p { line-height: 1.7; }
   font-size: 11px;
   font-weight: var(--font-weight-medium);
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--color-text-muted);
   border: 1px solid var(--color-border);
-  padding: 6px 14px;
+  padding: 6px 16px;
   border-radius: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .koelai-badge-dot {
@@ -1088,28 +1089,28 @@ p { line-height: 1.7; }
   height: 7px;
   border-radius: 50%;
   background: #4ade80;
-  box-shadow: 0 0 5px #4ade80;
+  box-shadow: 0 0 6px #4ade80;
   animation: pulseDot 2s ease-in-out infinite;
   flex-shrink: 0;
 }
 
 @keyframes pulseDot {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.4; transform: scale(1.5); }
+  50%       { opacity: 0.3; transform: scale(1.6); }
 }
 
-/* ── Content ───────────────────────────────────────────────── */
+/* ── Right: Content ────────────────────────────────────────── */
 .koelai-content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .koelai-heading {
-  font-size: clamp(32px, 4vw, 48px);
+  font-size: clamp(34px, 4vw, 52px);
   font-weight: var(--font-weight-bold);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   color: var(--color-text);
   margin: 0;
 }
@@ -1119,7 +1120,7 @@ p { line-height: 1.7; }
 }
 
 .koelai-sub {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
   color: var(--color-text);
   line-height: 1.5;
@@ -1136,7 +1137,7 @@ p { line-height: 1.7; }
 .koelai-features {
   list-style: none;
   padding: 0;
-  margin: 4px 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1159,91 +1160,131 @@ p { line-height: 1.7; }
   flex-shrink: 0;
 }
 
-.koelai-btn {
-  align-self: flex-start;
-}
-
-/* Call strip */
-.koelai-call-strip {
-  display: flex;
+/* ── Animated Call Button ──────────────────────────────────── */
+.koelai-call-btn {
+  position: relative;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 16px 20px;
-  border: 1px solid var(--color-border);
-  background: var(--color-bg-card);
-  margin-top: 4px;
-}
-
-.koelai-call-label {
-  font-size: 12px;
-  color: var(--color-text-muted);
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-}
-
-.koelai-call-number {
-  font-size: 18px;
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text);
+  gap: 16px;
+  padding: 18px 28px;
+  background: var(--color-text);
+  color: var(--color-bg);
   text-decoration: none;
-  letter-spacing: 0.02em;
-  transition: opacity var(--transition-fast);
+  border-radius: 4px;
+  margin-top: 8px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  overflow: hidden;
 }
 
-.koelai-call-number:hover {
+.koelai-call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.koelai-call-btn:active {
+  transform: translateY(0);
+}
+
+/* Pulsing rings on the button */
+.koelai-call-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  border: 2px solid var(--color-text);
+  opacity: 0;
+  animation: btnPulse 2.4s ease-out infinite;
+}
+
+.koelai-call-pulse-2 {
+  animation-delay: 1.2s;
+}
+
+@keyframes btnPulse {
+  0%   { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 0;   transform: scale(1.08); }
+}
+
+.koelai-call-icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.koelai-call-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.koelai-call-top {
+  font-size: 11px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   opacity: 0.7;
 }
 
+.koelai-call-num {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
 /* ── Dark mode ─────────────────────────────────────────────── */
-[data-theme="dark"] .koelai-section {
-  background: var(--color-bg);
+[data-theme="dark"] .koelai-call-btn {
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
-[data-theme="dark"] .kvr {
-  color: #2a2a2a;
+[data-theme="dark"] .koelai-call-pulse {
+  border-color: var(--color-white);
 }
 
-[data-theme="dark"] .koelai-call-strip {
-  background: #111111;
-  border-color: var(--color-border);
-}
-
-/* ── Mobile ────────────────────────────────────────────────── */
+/* ── Tablet ─────────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .koelai-inner {
     grid-template-columns: 1fr;
-    gap: var(--spacing-3xl);
-  }
-
-  .koelai-visual {
-    align-items: center;
-  }
-
-  .koelai-circle {
-    width: 180px;
-    height: 180px;
-  }
-
-  .kvr-1 { width: 210px; height: 210px; }
-  .kvr-2 { width: 260px; height: 260px; }
-  .kvr-3 { width: 310px; height: 310px; }
-  .kvr-4 { width: 360px; height: 360px; }
-}
-
-@media (max-width: 480px) {
-  .koelai-btn {
-    align-self: stretch;
+    gap: 48px;
     text-align: center;
   }
 
-  .koelai-call-strip {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+  .koelai-visual {
+    min-height: 260px;
   }
 
-  .koelai-call-number {
-    font-size: 20px;
+  .koelai-circle {
+    width: 170px;
+    height: 170px;
+  }
+
+  .kvr-1 { width: 200px; height: 200px; }
+  .kvr-2 { width: 250px; height: 250px; }
+  .kvr-3 { width: 300px; height: 300px; }
+  .kvr-4 { width: 350px; height: 350px; }
+
+  .koelai-features li {
+    justify-content: center;
+  }
+
+  .koelai-call-btn {
+    align-self: center;
+  }
+}
+
+/* ── Mobile ────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .koelai-call-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .koelai-call-num {
+    font-size: 18px;
   }
 }
 
