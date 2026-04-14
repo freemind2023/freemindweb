@@ -8856,5 +8856,1440 @@
     "website": "https://www.simonandschuster.com/imprints/37-ink",
     "email": "info@simonandschuster.com",
     "description": "African American literature, fiction, non-fiction"
+  },
+  {
+    "name": "Srishti Publishers & Distributors",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Romance",
+      "Thriller/Mystery",
+      "Non-Fiction"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://srishtipublishers.com",
+    "email": "submissions@srishtipublishers.com",
+    "description": "Popular trade publisher known for mass-market fiction, romance, and thrillers.",
+    "id": 489
+  },
+  {
+    "name": "Fingerprint Publishing",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help",
+      "Thriller/Mystery",
+      "Romance",
+      "Children's Books"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing",
+      "Hybrid Publishing"
+    ],
+    "website": "https://www.fingerprintpublishing.com",
+    "email": "submissions@fingerprintpublishing.com",
+    "description": "Popular trade publisher with wide retail distribution across India.",
+    "id": 490
+  },
+  {
+    "name": "Invincible Publishers",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help",
+      "Spiritual/Religious"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Hybrid Publishing"
+    ],
+    "website": "https://invinciblepublishers.com",
+    "email": "info@invinciblepublishers.com",
+    "description": "Self-publishing platform focused on first-time authors with affordable packages.",
+    "id": 491
+  },
+  {
+    "name": "Vishwakarma Publications",
+    "location": "Pune, India",
+    "genres": [
+      "Academic/Educational",
+      "Non-Fiction"
+    ],
+    "languages": [
+      "English",
+      "Marathi",
+      "Hindi"
+    ],
+    "types": [
+      "Academic Publishing"
+    ],
+    "website": "https://www.vishwakarmapublications.com",
+    "email": "info@vishwakarmapublications.com",
+    "description": "Academic publisher serving colleges and universities with textbooks and reference works.",
+    "id": 492
+  },
+  {
+    "name": "Rajpal & Sons",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://rajpalsons.in",
+    "email": "rajpal@rajpalsons.in",
+    "description": "Established Hindi-language publisher of literary works, poetry, and translations.",
+    "id": 493
+  },
+  {
+    "name": "Kitabghar Prakashan",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Romance",
+      "Non-Fiction"
+    ],
+    "languages": [
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.kitabgharprakashan.com",
+    "email": "info@kitabgharprakashan.com",
+    "description": "Prominent Hindi publisher known for popular fiction and romance novels.",
+    "id": 494
+  },
+  {
+    "name": "Rajkamal Prakashan",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.rajkamalprakashan.com",
+    "email": "info@rajkamalprakashan.com",
+    "description": "India's foremost Hindi literary publisher with over 75 years of publishing heritage.",
+    "id": 495
+  },
+  {
+    "name": "Prabhat Prakashan",
+    "location": "New Delhi, India",
+    "genres": [
+      "Non-Fiction",
+      "Self-Help",
+      "Spiritual/Religious",
+      "Biography/Memoir",
+      "Business"
+    ],
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.prabhatbooks.com",
+    "email": "prabhatbooks@gmail.com",
+    "description": "Leading Hindi publisher specializing in self-help, spirituality, and motivational titles.",
+    "id": 496
+  },
+  {
+    "name": "Diamond Books",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help",
+      "Health & Wellness",
+      "Spiritual/Religious"
+    ],
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.diamondbook.in",
+    "email": "sales@diamondbook.in",
+    "description": "Mass-market publisher known for affordable self-help, health, and lifestyle books.",
+    "id": 497
+  },
+  {
+    "name": "National Book Trust India",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books",
+      "Academic/Educational",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Marathi",
+      "Tamil",
+      "Telugu",
+      "Bengali",
+      "Gujarati",
+      "Kannada",
+      "Malayalam",
+      "Odia",
+      "Punjabi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.nbtindia.gov.in",
+    "email": "nbt@nbtindia.gov.in",
+    "description": "Government of India publishing body promoting books in all Indian languages at affordable prices.",
+    "id": 498
+  },
+  {
+    "name": "Sahitya Akademi",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Marathi",
+      "Tamil",
+      "Telugu",
+      "Bengali",
+      "Gujarati",
+      "Kannada",
+      "Malayalam",
+      "Odia",
+      "Punjabi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://sahitya-akademi.gov.in",
+    "email": "secy@sahitya-akademi.gov.in",
+    "description": "India's national academy of letters publishing literary works in 24 Indian languages.",
+    "id": 499
+  },
+  {
+    "name": "Prakash Books",
+    "location": "New Delhi, India",
+    "genres": [
+      "Children's Books",
+      "Non-Fiction",
+      "Academic/Educational"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.prakashbooks.com",
+    "email": "info@prakashbooks.com",
+    "description": "Major distributor and publisher of children's books and educational content in India.",
+    "id": 500
+  },
+  {
+    "name": "BookBazooka",
+    "location": "India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help",
+      "Romance"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Print-on-Demand"
+    ],
+    "website": "https://www.bookbazooka.com",
+    "email": "help@bookbazooka.com",
+    "description": "Fast-turnaround self-publishing platform for new and experienced Indian authors.",
+    "id": 501
+  },
+  {
+    "name": "Clever Fox Publishing",
+    "location": "India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Hybrid Publishing"
+    ],
+    "website": "https://cleverfoxpublishing.com",
+    "email": "info@cleverfoxpublishing.com",
+    "description": "Author-centric hybrid publisher offering full editorial and design services.",
+    "id": 502
+  },
+  {
+    "name": "Inked Thoughts Publications",
+    "location": "India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Romance"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Self-Publishing"
+    ],
+    "website": "https://www.inkedthoughts.com",
+    "email": "inkedthoughts@gmail.com",
+    "description": "Boutique self-publisher focused on debut authors and poetry collections.",
+    "id": 503
+  },
+  {
+    "name": "Vishwavidyalay Prakashan",
+    "location": "Varanasi, India",
+    "genres": [
+      "Academic/Educational",
+      "Non-Fiction"
+    ],
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "types": [
+      "Academic Publishing"
+    ],
+    "website": "https://www.vishwavidyalayaprakashan.com",
+    "email": "vvp@vishwavidyalayaprakashan.com",
+    "description": "Specialized academic publisher for Hindi-medium universities and colleges.",
+    "id": 504
+  },
+  {
+    "name": "Pustak Bharati",
+    "location": "Kolkata, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Academic/Educational",
+      "Children's Books"
+    ],
+    "languages": [
+      "Bengali"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://pustakbharati.com",
+    "email": "info@pustakbharati.com",
+    "description": "Leading Bengali-language publisher covering fiction, academic, and children's titles.",
+    "id": 505
+  },
+  {
+    "name": "Current Books",
+    "location": "Thrissur, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books",
+      "Academic/Educational"
+    ],
+    "languages": [
+      "Malayalam"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://currentbooks.in",
+    "email": "info@currentbooks.in",
+    "description": "Top Malayalam publisher with a comprehensive catalogue across all major genres.",
+    "id": 506
+  },
+  {
+    "name": "DC Books",
+    "location": "Kottayam, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Biography/Memoir",
+      "Children's Books"
+    ],
+    "languages": [
+      "Malayalam"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://dcbooks.com",
+    "email": "info@dcbooks.com",
+    "description": "Kerala's largest publisher and bookstore chain with 60+ years of literary heritage.",
+    "id": 507
+  },
+  {
+    "name": "Mangalam Publications",
+    "location": "Delhi, India",
+    "genres": [
+      "Spiritual/Religious",
+      "Non-Fiction",
+      "Self-Help"
+    ],
+    "languages": [
+      "Hindi",
+      "Sanskrit"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://mangalampublications.com",
+    "email": "info@mangalampublications.com",
+    "description": "Specialty publisher for Hindu religious texts, Vedic literature, and spiritual books.",
+    "id": 508
+  },
+  {
+    "name": "Farrar, Straus and Giroux",
+    "location": "New York, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://us.macmillan.com/fsg",
+    "email": "Via submission form",
+    "description": "Elite literary publisher known for Nobel and Pulitzer Prize-winning authors.",
+    "id": 509
+  },
+  {
+    "name": "Counterpoint Press",
+    "location": "Berkeley, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://counterpointpress.com",
+    "email": "Via submission form",
+    "description": "Independent literary publisher known for serious fiction and cultural nonfiction.",
+    "id": 510
+  },
+  {
+    "name": "Soho Press",
+    "location": "New York, USA",
+    "genres": [
+      "Fiction",
+      "Thriller/Mystery",
+      "Non-Fiction",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://sohopress.com",
+    "email": "submissions@sohopress.com",
+    "description": "Independent press publishing literary crime fiction and international mysteries.",
+    "id": 511
+  },
+  {
+    "name": "Kensington Publishing",
+    "location": "New York, USA",
+    "genres": [
+      "Romance",
+      "Fiction",
+      "Thriller/Mystery",
+      "Non-Fiction",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.kensingtonbooks.com",
+    "email": "Via submission form",
+    "description": "Largest independent US publisher specializing in romance, crime, and mainstream fiction.",
+    "id": 512
+  },
+  {
+    "name": "Entangled Publishing",
+    "location": "USA",
+    "genres": [
+      "Romance",
+      "Fiction",
+      "Science Fiction",
+      "Fantasy"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing",
+      "E-Book Only"
+    ],
+    "website": "https://entangledpublishing.com",
+    "email": "submissions@entangledpublishing.com",
+    "description": "Digital-first romance and genre fiction publisher with strong e-book presence.",
+    "id": 513
+  },
+  {
+    "name": "Seven Stories Press",
+    "location": "New York, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Academic/Educational"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.sevenstories.com",
+    "email": "info@sevenstories.com",
+    "description": "Independent press with a focus on social justice, human rights, and literary fiction.",
+    "id": 514
+  },
+  {
+    "name": "Algonquin Books",
+    "location": "Chapel Hill, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.workman.com/algonquin",
+    "email": "Via submission form",
+    "description": "North Carolina literary publisher known for Southern voices and quality fiction.",
+    "id": 515
+  },
+  {
+    "name": "Workman Publishing",
+    "location": "New York, USA",
+    "genres": [
+      "Non-Fiction",
+      "Cookbook",
+      "Health & Wellness",
+      "Children's Books",
+      "Self-Help"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.workman.com",
+    "email": "Via submission form",
+    "description": "Independent publisher of lifestyle, cookbooks, children's, and popular nonfiction.",
+    "id": 516
+  },
+  {
+    "name": "Hay House",
+    "location": "Carlsbad, USA",
+    "genres": [
+      "Self-Help",
+      "Spiritual/Religious",
+      "Health & Wellness",
+      "Non-Fiction"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing",
+      "E-Book Only"
+    ],
+    "website": "https://www.hayhouse.com",
+    "email": "editorial@hayhouse.com",
+    "description": "Leading publisher of self-help, personal development, and spiritual wellness titles.",
+    "id": 517
+  },
+  {
+    "name": "Llewellyn Publications",
+    "location": "Woodbury, USA",
+    "genres": [
+      "Spiritual/Religious",
+      "Self-Help",
+      "Health & Wellness",
+      "Non-Fiction"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.llewellyn.com",
+    "email": "pc@llewellyn.com",
+    "description": "Oldest and largest publisher of New Age, metaphysical, and occult books.",
+    "id": 518
+  },
+  {
+    "name": "Clarkson Potter",
+    "location": "New York, USA",
+    "genres": [
+      "Cookbook",
+      "Non-Fiction",
+      "Health & Wellness",
+      "Travel"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.penguinrandomhouse.com/imprints/clarkson-potter",
+    "email": "Via submission form",
+    "description": "Lifestyle imprint of Penguin Random House specializing in cookbooks, design, and wellness.",
+    "id": 519
+  },
+  {
+    "name": "Tyndale House Publishers",
+    "location": "Carol Stream, USA",
+    "genres": [
+      "Spiritual/Religious",
+      "Fiction",
+      "Self-Help",
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.tyndale.com",
+    "email": "Via submission form",
+    "description": "Evangelical Christian publisher of Bibles, Christian fiction, and devotional books.",
+    "id": 520
+  },
+  {
+    "name": "Covenant Communications",
+    "location": "American Fork, USA",
+    "genres": [
+      "Fiction",
+      "Spiritual/Religious",
+      "Non-Fiction",
+      "Romance"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.covenant-lds.com",
+    "email": "info@covenant-lds.com",
+    "description": "LDS publisher specializing in faith-based fiction, non-fiction, and lifestyle books.",
+    "id": 521
+  },
+  {
+    "name": "Page Publishing",
+    "location": "New York, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books",
+      "Poetry",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing"
+    ],
+    "website": "https://www.pagepublishing.com",
+    "email": "Via submission form",
+    "description": "Full-service self-publishing company with author support from manuscript to distribution.",
+    "id": 522
+  },
+  {
+    "name": "AuthorHouse",
+    "location": "Bloomington, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Biography/Memoir",
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Print-on-Demand"
+    ],
+    "website": "https://www.authorhouse.com",
+    "email": "authorsupport@authorhouse.com",
+    "description": "One of the world's largest self-publishing companies with global distribution.",
+    "id": 523
+  },
+  {
+    "name": "iUniverse",
+    "location": "Bloomington, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Self-Help"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Print-on-Demand"
+    ],
+    "website": "https://www.iuniverse.com",
+    "email": "Via submission form",
+    "description": "Self-publishing imprint offering editorial, design, and global distribution services.",
+    "id": 524
+  },
+  {
+    "name": "Xlibris",
+    "location": "Bloomington, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Children's Books",
+      "Academic/Educational"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Print-on-Demand",
+      "E-Book Only"
+    ],
+    "website": "https://www.xlibris.com",
+    "email": "info@xlibris.com",
+    "description": "Global self-publishing company offering print and digital publishing services.",
+    "id": 525
+  },
+  {
+    "name": "BookBaby",
+    "location": "Philadelphia, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Biography/Memoir",
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Print-on-Demand",
+      "E-Book Only"
+    ],
+    "website": "https://www.bookbaby.com",
+    "email": "bookbaby@bookbaby.com",
+    "description": "All-in-one self-publishing platform with editing, design, and worldwide distribution.",
+    "id": 526
+  },
+  {
+    "name": "IngramSpark",
+    "location": "Nashville, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books",
+      "Academic/Educational",
+      "Poetry"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Print-on-Demand"
+    ],
+    "website": "https://www.ingramspark.com",
+    "email": "Via submission form",
+    "description": "Professional self-publishing platform giving access to 40,000+ retailers worldwide.",
+    "id": 527
+  },
+  {
+    "name": "Draft2Digital",
+    "location": "Oklahoma City, USA",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Romance",
+      "Science Fiction",
+      "Fantasy"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing",
+      "E-Book Only"
+    ],
+    "website": "https://www.draft2digital.com",
+    "email": "support@draft2digital.com",
+    "description": "E-book aggregator distributing to Amazon, Apple, Barnes & Noble, and 40+ retailers.",
+    "id": 528
+  },
+  {
+    "name": "Faber & Faber",
+    "location": "London, UK",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Drama",
+      "Screenplay"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.faber.co.uk",
+    "email": "Via submission form",
+    "description": "Iconic UK literary publisher known for T.S. Eliot, Kazuo Ishiguro, and top literary voices.",
+    "id": 529
+  },
+  {
+    "name": "Headline Publishing Group",
+    "location": "London, UK",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Thriller/Mystery",
+      "Romance"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.headline.co.uk",
+    "email": "Via submission form",
+    "description": "Major Hachette UK imprint publishing bestselling fiction, sport, and lifestyle titles.",
+    "id": 530
+  },
+  {
+    "name": "Little Tiger Group",
+    "location": "London, UK",
+    "genres": [
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.littletiger.co.uk",
+    "email": "Via submission form",
+    "description": "UK's leading independent children's book publisher covering all age groups.",
+    "id": 531
+  },
+  {
+    "name": "Canongate Books",
+    "location": "Edinburgh, UK",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Poetry"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://canongate.co.uk",
+    "email": "submissions@canongate.co.uk",
+    "description": "Edinburgh-based independent publisher of Man Booker Prize-winning and literary titles.",
+    "id": 532
+  },
+  {
+    "name": "Scribe Publications",
+    "location": "London, UK",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Self-Help"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://scribepublications.co.uk",
+    "email": "Via submission form",
+    "description": "Independent Australian-UK press known for smart non-fiction and quality literary fiction.",
+    "id": 533
+  },
+  {
+    "name": "The History Press",
+    "location": "Stroud, UK",
+    "genres": [
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Travel"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.thehistorypress.co.uk",
+    "email": "Via submission form",
+    "description": "UK's leading independent heritage and history publisher.",
+    "id": 534
+  },
+  {
+    "name": "Michael O'Mara Books",
+    "location": "London, UK",
+    "genres": [
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Children's Books",
+      "Humor"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.mombooks.com",
+    "email": "Via submission form",
+    "description": "UK independent publisher of gift, humor, biography, and popular non-fiction titles.",
+    "id": 535
+  },
+  {
+    "name": "Allen & Unwin",
+    "location": "Sydney, Australia",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books",
+      "Biography/Memoir",
+      "Self-Help"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.allenandunwin.com",
+    "email": "Via submission form",
+    "description": "Australia's largest independent publisher spanning adult, children's, and academic titles.",
+    "id": 536
+  },
+  {
+    "name": "Pan Macmillan Australia",
+    "location": "Sydney, Australia",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books",
+      "Thriller/Mystery",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.panmacmillan.com.au",
+    "email": "Via submission form",
+    "description": "Major Australian arm of Macmillan publishing commercial and literary titles.",
+    "id": 537
+  },
+  {
+    "name": "Penguin Books Australia",
+    "location": "Melbourne, Australia",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.penguin.com.au",
+    "email": "Via submission form",
+    "description": "Australian arm of Penguin Random House publishing local and international titles.",
+    "id": 538
+  },
+  {
+    "name": "Coach House Books",
+    "location": "Toronto, Canada",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Drama"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.chbooks.com",
+    "email": "mail@chbooks.com",
+    "description": "Acclaimed Canadian literary press publishing experimental and innovative writing.",
+    "id": 539
+  },
+  {
+    "name": "Orca Book Publishers",
+    "location": "Victoria, Canada",
+    "genres": [
+      "Children's Books",
+      "Fiction",
+      "Academic/Educational"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://orcabook.com",
+    "email": "orca@orcabook.com",
+    "description": "Canadian children's and YA publisher committed to diverse voices and meaningful stories.",
+    "id": 540
+  },
+  {
+    "name": "Rowohlt Verlag",
+    "location": "Hamburg, Germany",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Thriller/Mystery"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.rowohlt.de",
+    "email": "Via submission form",
+    "description": "One of Germany's most prestigious publishers with a rich tradition in literary fiction.",
+    "id": 541
+  },
+  {
+    "name": "Suhrkamp Verlag",
+    "location": "Berlin, Germany",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Academic/Educational"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.suhrkamp.de",
+    "email": "Via submission form",
+    "description": "Germany's most celebrated literary publisher known for Kafka, Brecht, and contemporary voices.",
+    "id": 542
+  },
+  {
+    "name": "Gallimard",
+    "location": "Paris, France",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Poetry",
+      "Academic/Educational",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.gallimard.fr",
+    "email": "Via submission form",
+    "description": "France's most prestigious literary publisher with over 100 years of publishing tradition.",
+    "id": 543
+  },
+  {
+    "name": "Editions Albin Michel",
+    "location": "Paris, France",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.albin-michel.fr",
+    "email": "Via submission form",
+    "description": "Major French publisher covering literary fiction, popular non-fiction, and children's books.",
+    "id": 544
+  },
+  {
+    "name": "Magrudy's",
+    "location": "Dubai, UAE",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books",
+      "Academic/Educational"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.magrudy.com",
+    "email": "info@magrudy.com",
+    "description": "UAE's leading bookstore and publishing resource connecting regional and international titles.",
+    "id": 545
+  },
+  {
+    "name": "Jarir Bookstore Publishing",
+    "location": "Riyadh, Saudi Arabia",
+    "genres": [
+      "Academic/Educational",
+      "Non-Fiction",
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.jarir.com",
+    "email": "info@jarir.com",
+    "description": "Middle East's largest bookstore chain with educational and trade publishing services.",
+    "id": 546
+  },
+  {
+    "name": "Readomania",
+    "location": "Mumbai, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Romance",
+      "Thriller/Mystery"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing",
+      "Self-Publishing"
+    ],
+    "website": "https://readomania.com",
+    "email": "editor@readomania.com",
+    "description": "Digital-first Indian publisher focused on contemporary fiction, anthologies, and romance.",
+    "id": 547
+  },
+  {
+    "name": "Frog Books",
+    "location": "Mumbai, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help",
+      "Spiritual/Religious"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing",
+      "Hybrid Publishing"
+    ],
+    "website": "https://frogbooks.net",
+    "email": "frogbooks@rajhanskbooks.com",
+    "description": "Indian publisher offering trade publishing and hybrid services for popular genres.",
+    "id": 548
+  },
+  {
+    "name": "Indus Source Books",
+    "location": "Mumbai, India",
+    "genres": [
+      "Non-Fiction",
+      "Biography/Memoir",
+      "Business",
+      "Travel"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://www.indussource.com",
+    "email": "indussource@gmail.com",
+    "description": "Mumbai-based publisher specializing in Indian business, culture, and travel non-fiction.",
+    "id": 549
+  },
+  {
+    "name": "Zorba Books",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help",
+      "Spiritual/Religious",
+      "Poetry"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Self-Publishing",
+      "Hybrid Publishing"
+    ],
+    "website": "https://zorbabooks.com",
+    "email": "info@zorbabooks.com",
+    "description": "Hybrid publisher combining editorial quality with author-friendly self-publishing packages.",
+    "id": 550
+  },
+  {
+    "name": "Book Bakers",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Children's Books"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing",
+      "Hybrid Publishing"
+    ],
+    "website": "https://bookbakers.in",
+    "email": "info@bookbakers.in",
+    "description": "Literary agency and publisher helping Indian authors find the right publishing home.",
+    "id": 551
+  },
+  {
+    "name": "Half Baked Beans",
+    "location": "India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Romance",
+      "Thriller/Mystery",
+      "Poetry"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Self-Publishing"
+    ],
+    "website": "https://halfbakedbeansbooks.com",
+    "email": "info@halfbakedbeansbooks.com",
+    "description": "Self-publishing platform for contemporary Indian authors with fast turnaround.",
+    "id": 552
+  },
+  {
+    "name": "Grapevine India Publishers",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Non-Fiction",
+      "Self-Help",
+      "Business"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Self-Publishing"
+    ],
+    "website": "https://grapevineindia.com",
+    "email": "info@grapevineindia.com",
+    "description": "Delhi-based self-publisher offering print, ebook, and marketing services.",
+    "id": 553
+  },
+  {
+    "name": "Shrishti Publishers",
+    "location": "New Delhi, India",
+    "genres": [
+      "Fiction",
+      "Romance",
+      "Non-Fiction",
+      "Self-Help"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://srishtipublishers.com",
+    "email": "submissions@srishtipublishers.com",
+    "description": "Popular trade publisher known for mass-market fiction and contemporary Indian stories.",
+    "id": 554
+  },
+  {
+    "name": "Sanbun Publishers",
+    "location": "New Delhi, India",
+    "genres": [
+      "Academic/Educational",
+      "Non-Fiction"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Academic Publishing"
+    ],
+    "website": "https://sanbun.com",
+    "email": "sanbunpublishers@gmail.com",
+    "description": "Academic publisher specializing in research monographs and scholarly works.",
+    "id": 555
+  },
+  {
+    "name": "International Book House",
+    "location": "Mumbai, India",
+    "genres": [
+      "Non-Fiction",
+      "Academic/Educational",
+      "Business"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Traditional Publishing"
+    ],
+    "website": "https://internationalbookhouse.in",
+    "email": "ibh@internationalbookhouse.in",
+    "description": "Century-old Indian publisher and distributor for trade, academic, and professional titles.",
+    "id": 556
+  },
+  {
+    "name": "Manohar Publishers",
+    "location": "New Delhi, India",
+    "genres": [
+      "Academic/Educational",
+      "Non-Fiction",
+      "Biography/Memoir"
+    ],
+    "languages": [
+      "English"
+    ],
+    "types": [
+      "Academic Publishing",
+      "Traditional Publishing"
+    ],
+    "website": "https://www.manoharbooks.com",
+    "email": "manohar_books@sify.com",
+    "description": "Leading academic press specializing in history, social sciences, and Indological studies.",
+    "id": 557
   }
 ]
