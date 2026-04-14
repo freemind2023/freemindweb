@@ -241,6 +241,7 @@ p { line-height: 1.7; }
 }
 
 .nav-inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -292,7 +293,7 @@ p { line-height: 1.7; }
 
 /* Services Dropdown trigger */
 .nav-dropdown-trigger {
-  position: relative;
+  position: static;
 }
 
 .nav-dropdown-trigger > a::after {
@@ -315,7 +316,7 @@ p { line-height: 1.7; }
 /* Mega Menu */
 .mega-menu {
   position: absolute;
-  top: calc(var(--nav-height) - 1px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   width: min(1100px, 95vw);
