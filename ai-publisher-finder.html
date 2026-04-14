@@ -1246,6 +1246,39 @@
       goToStep(3);
     }
 
+    // ── Pre-load logo for watermark ──
+    const _wmLogo = new Image();
+    _wmLogo.crossOrigin = 'anonymous';
+    _wmLogo.src = '/images/logo.png';
+
+    function buildWatermarkDataURL() {
+      // Render logo on canvas, strip black background, keep white marks as dark/semi-transparent
+      const size = 500;
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(_wmLogo, 0, 0, size, size);
+
+      const imageData = ctx.getImageData(0, 0, size, size);
+      const d = imageData.data;
+      for (let i = 0; i < d.length; i += 4) {
+        const brightness = (d[i] + d[i + 1] + d[i + 2]) / 3;
+        if (brightness < 60) {
+          // Background pixel — fully transparent
+          d[i + 3] = 0;
+        } else {
+          // Logo mark pixel — render as dark gray, opacity proportional to brightness
+          d[i]     = 40;   // R
+          d[i + 1] = 40;   // G
+          d[i + 2] = 40;   // B
+          d[i + 3] = Math.round((brightness / 255) * 35); // max ~14% opacity
+        }
+      }
+      ctx.putImageData(imageData, 0, 0);
+      return canvas.toDataURL('image/png');
+    }
+
     // ── PDF Download ──
     document.getElementById('pdf-btn').addEventListener('click', () => {
       if (typeof window.jspdf === 'undefined') {
@@ -1318,6 +1351,21 @@
       doc.line(margin, y, pageW - margin, y);
       y += 6;
       addLine('Powered by Free Mind Consult | freemindconsult.com | For publishing assistance, contact info@freemindconsult.com', 8, false, 140);
+
+      // ── Stamp watermark on every page ──
+      if (_wmLogo.complete && _wmLogo.naturalWidth > 0) {
+        try {
+          const wmData = buildWatermarkDataURL();
+          const wmSize = 75; // mm — centred on A4 (210 x 297)
+          const wmX = (210 - wmSize) / 2;
+          const wmY = (297 - wmSize) / 2;
+          const totalPages = doc.getNumberOfPages();
+          for (let p = 1; p <= totalPages; p++) {
+            doc.setPage(p);
+            doc.addImage(wmData, 'PNG', wmX, wmY, wmSize, wmSize);
+          }
+        } catch (_) { /* skip watermark silently if image not ready */ }
+      }
 
       const safeName = (leadData.bookName || 'Book').replace(/[^a-zA-Z0-9]/g, '-');
       doc.save('Publisher-Results-' + safeName + '.pdf');
