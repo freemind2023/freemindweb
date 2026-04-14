@@ -52,11 +52,48 @@
       margin-bottom: 24px;
     }
 
-    .pm-logo {
-      height: 36px;
-      width: auto;
-      filter: brightness(0) invert(1);
+    .pm-brand-name {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1;
     }
+    .pm-brand-publish {
+      background: linear-gradient(135deg, var(--color-text) 0%, var(--color-text-muted) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: pmShimmer 3s ease-in-out infinite;
+    }
+    .pm-brand-match {
+      background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #34d399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% auto;
+      animation: pmGradientSlide 3s linear infinite;
+    }
+    .pm-brand-ai {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      -webkit-text-fill-color: var(--color-text-muted);
+      margin-left: 6px;
+      align-self: flex-end;
+      margin-bottom: 3px;
+      border: 1px solid var(--color-border);
+      padding: 2px 7px;
+      border-radius: 4px;
+      animation: pmAiBlink 4s ease-in-out infinite;
+    }
+    @keyframes pmShimmer { 0%,100%{opacity:1}50%{opacity:.75} }
+    @keyframes pmGradientSlide { 0%{background-position:0% center}100%{background-position:200% center} }
+    @keyframes pmAiBlink { 0%,90%,100%{opacity:1}95%{opacity:.3} }
 
     .pm-badge {
       font-size: 11px;
@@ -604,6 +641,23 @@
 
         <nav class="nav-links" aria-label="Primary navigation" role="menubar">
           <a href="index.html#about" role="menuitem">About</a>
+
+          <!-- Products Dropdown -->
+          <div class="nav-dropdown-trigger" role="none">
+            <a href="#" role="menuitem" aria-haspopup="true">Products</a>
+            <div class="mega-menu mega-menu--narrow" role="menu" aria-label="Products menu">
+              <div class="mega-col">
+                <div class="mega-col-title">Our Products</div>
+                <a href="index.html#koelai-heading" role="menuitem">
+                  <strong>Koelai AI</strong> — AI Calling Agent
+                </a>
+                <a href="ai-publisher-finder.html" role="menuitem">
+                  <strong>PublishMatch AI</strong> — Publisher Finder
+                </a>
+              </div>
+            </div>
+          </div>
+
           <a href="index.html#achievements" role="menuitem">Achievements</a>
           <a href="index.html#faq" role="menuitem">FAQ</a>
           <a href="index.html#contact" role="menuitem">Contact</a>
@@ -636,6 +690,15 @@
         </div>
       </div>
       <a href="index.html#about" class="nav-mobile-link">About</a>
+
+      <button class="mobile-category-btn" aria-expanded="false">
+        Products <span class="mobile-category-arrow">&#9660;</span>
+      </button>
+      <div class="mobile-sub-links">
+        <a href="index.html#koelai-heading">Koelai AI — AI Calling Agent</a>
+        <a href="ai-publisher-finder.html">PublishMatch AI — Publisher Finder</a>
+      </div>
+
       <a href="index.html#achievements" class="nav-mobile-link">Achievements</a>
       <a href="index.html#faq" class="nav-mobile-link">FAQ</a>
       <a href="index.html#contact" class="nav-mobile-link">Contact</a>
@@ -647,7 +710,9 @@
     <div class="pm-hero">
       <div class="container">
         <div class="pm-hero-inner">
-          <img src="images/publishmatch-logo.png" alt="PublishMatch AI" class="pm-logo">
+          <div class="pm-brand-name">
+            <span class="pm-brand-publish">Publish</span><span class="pm-brand-match">Match</span><span class="pm-brand-ai"> AI</span>
+          </div>
           <span class="pm-badge">Free Tool</span>
         </div>
         <h1>AI Publisher Finder</h1>
@@ -896,9 +961,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-logo">
-            <img src="images/logo.png" alt="Free Mind Consultancy" loading="lazy"
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-            <span class="footer-logo-text" style="display:none">Free Mind Consultancy</span>
+            <span class="footer-logo-text" style="font-size:20px;font-weight:800;letter-spacing:-0.02em;color:var(--color-text)">Free Mind</span>
           </div>
           <div class="footer-tagline">Consulting for Change</div>
           <p class="footer-desc">Professional services firm helping founders, authors, professors, government officers, and coaches amplify their impact.</p>

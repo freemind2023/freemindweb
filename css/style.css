@@ -338,6 +338,25 @@ p { line-height: 1.7; }
   pointer-events: all;
 }
 
+/* Narrow single-column dropdown for Products */
+.mega-menu--narrow {
+  width: 280px;
+  grid-template-columns: 1fr;
+  left: 0;
+  transform: none;
+}
+
+.mega-menu--narrow .mega-col {
+  border-right: none;
+}
+
+.mega-menu--narrow a strong {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text);
+  margin-bottom: 1px;
+}
+
 .mega-col {
   padding: var(--spacing-lg);
   border-right: 1px solid var(--color-border);
