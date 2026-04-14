@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  /* ── Google Sheets Configuration ───────────────────────── */
+  const SHEETS_URL = "https://script.google.com/macros/s/AKfycbx3S0UQi2PVg-mFYUVKlxemkrDrPwKiQQ39j7zQRBhB82L-XA7-Gxdo8Gamu1WVDokV/exec";
+
   /* ── EmailJS Configuration ──────────────────────────────── */
 
   // REPLACE: Add your EmailJS Public Key from https://emailjs.com/account
@@ -153,6 +156,21 @@
         }
 
         await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+
+        // Save lead to Google Sheets (fire-and-forget, doesn't block UX)
+        fetch(SHEETS_URL, {
+          method: 'POST',
+          body: JSON.stringify({
+            from_name:        templateParams.from_name,
+            from_email:       templateParams.from_email,
+            from_phone:       templateParams.from_phone,
+            category:         templateParams.category,
+            service_interest: templateParams.service_interest,
+            message:          templateParams.message,
+            referral_source:  templateParams.referral_source,
+            source_page:      window.location.pathname
+          })
+        }).catch(() => {}); // silently ignore if Sheets is unreachable
 
         // Success
         contactForm.style.display = 'none';
