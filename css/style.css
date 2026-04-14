@@ -2186,11 +2186,12 @@ p { line-height: 1.7; }
 }
 
 .form-checkbox input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   margin-top: 2px;
-  accent-color: var(--color-black);
+  accent-color: #ffffff;
+  cursor: pointer;
 }
 
 .form-checkbox-label {

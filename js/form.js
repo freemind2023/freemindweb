@@ -150,42 +150,43 @@
       // a backend endpoint (e.g., Node.js, serverless function with formidable).
       // For now the file field is cosmetic only.
 
+      // Always save to Google Sheets first (works even without EmailJS)
+      const sheetsPayload = {
+        from_name:        templateParams.from_name,
+        from_email:       templateParams.from_email,
+        from_phone:       templateParams.from_phone,
+        category:         templateParams.category,
+        service_interest: templateParams.service_interest,
+        message:          templateParams.message,
+        referral_source:  templateParams.referral_source,
+        source_page:      window.location.pathname
+      };
+
+      let sheetsSaved = false;
       try {
-        if (typeof emailjs === 'undefined') {
-          throw new Error('EmailJS not loaded. Please check your internet connection.');
+        await fetch(SHEETS_URL, { method: 'POST', body: JSON.stringify(sheetsPayload) });
+        sheetsSaved = true;
+      } catch (_) {}
+
+      // Try EmailJS if configured
+      const emailjsConfigured = EMAILJS_PUBLIC_KEY !== 'ADD_YOUR_EMAILJS_PUBLIC_KEY_HERE'
+        && EMAILJS_SERVICE_ID !== 'ADD_YOUR_EMAILJS_SERVICE_ID_HERE'
+        && EMAILJS_TEMPLATE_ID !== 'ADD_YOUR_EMAILJS_TEMPLATE_ID_HERE';
+
+      if (emailjsConfigured && typeof emailjs !== 'undefined') {
+        try {
+          await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
+        } catch (err) {
+          console.warn('EmailJS send failed:', err);
         }
+      }
 
-        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
-
-        // Save lead to Google Sheets (fire-and-forget, doesn't block UX)
-        fetch(SHEETS_URL, {
-          method: 'POST',
-          body: JSON.stringify({
-            from_name:        templateParams.from_name,
-            from_email:       templateParams.from_email,
-            from_phone:       templateParams.from_phone,
-            category:         templateParams.category,
-            service_interest: templateParams.service_interest,
-            message:          templateParams.message,
-            referral_source:  templateParams.referral_source,
-            source_page:      window.location.pathname
-          })
-        }).catch(() => {}); // silently ignore if Sheets is unreachable
-
-        // Success
+      // Show success if Sheets saved OR EmailJS worked
+      if (sheetsSaved || emailjsConfigured) {
         contactForm.style.display = 'none';
-        if (formSuccess) {
-          formSuccess.style.display = 'block';
-        }
-      } catch (err) {
-        console.error('EmailJS error:', err);
-
-        // Error
-        if (formError) {
-          formError.style.display = 'block';
-        }
-
-        // Reset button
+        if (formSuccess) formSuccess.style.display = 'block';
+      } else {
+        if (formError) formError.style.display = 'block';
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = 'Send Inquiry';
