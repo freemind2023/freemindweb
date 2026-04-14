@@ -1049,18 +1049,21 @@ p { line-height: 1.7; }
 
 /* Logo */
 .pm-banner-logo-wrap {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .pm-banner-logo {
-  height: 32px;
+  height: 120px;
   width: auto;
   display: block;
-  mix-blend-mode: screen;   /* removes black bg from PNG */
+  mix-blend-mode: screen;
+  opacity: 1;
+  filter: brightness(1.15) contrast(1.05);
 }
 
 [data-theme="light"] .pm-banner-logo {
   mix-blend-mode: multiply;
+  filter: invert(1);
 }
 
 /* Title */
@@ -1158,6 +1161,10 @@ p { line-height: 1.7; }
   .pm-banner-inner {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+
+  .pm-banner-logo {
+    height: 90px;
   }
 
   .pm-banner-stats {
@@ -1468,7 +1475,22 @@ p { line-height: 1.7; }
   }
 
   .koelai-call-num {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  /* Shrink voice rings so they don't overflow on small screens */
+  .kvr-1 { width: 150px; height: 150px; }
+  .kvr-2 { width: 190px; height: 190px; }
+  .kvr-3 { width: 230px; height: 230px; }
+  .kvr-4 { width: 270px; height: 270px; }
+
+  .koelai-visual {
+    min-height: 210px;
+  }
+
+  .koelai-circle {
+    width: 130px;
+    height: 130px;
   }
 }
 
@@ -2843,17 +2865,53 @@ p { line-height: 1.7; }
     flex-wrap: wrap;
   }
 
-  /* ── Floating Buttons ── */
+  /* ── Floating Buttons — icon only on mobile, separated corners ── */
   .whatsapp-float {
-    bottom: 80px;
-    right: 16px;
-    padding: 10px 16px;
-    font-size: 12px;
+    bottom: 20px;
+    right: auto;
+    left: 16px;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    font-size: 0;           /* hide text label */
+    border-radius: 50%;
+  }
+
+  .whatsapp-float::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z'/%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.524 5.836L.057 23.886l6.223-1.433A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.86 0-3.601-.5-5.1-1.37l-.36-.214-3.754.864.944-3.635-.235-.374A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z'/%3E%3C/svg%3E") center/contain no-repeat;
+    flex-shrink: 0;
   }
 
   .back-to-top {
     right: 16px;
-    bottom: 24px;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* ── Koelai call strip mobile fix ── */
+  .koelai-call-btn {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 16px 20px;
+  }
+
+  .koelai-call-num {
+    font-size: 18px;
+  }
+
+  /* ── PublishMatch banner mobile ── */
+  .pm-hook-pill {
+    font-size: 11px;
+  }
+
+  .pm-banner-title {
+    font-size: 22px;
   }
 }
 
