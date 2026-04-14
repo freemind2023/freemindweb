@@ -443,3 +443,9 @@
 [data-theme="dark"] :focus-visible {
   outline-color: var(--color-white);
 }
+
+/* ── PublishMatch Banner ──────────────────────────────────── */
+[data-theme="dark"] .publishmatch-banner {
+  background: #111111;
+  border-color: var(--color-border);
+}

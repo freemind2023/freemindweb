@@ -994,6 +994,99 @@ p { line-height: 1.7; }
   color: var(--color-gray-400);
 }
 
+/* ── PublishMatch Banner ──────────────────────────────────── */
+.publishmatch-banner {
+  padding: 64px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+}
+
+.pm-banner-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: center;
+}
+
+.pm-banner-logo {
+  height: 28px;
+  width: auto;
+  display: block;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="light"] .pm-banner-logo {
+  filter: none;
+}
+
+.pm-banner-title {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.pm-banner-desc {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0 0 24px;
+  max-width: 480px;
+}
+
+.pm-banner-btn {
+  align-self: flex-start;
+}
+
+.pm-banner-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.pm-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pm-stat-num {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.pm-stat-lbl {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .pm-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .pm-banner-stats {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .pm-banner-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* ── Koelai Section ───────────────────────────────────────── */
 .koelai-section {
   padding: 80px 0;
