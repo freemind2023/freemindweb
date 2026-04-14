@@ -474,21 +474,48 @@
 
     <!-- ── PublishMatch AI Banner ───────────────────────── -->
     <section class="publishmatch-banner" aria-label="PublishMatch AI Publisher Finder">
+      <div class="pm-banner-noise" aria-hidden="true"></div>
       <div class="container">
         <div class="pm-banner-inner">
-          <div class="pm-banner-left fade-up">
-            <img src="images/publishmatch-logo.png" alt="PublishMatch AI" class="pm-banner-logo">
-            <h2 class="pm-banner-title">Find Your Perfect Publisher</h2>
-            <p class="pm-banner-desc">Answer a few questions and get matched with publishers suited to your book's genre, language, and goals — free, in under 2 minutes.</p>
-            <a href="ai-publisher-finder.html" class="btn btn-primary pm-banner-btn">Start Publisher Finder &rarr;</a>
+
+          <!-- Left content -->
+          <div class="pm-banner-left">
+            <!-- Hook pill -->
+            <div class="pm-hook-pill fade-up">
+              <span class="pm-hook-dot"></span>
+              Authors — still searching for the right publisher?
+            </div>
+
+            <!-- Logo -->
+            <div class="pm-banner-logo-wrap fade-up delay-100">
+              <img src="images/publishmatch-logo.png" alt="PublishMatch AI" class="pm-banner-logo">
+            </div>
+
+            <!-- Headline -->
+            <h2 class="pm-banner-title fade-up delay-200">
+              Stop guessing.<br>Find your publisher in 2 minutes.
+            </h2>
+            <p class="pm-banner-desc fade-up delay-300">
+              488 publishers. Every genre. Every language. Tell us about your book
+              and our AI matches you instantly — completely free.
+            </p>
+
+            <!-- Animated CTA -->
+            <a href="ai-publisher-finder.html" class="pm-banner-cta fade-up delay-400">
+              <span class="pm-cta-pulse" aria-hidden="true"></span>
+              <span class="pm-cta-pulse pm-cta-pulse-2" aria-hidden="true"></span>
+              <span class="pm-cta-text">Find My Publisher &rarr;</span>
+            </a>
           </div>
+
+          <!-- Right stats -->
           <div class="pm-banner-stats fade-up delay-200">
             <div class="pm-stat">
-              <span class="pm-stat-num">50+</span>
+              <span class="pm-stat-num" data-count="488" data-suffix="+">488+</span>
               <span class="pm-stat-lbl">Publishers in Database</span>
             </div>
             <div class="pm-stat">
-              <span class="pm-stat-num">10+</span>
+              <span class="pm-stat-num">15+</span>
               <span class="pm-stat-lbl">Countries Covered</span>
             </div>
             <div class="pm-stat">
@@ -496,6 +523,7 @@
               <span class="pm-stat-lbl">Free to Use</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>
