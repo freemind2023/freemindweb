@@ -1047,23 +1047,71 @@ p { line-height: 1.7; }
   flex-shrink: 0;
 }
 
-/* Logo */
+/* Brand Name (replaces logo) */
 .pm-banner-logo-wrap {
   margin-bottom: 20px;
 }
 
-.pm-banner-logo {
-  height: 120px;
-  width: auto;
-  display: block;
-  mix-blend-mode: screen;
-  opacity: 1;
-  filter: brightness(1.15) contrast(1.05);
+.pm-brand-name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
-[data-theme="light"] .pm-banner-logo {
-  mix-blend-mode: multiply;
-  filter: invert(1);
+.pm-brand-publish {
+  color: var(--color-text);
+  position: relative;
+  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-text-muted) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: pmShimmer 3s ease-in-out infinite;
+}
+
+.pm-brand-match {
+  color: var(--color-text);
+  position: relative;
+  background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% auto;
+  animation: pmGradientSlide 3s linear infinite;
+}
+
+.pm-brand-ai {
+  font-size: 0.45em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  -webkit-text-fill-color: var(--color-text-muted);
+  margin-left: 6px;
+  align-self: flex-end;
+  margin-bottom: 4px;
+  border: 1px solid var(--color-border);
+  padding: 2px 7px;
+  border-radius: 4px;
+  animation: pmAiBlink 4s ease-in-out infinite;
+}
+
+@keyframes pmShimmer {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.75; }
+}
+
+@keyframes pmGradientSlide {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pmAiBlink {
+  0%, 90%, 100% { opacity: 1; }
+  95%           { opacity: 0.3; }
 }
 
 /* Title */
@@ -1163,8 +1211,8 @@ p { line-height: 1.7; }
     gap: 36px;
   }
 
-  .pm-banner-logo {
-    height: 90px;
+  .pm-brand-name {
+    font-size: clamp(22px, 6vw, 32px);
   }
 
   .pm-banner-stats {
