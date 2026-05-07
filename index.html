@@ -224,87 +224,40 @@
     <span class="loader-text">Free Mind Consultancy</span>
   </div>
 
-  <!-- ── Meme Marketing Promo Bar ──────────────────────── -->
-  <div class="promo-bar" id="promoBar">
-    <div class="promo-bar-inner">
-      <span class="promo-bar-emoji">🔥</span>
-      <span class="promo-bar-text">
-        <strong>NEW SERVICE:</strong>&nbsp; Make your brand go viral with
-        <strong>Free Mind Meme Marketing</strong> — Starting ₹3,000/month
-      </span>
-      <a href="meme-marketing/index.html" class="promo-bar-btn">Explore Now →</a>
-      <button class="promo-bar-close" onclick="document.getElementById('promoBar').style.display='none'" aria-label="Close">✕</button>
-    </div>
-  </div>
-
   <style>
-    .promo-bar {
-      background: linear-gradient(90deg, #ff006e 0%, #a855f7 50%, #ff2d78 100%);
-      background-size: 200% 100%;
-      animation: promoShift 4s linear infinite;
-      padding: 10px 16px;
-      position: relative;
-      z-index: 1001;
-    }
-    @keyframes promoShift {
-      0%   { background-position: 0% 0%; }
-      100% { background-position: 200% 0%; }
-    }
-    .promo-bar-inner {
-      display: flex;
+    .hero-meme-nudge {
+      display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .promo-bar-emoji { font-size: 16px; animation: shake 1.5s ease-in-out infinite; }
-    @keyframes shake {
-      0%,100% { transform: rotate(0deg); }
-      25%      { transform: rotate(-12deg); }
-      75%      { transform: rotate(12deg); }
-    }
-    .promo-bar-text {
-      font-size: 13.5px;
-      color: #fff;
-      font-family: 'Inter', sans-serif;
-      letter-spacing: 0.01em;
-    }
-    .promo-bar-btn {
-      background: rgba(255,255,255,0.22);
-      border: 1.5px solid rgba(255,255,255,0.6);
-      color: #fff;
-      font-size: 12.5px;
-      font-weight: 700;
-      padding: 5px 16px;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 10px 20px 10px 14px;
+      background: var(--color-black);
+      border: 1px solid rgba(255,255,255,0.15);
       border-radius: 100px;
       text-decoration: none;
-      font-family: 'Inter', sans-serif;
+      color: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      transition: border-color 0.2s, transform 0.2s;
+      letter-spacing: 0.01em;
+    }
+    .hero-meme-nudge:hover {
+      border-color: rgba(255,255,255,0.45);
+      transform: translateX(4px);
+    }
+    .hero-meme-nudge .nudge-badge {
+      background: #fff;
+      color: #000;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 100px;
       white-space: nowrap;
-      transition: background 0.2s, transform 0.15s;
-      letter-spacing: 0.02em;
     }
-    .promo-bar-btn:hover { background: rgba(255,255,255,0.38); transform: scale(1.05); }
-    .promo-bar-close {
-      background: none;
-      border: none;
-      color: rgba(255,255,255,0.7);
-      font-size: 15px;
-      cursor: pointer;
-      padding: 2px 6px;
-      line-height: 1;
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: color 0.2s;
-    }
-    .promo-bar-close:hover { color: #fff; }
-    @media (max-width: 600px) {
-      .promo-bar-text { font-size: 12px; text-align: center; }
-      .promo-bar-close { position: static; transform: none; }
-    }
+    .hero-meme-nudge .nudge-text { color: rgba(255,255,255,0.6); }
+    .hero-meme-nudge .nudge-arrow { color: rgba(255,255,255,0.35); font-size: 14px; }
   </style>
 
   <!-- ── Navigation ─────────────────────────────────────── -->
@@ -487,6 +440,12 @@
           <span class="wit-line-2">Your competitors are not waiting.</span>
           <span class="wit-line-3">Still thinking about it?</span>
         </div>
+
+        <a href="meme-marketing/index.html" class="hero-meme-nudge">
+          <span class="nudge-badge">New</span>
+          <span class="nudge-text">Try Meme Marketing — Starting ₹3,000/month</span>
+          <span class="nudge-arrow">→</span>
+        </a>
 
         <p class="hero-sub">
           Free Mind Consultancy delivers 30 specialized services across publishing, technology,
@@ -952,6 +911,22 @@
               <div class="service-details" aria-hidden="true">
                 <div class="service-details-inner">
                   Whether you need an MVP to validate a product idea or a custom ERP to unify operations, our team designs, builds, and deploys scalable systems with clean architecture.
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card fade-up">
+              <h3>Meme Marketing</h3>
+              <p class="service-desc">Turn your brand viral with strategic meme campaigns, reels, and trend hijacking.</p>
+              <ul class="service-benefits">
+                <li>Weekly meme drops tailored to your brand voice and audience</li>
+                <li>Trend hijacking — your brand in every viral conversation</li>
+                <li>Comment section marketing and community engagement</li>
+              </ul>
+              <button class="service-learn-more" aria-expanded="false">Learn More</button>
+              <div class="service-details" aria-hidden="true">
+                <div class="service-details-inner">
+                  We create and distribute memes, viral reels, and trending content that puts your brand in front of your audience. Starting at just ₹3,000/month with no long-term contracts. <a href="meme-marketing/index.html" style="color:inherit;text-decoration:underline;opacity:0.7;">View the Meme Marketing page →</a>
                 </div>
               </div>
             </article>
