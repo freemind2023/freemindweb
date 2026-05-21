@@ -666,6 +666,74 @@
 
     /* ── WhatsApp icon SVG path ───────────────────── */
     .wa-path { fill: currentColor; }
+
+    /* ══════════════════════════════════════════════
+       MOBILE FIXES  (≤ 480px)
+    ══════════════════════════════════════════════ */
+    @media (max-width: 480px) {
+
+      /* Topbar: prevent logo text from overflowing into the button */
+      .topbar-inner { gap: 8px; }
+      .topbar-logo {
+        font-size: 13px;
+        letter-spacing: -0.02em;
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        gap: 7px;
+      }
+      .topbar-logo img { width: 26px; height: 26px; flex-shrink: 0; }
+      #topbar .btn-primary {
+        padding: 10px 14px;
+        font-size: 13px;
+        flex-shrink: 0;
+        white-space: nowrap;
+        min-height: 40px;
+      }
+
+      /* Hero: center-align content */
+      .hero-grid { text-align: center; }
+      .hero-headline { font-size: clamp(26px, 7vw, 32px); }
+      .hero-sub { font-size: 15px; max-width: 100%; margin-left: auto; margin-right: auto; }
+      .hero-badge { margin-left: auto; margin-right: auto; }
+      .hero-ctas { flex-direction: column; gap: 10px; align-items: stretch; }
+      .hero-ctas .btn-primary,
+      .hero-ctas .btn-whatsapp { width: 100%; justify-content: center; }
+      .hero-trust { justify-content: center; text-align: center; }
+      .trust-badges { justify-content: center; }
+
+      /* Services: single column on smallest screens */
+      .services-grid { grid-template-columns: 1fr; }
+
+      /* Metric cards: keep 3-col but tighten */
+      .metric-val { font-size: 22px; }
+      .metric-card { padding: 14px 8px; }
+
+      /* Pricing: full width */
+      .pricing-grid { max-width: 100%; }
+
+      /* FAQ: tighter padding */
+      .faq-q { padding: 15px 14px; font-size: 14px; }
+      .faq-ans-inner { padding: 0 14px 15px; }
+
+      /* Final CTA buttons: stack vertically */
+      .cta-btns { flex-direction: column; align-items: center; gap: 10px; }
+      .cta-btns .btn-white,
+      .cta-btns .btn-whatsapp { width: 100%; max-width: 320px; justify-content: center; }
+
+      /* Footer bottom: stack */
+      .footer-bottom { flex-direction: column; text-align: center; gap: 10px; }
+      .f-legal { justify-content: center; }
+    }
+
+    /* ── Extra-small: 360px phones ─────────────────── */
+    @media (max-width: 360px) {
+      .topbar-logo { font-size: 12px; }
+      .hero-headline { font-size: 24px; }
+      .metric-cards { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
