@@ -873,7 +873,7 @@
 
     <!-- Comparison Table -->
     <h2 style="font-size:28px;font-weight:700;margin-bottom:8px;color:#fff;">Meme Marketing vs. Paid Ads vs. Traditional Social</h2>
-    <p style="color:rgba(255,255,255,0.6);margin-bottom:32px;font-size:15px;">See why meme marketing delivers better ROI for Indian brands in 2025</p>
+    <p style="color:rgba(255,255,255,0.6);margin-bottom:32px;font-size:15px;">See why meme marketing delivers better ROI for Indian brands in 2026</p>
 
     <div style="overflow-x:auto;">
       <table style="width:100%;border-collapse:collapse;font-size:14px;color:#fff;">
@@ -976,7 +976,7 @@
       </a>
     </div>
     <div class="footer-copy">
-      Free Mind Meme Marketing &nbsp;•&nbsp; © 2025 Free Mind Consultancy &nbsp;•&nbsp; All rights reserved
+      Free Mind Meme Marketing &nbsp;•&nbsp; © 2026 Free Mind Consultancy &nbsp;•&nbsp; All rights reserved
     </div>
   </footer>
 
@@ -1127,6 +1127,10 @@
       });
 
       ScrollTrigger.refresh();
+
+      /* Auto-update copyright year */
+      var fc = document.querySelector('.footer-copy');
+      if (fc) fc.innerHTML = fc.innerHTML.replace(/©\s*\d{4}/, '© ' + new Date().getFullYear());
     });
   </script>
 </body>

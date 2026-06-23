@@ -4,6 +4,19 @@
    dark mode, back-to-top, mobile menu, page loader
    ============================================================ */
 
+/* ── 0. Auto-update copyright year ───────────────────────── */
+document.addEventListener('DOMContentLoaded', function () {
+  var y = new Date().getFullYear();
+  document.querySelectorAll('.footer-copyright').forEach(function (el) {
+    el.textContent = el.textContent.replace(/(?:Copyright|©)\s*\d{4}/, function (m) {
+      return m.replace(/\d{4}/, y);
+    });
+  });
+  document.querySelectorAll('.footer-bottom').forEach(function (el) {
+    el.innerHTML = el.innerHTML.replace(/©\s*\d{4}/g, '© ' + y);
+  });
+});
+
 (function () {
   'use strict';
 
