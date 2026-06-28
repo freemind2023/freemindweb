@@ -1,0 +1,49 @@
+# Website Configuration
+
+site:
+  name: "Free Mind Consultancy"
+  url: "https://www.freemindconsultancy.com"
+  # Local path to website source files
+  local_root: "${WEBSITE_ROOT}"
+  # Main technology
+  framework: "html"
+  # Sitemap location
+  sitemap_url: "https://www.freemindconsultancy.com/sitemap.xml"
+
+pages:
+  # Key pages to always monitor
+  priority_pages:
+    - path: "/"
+      name: "Homepage"
+      primary_keyword: "free mind consultancy"
+    - path: "/services"
+      name: "Services"
+      primary_keyword: "digital marketing services india"
+    # Add more pages as your site grows
+
+  # Page types for schema markup
+  page_types:
+    homepage: "WebSite"
+    service: "Service"
+    blog: "Article"
+    about: "AboutPage"
+    contact: "ContactPage"
+
+seo:
+  # Brand name for title tag suffix
+  brand_suffix: "| Free Mind Consultancy"
+  # Default language
+  language: "en"
+  # Target region
+  target_region: "IN"
+  # Default Open Graph image
+  default_og_image: "/assets/og-default.jpg"
+
+structure:
+  # Where HTML files live relative to website root
+  html_dir: "/"
+  # Where assets live
+  assets_dir: "/assets"
+  images_dir: "/assets/images"
+  css_dir: "/assets/css"
+  js_dir: "/assets/js"

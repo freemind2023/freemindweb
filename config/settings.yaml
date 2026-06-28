@@ -1,0 +1,75 @@
+# SEO Agent Settings
+
+ga4:
+  property_id: "${GA4_PROPERTY_ID}"
+  # Default date range for data fetches (days back from today)
+  default_lookback_days: 30
+  # Metrics to fetch
+  metrics:
+    - sessions
+    - totalUsers
+    - newUsers
+    - bounceRate
+    - averageSessionDuration
+    - screenPageViews
+    - conversions
+  # Dimensions to fetch
+  dimensions:
+    - pagePath
+    - sessionSource
+    - sessionMedium
+    - country
+    - deviceCategory
+
+search_console:
+  property: "${SEARCH_CONSOLE_PROPERTY}"
+  default_lookback_days: 30
+  # Row limit per API call
+  row_limit: 5000
+  # Dimensions to fetch
+  dimensions:
+    - query
+    - page
+    - country
+    - device
+
+analysis:
+  # Minimum impressions to consider a keyword relevant
+  min_impressions: 10
+  # CTR threshold to flag underperforming pages
+  low_ctr_threshold: 0.02
+  # Position threshold for "striking distance" keywords
+  striking_distance_max_position: 20
+  striking_distance_min_position: 4
+  # Minimum word count for content pages
+  min_content_word_count: 800
+
+reporting:
+  # Generate reports in these formats
+  formats:
+    - markdown
+    - html
+  # Number of top items to include in reports
+  top_pages_count: 20
+  top_keywords_count: 50
+
+optimization:
+  # Maximum number of changes per run
+  max_changes_per_run: 10
+  # Always back up before modifying
+  backup_before_modify: true
+  # Image optimization quality (1-100)
+  image_quality: 85
+  # Max image width in pixels
+  max_image_width: 1920
+
+pipeline:
+  # Steps to run in the full pipeline (in order)
+  steps:
+    - fetch_ga4
+    - fetch_search_console
+    - combine_data
+    - keyword_analysis
+    - page_analysis
+    - technical_audit
+    - generate_monthly_report

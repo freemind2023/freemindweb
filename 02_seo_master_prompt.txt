@@ -1,0 +1,1481 @@
+================================================================================
+  FREE MIND CONSULTANCY — MASTER SEO + AEO + GEO OPTIMIZATION PROMPT
+  Feed this entire file back to Claude Code to execute all changes below.
+================================================================================
+
+CONTEXT: This is the complete optimization brief for freemindconsult.com — a
+professional consulting firm (Free Mind Consultancy) based in India, founded
+2023, serving Founders, Authors, Professors, Government Officers, and Coaches.
+Their flagship product is Koelai AI (AI calling agent). They also have
+PublishMatch AI (publisher finder tool), a Meme Marketing service (starting
+₹3,000/month, at /meme-marketing/), and a Clinic/Doctor Automation system
+(appointment booking, WhatsApp automation, AI receptionist, at /clinic-automation/).
+Domain: www.freemindconsult.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 1: UNDERSTANDING THE THREE PILLARS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SEO  = Search Engine Optimization
+      → Rank on Google/Bing keyword searches. Signal: backlinks, on-page
+        relevance, technical health, E-E-A-T (Experience, Expertise,
+        Authoritativeness, Trustworthiness).
+
+AEO  = Answer Engine Optimization
+      → Win Google Featured Snippets, People Also Ask boxes, voice search
+        answers, and Google AI Overviews. Signal: direct Q&A structured
+        content, FAQ schema, HowTo schema, clear concise definitions.
+
+GEO  = Generative Engine Optimization
+      → Get cited by ChatGPT, Perplexity AI, Google Gemini, Claude, Bing
+        Copilot when people ask questions. Signal: factual, citable, clearly
+        attributed content; author bios; named statistics; primary sources;
+        publisher-level trust signals.
+
+All three must work TOGETHER. A single well-written FAQ answer can rank on
+Google (SEO), win a featured snippet (AEO), AND be quoted by Perplexity (GEO).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 2: WEBSITE AUDIT — CURRENT STRENGTHS & GAPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CURRENT STRENGTHS (keep and enhance):
+✓ Google Analytics (G-EWH4E2G82R) already installed
+✓ JSON-LD structured data: Organization, LocalBusiness, WebSite, FAQPage
+✓ Open Graph and Twitter Card meta tags present
+✓ Canonical tag present
+✓ robots.txt and sitemap.xml exist
+✓ Mobile-first responsive design
+✓ HTTPS ready (Netlify/Vercel deployment)
+✓ Good page speed architecture (no heavy frameworks)
+✓ WhatsApp CTA, podcast badges, social links
+
+CRITICAL GAPS TO FIX:
+✗ Only 7 FAQ items — should be 40+ organized by audience/topic
+✗ No individual service pages with deep content (linked but pages missing)
+✗ No blog content published (blog/index.html linked but empty)
+✗ No author/team bios (GEO requires named human authors)
+✗ No "About the Founder" page (trust signal for GEO)
+✗ Meta descriptions are generic — need keyword-specific versions per page
+✗ H1 tags not keyword-optimized (hero headline is brand, not keyword)
+✗ No HowTo, Article, or Person schema markup
+✗ No Google Business Profile structured data with reviews
+✗ Missing location-specific content (Pune, Mumbai, India focus)
+✗ No pricing pages (high commercial intent keyword opportunity)
+✗ No comparison content ("vs" pages for competitor queries)
+✗ No glossary/definition pages (GEO gold mine)
+✗ No case studies with named clients / anonymized detail
+✗ No internal linking strategy — pages float in isolation
+✗ Images missing descriptive alt text in several places
+✗ Page title formula not optimized for CTR
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 3: TARGET KEYWORD UNIVERSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TIER 1 — HIGH PRIORITY (commercial, high intent, winnable in 6 months):
+
+Book Publishing:
+  book publishing services India
+  self publishing services India
+  self publish a book in India cost
+  book publishing company India for first time authors
+  how to publish a book in India self publishing
+  ISBN registration India for self publishers
+  how to get ISBN for book in India
+
+Ghostwriting:
+  ghostwriting services India
+  professional ghostwriter India
+  ghostwriter for book India price
+  hire ghostwriter India
+  business book ghostwriting India
+  memoir ghostwriting India
+
+AI Calling Agent:
+  AI calling agent India
+  AI voice agent for business India
+  automated calling software India
+  AI phone agent for lead generation
+  voice AI for sales India
+  Koelai AI calling agent
+
+LMS Development:
+  LMS development India
+  custom LMS development company India
+  learning management system development cost India
+  white label LMS India
+  LMS for coaching institute India
+
+Business Consulting:
+  business consulting services India
+  consulting firm India for startups
+  startup consulting India
+  founder consulting India
+
+Curriculum Design:
+  curriculum design services India
+  instructional design services India
+  course curriculum development India
+  eLearning content development India
+
+Personal Branding:
+  personal branding for founders India
+  thought leadership content India
+  LinkedIn personal branding India
+  personal branding consultant India
+
+Research Paper:
+  research paper editing services India
+  academic editing services India
+  journal paper editing India
+  peer review paper editing India
+
+Meme Marketing:
+  meme marketing services India
+  meme marketing agency India
+  viral meme marketing for brands India
+  social media meme marketing agency
+  brand meme marketing starting 3000
+  viral reels marketing India
+  trend hijacking marketing India
+  meme marketing for startups India
+  comment section marketing India
+  social media marketing memes India
+
+Doctor / Clinic Automation:
+  clinic appointment booking system India
+  doctor appointment booking software India
+  clinic automation system India
+  WhatsApp appointment booking for doctors
+  AI receptionist for clinic India
+  online appointment booking for doctors India
+  smart clinic management system India
+  patient follow-up automation India
+  reduce no-shows clinic India
+  clinic digital marketing India
+  Google Ads for doctors India
+  SEO for doctors India
+  doctor website development India
+  clinic WhatsApp automation India
+  appointment reminder system for clinics
+
+TIER 2 — MEDIUM PRIORITY (informational, AEO/GEO, drives trust):
+
+  what is an AI calling agent
+  how does AI voice calling work
+  what is ghostwriting and is it legal
+  how long does it take to publish a book
+  what is an ISBN number and do I need one
+  how to self publish a book in India step by step
+  what is LMS and how does it work
+  difference between LMS and CMS
+  what is curriculum design in education
+  how to build a personal brand as a founder
+  what is book translation and localization
+  how to get a book on Amazon India
+  what is SCORM compliance in eLearning
+  how to hire a ghostwriter for a book
+  what is business process automation
+
+TIER 3 — LONG TAIL (blog, FAQ, GEO citations):
+
+  book publishing services for professors India
+  how to publish a government officer memoir India
+  ghostwriting services for IAS officers
+  AI calling agent for clinic automation India
+  LMS for skill development institute India
+  how to translate a book from English to Hindi
+  textbook writing services for academic authors
+  self publishing vs traditional publishing India
+  how much does it cost to self publish a book in India
+  what is the difference between ghostwriting and co-authoring
+  how to build an online course in India
+  AI voice agent vs human call center cost comparison
+  book publishing timeline from manuscript to Amazon
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 4: COMPLETE FAQ RESTRUCTURE (40 QUESTIONS ACROSS ALL AUDIENCES)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Replace the current 7 FAQ items with the following 40 questions organized into
+collapsible category sections. Each answer must be 60–120 words — long enough
+to be informative, short enough to win featured snippets.
+
+Add these as BOTH visible FAQ accordions on the page AND in the FAQPage JSON-LD
+schema. This directly targets Google's "People Also Ask" boxes.
+
+--- GENERAL QUESTIONS ---
+
+Q1: What does Free Mind Consultancy do?
+A: Free Mind Consultancy is an Indian professional services firm that delivers
+30 specialized services across five client categories: founders and
+entrepreneurs, published and aspiring authors, academic professors and
+researchers, senior government officers, and coaching institutes. Services span
+book publishing, ghostwriting, AI calling agents, LMS development, business
+automation, curriculum design, and personal branding. All services are delivered
+remotely through virtual collaboration, serving clients across India, the UAE,
+UK, US, and Southeast Asia.
+
+Q2: Where is Free Mind Consultancy located?
+A: Free Mind Consultancy is based in India (Pune region) and operates entirely
+virtually. All client consultations, project management, and delivery are
+conducted through video calls and digital collaboration tools. This allows the
+firm to serve clients globally with no geographic restriction.
+
+Q3: How do I get started with Free Mind Consultancy?
+A: Submit the contact form at freemindconsult.com or email
+info@freemindconsult.com. A consultant will respond within 24 hours to schedule
+a free discovery call. During that call, you share your goals, and within 48
+hours you receive a customized proposal with scope, timeline, and pricing. There
+is no obligation to proceed after the discovery call.
+
+Q4: Does Free Mind Consultancy work with international clients?
+A: Yes. Free Mind Consultancy has delivered projects for clients in India, UAE,
+UK, USA, Australia, Singapore, Malaysia, Bangladesh, Sri Lanka, and Nepal. All
+consultations happen via virtual meetings, and deliverables are shared digitally.
+Time zone differences are accommodated through flexible scheduling.
+
+Q5: Can I hire Free Mind for just one service?
+A: Yes. There are no mandatory packages. Clients may engage Free Mind for a
+single service — for example, only ISBN registration, only ghostwriting, or only
+an AI calling agent setup. Most clients begin with one service and expand the
+engagement after seeing results.
+
+--- BOOK PUBLISHING QUESTIONS ---
+
+Q6: How long does it take to publish a book through Free Mind Consultancy?
+A: A standard book publishing project — from final manuscript submission to live
+on Amazon — takes six to ten weeks. The timeline depends on editing complexity,
+number of cover design revisions, interior formatting requirements, and whether
+ISBN registration is needed simultaneously. Academic or translated editions may
+take two to four weeks longer.
+
+Q7: What is the cost of self-publishing a book in India through Free Mind?
+A: Pricing varies based on manuscript length, editing depth, cover design
+complexity, and distribution scope. Free Mind offers modular pricing — you
+choose only the services you need. Contact us for a customized quote. The free
+discovery call includes a scope assessment and pricing estimate with no
+obligation.
+
+Q8: Does Free Mind handle distribution to Amazon and bookstores?
+A: Yes. Free Mind manages distribution setup on Amazon KDP (Kindle Direct
+Publishing), IngramSpark for global print distribution, and regional Indian
+distributors upon request. After setup, your book is available for purchase on
+Amazon India, Amazon global, and can be ordered by bookstores and libraries
+worldwide.
+
+Q9: Will I retain the rights to my book?
+A: Yes, completely. Authors retain 100% of copyright and intellectual property
+rights. Free Mind is a service provider, not a publisher claiming rights. For
+ghostwritten content, a full authorship transfer agreement and NDA are signed
+before work begins.
+
+Q10: What is ISBN registration and do I need it?
+A: An ISBN (International Standard Book Number) is a unique 13-digit identifier
+assigned to a book, required for distribution to bookstores, libraries, and
+online retail platforms like Amazon. Any book intended for public sale or library
+cataloguing needs an ISBN. Free Mind handles the full Indian ISBN registration
+process including barcode generation for print, digital, and audio editions.
+
+Q11: How does Free Mind help with book translation?
+A: Free Mind manages book translation using subject-matter expert translators
+backed by native-speaker reviewers for quality assurance. Languages covered
+include Hindi, Marathi, Tamil, Telugu, Bengali, Kannada, Malayalam, Arabic,
+French, German, and others. Each translated edition receives its own ISBN
+registration. Cultural localization — not just literal translation — is included
+to ensure the book resonates in each target market.
+
+Q12: What types of books does Free Mind publish?
+A: Free Mind publishes business books, leadership memoirs, self-help titles,
+academic textbooks, governance memoirs by civil servants, training manuals for
+coaching institutes, and children's books. Every client category has a dedicated
+publishing track optimized for their specific distribution channels and audience.
+
+Q13: What is the difference between self-publishing and traditional publishing?
+A: Traditional publishing means a publisher selects your manuscript, funds
+production, and distributes the book — but takes most royalties and creative
+control. Self-publishing means you fund production and retain full rights and a
+higher royalty percentage (typically 60–70% on Amazon KDP vs. 8–15% traditional).
+Free Mind manages the self-publishing process professionally, delivering
+traditional-quality results with self-publishing economics.
+
+--- GHOSTWRITING QUESTIONS ---
+
+Q14: What is ghostwriting and is it legal and ethical?
+A: Ghostwriting is the practice of hiring a professional writer to write content
+— a book, speech, or article — that is published under the client's name.
+Ghostwriting is entirely legal and has been standard practice for centuries among
+politicians, celebrities, executives, and authors. The ghostwriter is compensated
+and assigns all rights to the client. At Free Mind, every ghostwriting engagement
+is protected by a legally binding NDA and a full rights transfer agreement.
+
+Q15: How does the ghostwriting process work at Free Mind?
+A: The process starts with a series of structured interviews where the
+ghostwriter captures your voice, ideas, stories, and perspective. The writer then
+drafts chapters, shares them for review, and revises based on your feedback.
+Multiple rounds of revision are included. The result is a manuscript that sounds
+authentically like you. An NDA is signed before any information is shared.
+
+Q16: Will the ghostwriter know my industry well enough?
+A: Free Mind matches clients with ghostwriters who have demonstrated expertise in
+the client's domain — business, governance, academia, health, or technology. For
+highly technical subjects, a subject-matter expert reviewer is added to the team
+to ensure accuracy.
+
+--- AI CALLING AGENT (KOELAI AI) QUESTIONS ---
+
+Q17: What is Koelai AI and how does it work?
+A: Koelai is an AI calling agent built by Free Mind Consultancy. It makes and
+receives phone calls using a natural-sounding AI voice, conducts conversations in
+100+ languages, and handles tasks like lead qualification, appointment booking,
+customer follow-ups, and inbound call responses — 24 hours a day, 7 days a week.
+Koelai is trained on your specific business knowledge, uses your brand's voice
+and persona, and integrates with your CRM to capture all interaction data.
+
+Q18: How is an AI calling agent different from an IVR or chatbot?
+A: An IVR (Interactive Voice Response) plays pre-recorded prompts and routes
+calls by button press. A chatbot handles text conversations. Koelai AI conducts
+full, two-way spoken conversations — it listens, understands natural language,
+responds contextually, and adapts to what the caller says, just like a human
+agent. It can handle objections, answer complex questions, and escalate to a
+human when needed.
+
+Q19: Can Koelai AI speak in Indian regional languages?
+A: Yes. Koelai supports 100+ languages including Hindi, Marathi, Tamil, Telugu,
+Bengali, Kannada, Malayalam, Gujarati, Punjabi, and other regional languages.
+For businesses operating across India's linguistic diversity, Koelai can be
+configured to detect the caller's language and respond accordingly.
+
+Q20: What industries can use an AI calling agent like Koelai?
+A: Koelai is used across industries including healthcare (clinic appointment
+booking, patient follow-up), real estate (lead qualification, site visit
+scheduling), education (admission inquiries, fee reminders), e-commerce (order
+status, return initiation), financial services (loan inquiries, EMI reminders),
+and SaaS (onboarding calls, churn prevention).
+
+Q21: How much does Koelai AI cost?
+A: Koelai AI is priced based on call volume, number of languages, integration
+complexity, and customization requirements. Contact Free Mind for a customized
+quote. You can experience Koelai live by calling +91 92409 04635.
+
+--- LMS DEVELOPMENT QUESTIONS ---
+
+Q22: What is an LMS and why does a coaching institute need one?
+A: An LMS (Learning Management System) is a digital platform where you host,
+deliver, and manage online courses. For a coaching institute, an LMS allows
+learners to access course content anytime, track their own progress, take
+assessments, and receive certificates — all without requiring physical
+attendance. It enables institutes to serve hundreds or thousands of learners
+simultaneously and generate passive income through self-paced course sales.
+
+Q23: How long does it take to build a custom LMS with Free Mind?
+A: A standard branded LMS with course management, learner progress tracking,
+certificate generation, and payment integration takes eight to fourteen weeks
+depending on the number of courses, integration requirements, and design
+complexity. A basic version can be launched in four to six weeks.
+
+Q24: What is SCORM and why does it matter for eLearning?
+A: SCORM (Sharable Content Object Reference Model) is a technical standard that
+ensures eLearning content works on any compliant LMS. Content built to SCORM
+standards can be reused, tracked for learner completion, and scored accurately.
+Free Mind builds SCORM-compliant modules that can be uploaded to any standard LMS
+including Moodle, TalentLMS, Canvas, and custom platforms.
+
+--- CURRICULUM DESIGN QUESTIONS ---
+
+Q25: What is curriculum design and how is it different from course content?
+A: Curriculum design is the strategic framework that defines what learners should
+know, understand, and be able to do at the end of a program — the "why" and
+"what." Course content is the actual material (videos, readings, activities) that
+delivers those outcomes. Free Mind designs the curriculum framework first — using
+Bloom's Taxonomy — then develops or oversees development of the content that
+fulfills it.
+
+Q26: Can curriculum design be aligned to national accreditation standards?
+A: Yes. Free Mind's instructional designers create accreditation-ready
+documentation aligned to NSDC, UGC, AICTE, and sector-specific standards.
+Documentation includes learning outcome maps, assessment rubrics, and program
+structure reports formatted for accreditation submission.
+
+--- PERSONAL BRANDING QUESTIONS ---
+
+Q27: How does personal branding help a founder grow their business?
+A: A founder's personal brand — their reputation, visibility, and thought
+leadership — directly influences business growth. Investors research founders
+before funding. Clients check LinkedIn before signing contracts. Top talent
+evaluates the founder before joining. A strong personal brand built on published
+content, speaking appearances, podcast interviews, and a consistent social media
+presence can generate inbound leads, attract investors, and reduce sales friction.
+
+Q28: What does Free Mind's personal branding service include?
+A: Services include LinkedIn profile optimization, personal brand strategy
+document, ghostwritten thought leadership articles, LinkedIn content calendar,
+podcast appearance pitching and preparation, a professionally written
+biography, and optionally a book or whitepaper to establish expertise in your
+field.
+
+--- PROFESSORS AND ACADEMIC QUESTIONS ---
+
+Q29: How does Free Mind help professors publish academic books?
+A: Free Mind handles the full academic book production process — developmental
+editing, copy editing, professional typesetting, cover design, ISBN registration,
+and distribution to Amazon, academic bookstores, and library cataloguing
+platforms. For professors wanting institutional distribution, Free Mind can
+coordinate with academic distributors.
+
+Q30: What is the difference between a textbook and a research monograph?
+A: A textbook is designed for structured learning — it follows a curriculum,
+uses pedagogical features like learning objectives, summaries, and exercises, and
+is adopted by courses. A research monograph presents original research findings
+for an academic audience. Free Mind publishes both, with separate production
+processes optimized for each format.
+
+Q31: Can Free Mind edit a research paper for international journal submission?
+A: Yes. Free Mind's academic editors specialize in preparing manuscripts for
+peer-reviewed international journals. Editing includes structural review (is the
+argument clear and logically organized?), language editing for non-native English
+writers, citation format alignment to the target journal's style guide (APA, MLA,
+Vancouver, Chicago), and abstract strengthening.
+
+--- GOVERNMENT OFFICER QUESTIONS ---
+
+Q32: How does Free Mind help government officers publish their memoirs?
+A: Government officers and civil servants bring decades of governance experience
+worth documenting. Free Mind provides end-to-end memoir production: structured
+interviews to capture the officer's narrative, ghostwriting or co-authoring
+support, editorial transformation from administrative language to accessible
+narrative prose, professional design and formatting, ISBN registration, and
+distribution. The process is fully confidential with NDA protection.
+
+Q33: Can a government officer publish a book while still in service?
+A: Publication rules vary by department and government type. Free Mind does not
+provide legal advice but recommends consulting your department's service rules
+before publication. Many retired officers and serving officers in permitted
+categories have published through Free Mind. The manuscript can be prepared
+confidentially and published at an appropriate time.
+
+--- PROCESS AND COMMERCIAL QUESTIONS ---
+
+Q34: What is the process after I contact Free Mind Consultancy?
+A: Step 1 — Submit the contact form or email. Step 2 — A consultant responds
+within 24 hours to schedule a free discovery call. Step 3 — On the call (30–60
+minutes), you share your goals and the consultant asks clarifying questions.
+Step 4 — Within 48 hours, you receive a written proposal with scope, timeline,
+team, and pricing. Step 5 — If you proceed, an agreement is signed and
+onboarding begins within one week.
+
+Q35: Does Free Mind sign NDAs with clients?
+A: Yes. For all ghostwriting, business consulting, and technology development
+engagements, a mutual NDA is signed before any confidential information is
+shared. For publishing-only services, an NDA is available on request.
+
+Q36: Does Free Mind offer refunds if I am not satisfied?
+A: Free Mind works in milestone-based structures with defined deliverables and
+review rounds at each stage. If deliverables do not meet the agreed specification,
+revisions are included at no extra cost. Refund policies are defined in each
+service agreement. The discovery call and initial proposal are always free of
+charge with no obligation.
+
+Q37: Can Free Mind handle multiple services simultaneously for one client?
+A: Yes. Many clients engage Free Mind across multiple service lines at once —
+for example, a founder may be using the AI Calling Agent, Digital Marketing, and
+Personal Branding services concurrently. Each service has a dedicated point of
+contact to ensure quality is not compromised across parallel workstreams.
+
+--- PRICING AND COMMERCIAL ---
+
+Q38: How much does book publishing cost in India with Free Mind?
+A: Book publishing investment depends on manuscript length, editing requirements,
+cover design tier, and distribution scope. Modular pricing means you pay only for
+services you use. Basic self-publishing (formatting + cover + ISBN + Amazon setup)
+starts at a competitive market rate. Full-service publishing (editing + design +
+ISBN + global distribution + launch support) is priced accordingly. Book a free
+discovery call for a personalized quote.
+
+Q39: Does Free Mind offer payment plans?
+A: For larger projects (books, LMS, ERP systems), Free Mind structures payment
+in milestone tranches — typically 30–40% upfront, 30–40% at midpoint delivery,
+and 20–30% on final delivery. This protects both parties and aligns payment to
+verified progress.
+
+Q40: What makes Free Mind Consultancy different from other consulting firms?
+A: Three differentiators: First, specialization — Free Mind serves five specific
+professional categories with services built around their exact needs, not generic
+consulting. Second, technology-first — from Koelai AI to SCORM modules to
+custom LMS platforms, technology is embedded in every service. Third,
+cross-service integration — a founder can get an AI calling agent, personal
+brand book, and digital marketing strategy from one firm, with all pieces aligned.
+
+--- MEME MARKETING QUESTIONS ---
+
+Q41: What is meme marketing and does it actually work for Indian brands?
+A: Meme marketing is the practice of using internet memes, viral humor,
+trending formats, and relatable cultural references to promote a brand on social
+media. It works because memes are shared organically — people forward them to
+friends without any paid boosting, giving brands viral reach at a fraction of
+traditional ad spend. In India, where social media usage on Instagram, WhatsApp,
+and YouTube is massive, meme-based content consistently outperforms polished
+brand creatives in engagement and reach. Free Mind's meme marketing service
+starts at just ₹3,000 per month.
+
+Q42: What is included in Free Mind's meme marketing service?
+A: Free Mind's meme marketing service includes four core offerings: (1) Meme
+Marketing — weekly custom meme drops tailored to your brand voice and audience;
+(2) Viral Reels — short-form video content using trending audio, cuts, and
+formats; (3) Trend Hijacking — placing your brand inside viral trending
+conversations within 24 hours of a trend emerging; and (4) Comment Section
+Marketing — strategic engagement in comment sections of viral posts to generate
+brand awareness through community interaction.
+
+Q43: How much does meme marketing cost with Free Mind?
+A: Free Mind's meme marketing service starts at ₹3,000 per month with no
+long-term contracts. You can cancel anytime. Pricing scales with the volume of
+content, number of platforms, and level of strategic involvement. A WhatsApp
+consultation is available to discuss custom requirements and exact monthly scope.
+
+Q44: Which brands benefit most from meme marketing?
+A: Meme marketing works best for brands targeting audiences aged 18–40 who
+are active on Instagram, Twitter/X, and YouTube. High-performing categories
+include startups, D2C consumer brands, edtech companies, coaching institutes,
+food and beverage brands, SaaS tools, financial services, and any brand that
+wants to build strong organic reach without relying entirely on paid advertising.
+Even B2B brands benefit — LinkedIn meme content drives engagement and builds
+brand recall among founders and professionals.
+
+Q45: Is meme marketing safe for professional or corporate brands?
+A: Yes, when executed strategically. Free Mind creates memes that align with
+your brand voice — they don't need to be juvenile or offensive. Professional
+brands can use memes with wit, relatable workplace humor, and industry-specific
+references that resonate with their audience while maintaining credibility. Every
+meme is reviewed for brand safety before publication.
+
+Q46: What is trend hijacking in meme marketing?
+A: Trend hijacking is the practice of inserting your brand into a viral trending
+moment — a meme format, news event, challenge, or cultural reference — within
+hours of it going viral. Done well, it generates massive organic reach by
+piggy-backing on existing audience interest. Free Mind monitors trending formats
+across Instagram Reels, Twitter/X, and YouTube Shorts and responds within 24
+hours with brand-aligned trend content.
+
+--- CLINIC AUTOMATION AND APPOINTMENT BOOKING QUESTIONS ---
+
+Q47: What is clinic automation and how does it help doctors?
+A: Clinic automation is the use of digital systems to replace manual clinic
+operations — appointment booking, patient reminders, reception management, and
+follow-ups — with automated, technology-driven workflows. For doctors, clinic
+automation reduces no-shows through WhatsApp reminders, eliminates manual
+register management with an online appointment calendar, frees reception staff
+from phone overload with an AI receptionist, and helps new patients find the
+clinic through a proper website and Google visibility.
+
+Q48: How does the online appointment booking system work for clinics?
+A: Free Mind's clinic appointment booking system allows patients to book
+appointments directly from the clinic's website, Google Business listing, or
+WhatsApp — 24 hours a day, 7 days a week, without any app download. Once a
+booking is made, the patient automatically receives a WhatsApp confirmation
+message. A reminder is sent before the appointment. The doctor or clinic admin
+views all bookings through a centralized dashboard with calendar, queue
+management, and patient record access.
+
+Q49: What is an AI receptionist for a clinic and how does it work?
+A: An AI receptionist for a clinic is a voice AI system (powered by Free Mind's
+Koelai AI) that answers incoming patient calls, responds to appointment inquiries,
+books appointments directly in the clinic's calendar, and sends WhatsApp
+confirmations — all automatically, without a human receptionist. It works 24/7,
+handles multiple calls simultaneously, and escalates to a human if needed.
+It significantly reduces missed calls, reception overload, and front-desk errors.
+
+Q50: How does WhatsApp automation help reduce clinic no-shows?
+A: WhatsApp automation for clinics sends appointment reminders directly to the
+patient's WhatsApp number — typically 24 hours before and 2 hours before the
+scheduled appointment. Studies show automated reminders reduce no-shows by 30–60%
+in healthcare settings. Free Mind integrates the WhatsApp Business API into the
+clinic's booking system so all reminders are sent automatically without any
+manual effort from clinic staff.
+
+Q51: Can multiple doctors or a multi-speciality clinic use the system?
+A: Yes. Free Mind's clinic management system supports multiple doctors,
+departments, and branches from a single admin panel with role-based access.
+Each doctor gets their own schedule, appointment queue, and patient record
+section. The system is designed for solo practice clinics, multi-doctor
+setups, and multi-branch clinic chains.
+
+Q52: What medical specialities does Free Mind build clinic systems for?
+A: Free Mind builds customized clinic automation systems for general physicians,
+dermatologists, dentists, pediatricians, gynecologists, orthopedic specialists,
+ENT specialists, ophthalmologists, neurologists, psychiatrists, physiotherapists,
+and multi-speciality hospitals. Each speciality has different workflow requirements
+— for example, dentists need multi-session appointment tracking, while
+dermatologists may need follow-up sequencing. Systems are customized accordingly.
+
+Q53: Does Free Mind build doctor websites as part of clinic automation?
+A: Yes. Doctor website development is the first step in the clinic automation
+system. The website is SEO-optimized to rank on Google for local searches like
+"cardiologist in Pune" or "dentist near me," includes online appointment booking
+integration, displays the doctor's credentials and patient reviews, and is fully
+mobile-responsive. A professional website builds patient trust before they even
+walk through the clinic door.
+
+Q54: How does Google Ads for clinics work and is it worth the investment?
+A: Google Ads for clinics (Search Ads) places the clinic at the top of Google
+search results when a patient searches for a doctor of that speciality in the
+clinic's geographic area. Patients searching for a doctor have immediate intent
+— they are ready to book, not just browsing. Free Mind manages the entire Google
+Ads setup: keyword research, ad copy, landing page optimization, and ongoing bid
+management. For most clinics, Google Ads generates the highest-quality new
+patient leads of any digital channel.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 5: ON-PAGE SEO FIXES FOR index.html
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TITLE TAG — Change to:
+  Book Publishing, Ghostwriting & AI Calling Agent — Free Mind Consultancy India
+
+META DESCRIPTION — Change to:
+  Free Mind Consultancy offers book publishing, ghostwriting, AI calling agents
+  (Koelai AI), LMS development, and 27 more services for founders, authors,
+  professors, and coaches across India and globally. Book a free consultation.
+
+H1 — The current H1 "Consulting for [typewriter]" is branded but not
+keyword-optimized. Add a visually hidden SEO H1 above the section OR update
+the page's first visible semantic heading to include a keyword phrase. Suggested:
+  <h1 class="sr-only">Book Publishing, AI Calling Agent & Professional
+  Consulting Services India — Free Mind Consultancy</h1>
+  (sr-only = visually hidden but readable by search engines and screen readers)
+
+H2 HEADINGS — Rename sections to include target keywords:
+  "About Free Mind Consultancy" → keep (branded + keyword)
+  "Five Audiences. Thirty Services." → keep
+  "Our Services" → "Professional Consulting, Publishing & Technology Services"
+  "How We Work" → "How Free Mind's Consulting Process Works"
+  "Results We Have Delivered" → "Client Results: Real Outcomes"
+  "What Our Clients Say" → keep
+  "Frequently Asked Questions" → "Frequently Asked Questions About Our Services"
+
+IMAGE ALT TEXT — Audit and update all images:
+  logo.png → alt="Free Mind Consultancy logo — professional consulting India"
+  koelai-hero.jpg → alt="Koelai AI calling agent — natural voice AI for Indian businesses"
+  spotify.png → alt="Listen to Free Talk podcast on Spotify"
+  amazon-music.png → alt="Listen to Free Talk podcast on Amazon Music"
+
+INTERNAL LINKS — Add text links within content sections to:
+  /services/founders.html — from every Founders reference
+  /services/authors.html — from every Authors reference
+  /services/professors.html — from every Professors reference
+  /services/government-officers.html — from every Government Officers reference
+  /services/coaches.html — from every Coaches reference
+  /products/koelai-ai.html — from every Koelai mention
+  /ai-publisher-finder.html — from PublishMatch mentions
+  /blog/index.html — from at least 2 places in the main content
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 6: SCHEMA MARKUP UPGRADES (JSON-LD)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ADD these new JSON-LD blocks to index.html <head>:
+
+1. BreadcrumbList — for every page (helps Google understand site structure)
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freemindconsult.com/"}
+  ]
+}
+
+2. Service schema — one per major service (add 8 top services):
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Book Publishing Services India",
+  "serviceType": "Book Publishing",
+  "provider": {"@type":"Organization","name":"Free Mind Consultancy"},
+  "areaServed": {"@type":"Country","name":"India"},
+  "description": "End-to-end book publishing from manuscript to Amazon and global retail distribution for authors, professors, and government officers in India.",
+  "url": "https://www.freemindconsult.com/services/authors.html"
+}
+(Repeat for: Ghostwriting, AI Calling Agent, LMS Development, ISBN Registration,
+Curriculum Design, Business Automation, Personal Branding)
+
+3. Expand FAQPage schema to include ALL 40 questions from Part 4.
+   The current FAQPage only has 7 questions — this severely limits PAA coverage.
+
+4. Add Person schema for founder/CEO (if name is publicly known):
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aryan Ahire",
+  "jobTitle": "Founder",
+  "worksFor": {"@type":"Organization","name":"Free Mind Consultancy"},
+  "url": "https://www.freemindconsult.com/about"
+}
+
+5. Add AggregateRating once Google reviews are collected:
+{
+  "@type": "AggregateRating",
+  "ratingValue": "4.9",
+  "reviewCount": "47"
+}
+(Only add when you have real reviews on Google Business Profile)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 7: NEW PAGES TO CREATE (PRIORITY ORDER)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Each new page = a new keyword ranking opportunity + GEO citation source.
+Build pages in this order. Each page must have:
+  - Unique title tag with primary keyword
+  - Unique meta description
+  - One H1 with primary keyword
+  - 800+ words of original content
+  - At least 5 FAQ items specific to that page with schema markup
+  - Internal links to at least 3 other pages
+  - A CTA linking to the contact form
+
+PRIORITY 1 — SERVICE PAGES (already linked, need content):
+
+  /services/authors.html
+  Primary keyword: "book publishing services India"
+  H1: "Book Publishing, Ghostwriting & Author Services in India"
+  Content: Full explanation of all 6 author services, publishing timeline,
+  cost guide, comparison of self-publishing vs traditional, case study
+  (anonymized), 8 FAQs specific to authors.
+
+  /services/founders.html
+  Primary keyword: "business consulting services India for founders"
+  H1: "AI Calling Agent, Business Automation & Founder Consulting Services"
+  Content: All 7 founder services explained, Koelai AI highlight, ROI
+  stats from achievements section, 8 FAQs.
+
+  /services/professors.html
+  Primary keyword: "academic book publishing services India for professors"
+  H1: "Academic Book Publishing, Research Paper Editing & Textbook Writing India"
+  Content: All 6 professor services, accreditation support mention, 6 FAQs.
+
+  /services/coaches.html
+  Primary keyword: "LMS development India for coaching institutes"
+  H1: "LMS Development, Curriculum Design & eLearning Services India"
+  Content: All 6 coach/institute services, SCORM explanation, 6 FAQs.
+
+  /services/government-officers.html
+  Primary keyword: "book publishing for government officers India"
+  H1: "Book Publishing and Memoir Writing for IAS, IPS & Civil Servants India"
+  Content: All 6 officer services, NDA assurance, memoir example narrative,
+  6 FAQs.
+
+PRIORITY 2 — PRODUCT PAGES:
+
+  /products/koelai-ai.html
+  Primary keyword: "AI calling agent India"
+  H1: "Koelai AI — India's AI Calling Agent in 100+ Languages"
+  Content: Full product description, use cases by industry, technical specs
+  (100+ languages, CRM integration, 24/7 availability), pricing structure
+  teaser, demo CTA (the call button +91 92409 04635), 8 FAQs.
+
+PRIORITY 3 — MEME MARKETING PAGE (already exists, needs SEO upgrade):
+
+  /meme-marketing/index.html — EXISTING PAGE — needs these SEO improvements:
+  Current title: "Free Mind Meme Marketing — Make Your Brand Viral"
+  Upgraded title: "Meme Marketing Services India — Starting ₹3,000/month | Free Mind"
+  Current meta description: "We turn dead social media pages into viral meme machines. Starting ₹3000/month."
+  Upgraded meta description: "Free Mind's meme marketing service starts at ₹3,000/month. Weekly meme drops, viral reels, trend hijacking, and comment section marketing for Indian brands. No contracts."
+  ADD: FAQPage JSON-LD schema with Q41–Q46 from Part 4
+  ADD: OpenGraph and Twitter Card meta tags (currently missing!)
+  ADD: Canonical URL tag (currently missing!)
+  ADD: Google Analytics tracking (currently missing on this page — add gtag!)
+  ADD: BreadcrumbList schema
+  ADD: HowTo schema — "How Meme Marketing Works in 3 Steps"
+  ADD: Internal link back to index.html and to /services/founders.html
+  ADD: "What is meme marketing?" definition section at top of page (AEO target)
+  ADD: Comparison table: Meme Marketing vs. Traditional Social Media Marketing vs. Paid Ads
+
+PRIORITY 3B — CLINIC AUTOMATION PAGE (already exists, needs SEO upgrade):
+
+  /clinic-automation/index.html — EXISTING PAGE — needs these SEO improvements:
+  Current title: "Clinic Automation System | Free Mind Consultancy"
+  Upgraded title: "Clinic Appointment Booking, WhatsApp Automation & AI Receptionist | Free Mind"
+  Current meta description: "Smart clinic appointment system with WhatsApp automation and AI receptionist. Book a free demo with Free Mind Consultancy today."
+  Upgraded meta description: "Free Mind builds complete clinic automation systems: online appointment booking, WhatsApp reminders, AI receptionist calling (Koelai AI), SEO for doctors, and Google Ads. Book a free demo."
+  UPDATE: Expand existing FAQPage JSON-LD (currently only 3 questions) to add Q47–Q54 from Part 4
+  ADD: HowTo schema — "How to Set Up Online Appointment Booking for Your Clinic"
+  ADD: Service schema blocks for each of the 8 clinic services
+  ADD: Internal links to /products/koelai-ai.html (AI receptionist is powered by Koelai)
+  ADD: "Quick Answer" box at top: "What does a clinic automation system do? It handles appointment booking, patient reminders, AI reception calling, and online patient acquisition — automatically."
+  ADD: Comparison table: Manual Clinic Management vs. Automated Clinic System (columns: time saved, errors, no-shows, patient experience, cost)
+  CREATE: /clinic-automation/appointment-booking-doctors-india.html
+    Primary keyword: "online appointment booking for doctors India"
+    Format: Definitional + how-to, 800+ words
+  CREATE: /clinic-automation/whatsapp-appointment-reminder-clinics.html
+    Primary keyword: "WhatsApp appointment reminder for clinics India"
+    Format: How-it-works guide with step schema
+  CREATE: /clinic-automation/ai-receptionist-for-clinics.html
+    Primary keyword: "AI receptionist for clinic India"
+    Format: Product explainer page with Koelai AI link
+
+PRIORITY 4 — LOCATION/INDUSTRY PAGES (GEO signals + local SEO):
+
+  /book-publishing-pune.html
+  Primary keyword: "book publishing services Pune"
+
+  /book-publishing-mumbai.html
+  Primary keyword: "book publishing services Mumbai"
+
+  /ai-calling-agent-healthcare.html
+  Primary keyword: "AI calling agent for hospitals India"
+
+  /ghostwriting-india.html
+  Primary keyword: "ghostwriting services India"
+  (standalone page, deeper than the service tab item)
+
+  /meme-marketing-for-startups-india.html
+  Primary keyword: "meme marketing for startups India"
+  Format: Industry targeting page with case story, pricing, CTA
+
+  /clinic-automation-pune.html
+  Primary keyword: "clinic appointment system Pune"
+  (Location page for local SEO — repeat for Mumbai, Hyderabad, Chennai)
+
+PRIORITY 4 — EDUCATIONAL/INFORMATIONAL PAGES (AEO + GEO):
+
+  /how-to-self-publish-a-book-india.html
+  Primary keyword: "how to self publish a book in India"
+  Format: Step-by-step guide (HowTo schema)
+  Content: 10-step guide with timeline, costs, decisions at each step.
+  This targets both Google featured snippets AND ChatGPT/Perplexity answers.
+
+  /what-is-isbn-registration-india.html
+  Primary keyword: "what is ISBN registration India"
+  Format: Definitional + how-to
+  Content: What ISBN is, who needs it, how to get one in India, cost,
+  timeline, Free Mind's service.
+
+  /ai-calling-agent-vs-ivr.html
+  Primary keyword: "AI calling agent vs IVR"
+  Format: Comparison article
+  Content: Side-by-side comparison table, use cases, cost implications.
+  Targets "difference between" and "vs" queries — very common in AEO.
+
+  /self-publishing-vs-traditional-publishing-india.html
+  Primary keyword: "self publishing vs traditional publishing India"
+  Format: Comparison page with table
+
+  /ghostwriting-legal-india.html
+  Primary keyword: "is ghostwriting legal in India"
+  Format: Q&A article targeting direct answer query
+
+PRIORITY 5 — BLOG POSTS (activate blog/index.html):
+
+  10 blog posts to publish in first 90 days:
+
+  1. "How to Self-Publish a Book on Amazon India in 2025: Complete Step-by-Step Guide"
+     Target: "self publish book Amazon India"
+
+  2. "What is an ISBN Number and How to Register One in India (2025 Guide)"
+     Target: "ISBN registration India 2025"
+
+  3. "AI Calling Agent vs Traditional Call Center: ROI Comparison for Indian Businesses"
+     Target: "AI calling agent cost India"
+
+  4. "How to Hire a Ghostwriter in India: Process, Cost, and Red Flags to Avoid"
+     Target: "hire ghostwriter India"
+
+  5. "How to Build an LMS for Your Coaching Institute in India"
+     Target: "LMS for coaching institute India"
+
+  6. "Personal Branding for Founders: How to Build Thought Leadership in 6 Months"
+     Target: "personal branding founders India"
+
+  7. "How Long Does Book Publishing Take? Timeline From Manuscript to Amazon"
+     Target: "how long does book publishing take India"
+
+  8. "What is Curriculum Design? A Complete Guide for Coaching Institutes"
+     Target: "curriculum design for coaching institutes"
+
+  9. "How to Get Your Research Paper Published in an International Journal"
+     Target: "research paper international journal India"
+
+  10. "IAS Officer Memoir: How to Turn 30 Years of Public Service Into a Book"
+      Target: "IAS officer memoir book India"
+
+  11. "Meme Marketing in India: How Brands Are Going Viral Without Big Ad Budgets"
+      Target: "meme marketing India brands"
+      Format: Data-backed article with examples of Indian brands using meme marketing.
+      AEO target: "what is meme marketing" + "does meme marketing work for Indian brands"
+
+  12. "What is Trend Hijacking? How to Put Your Brand Inside Every Viral Moment"
+      Target: "trend hijacking marketing India"
+      Format: Explainer + step-by-step guide with HowTo schema
+
+  13. "How to Reduce Clinic No-Shows by 50% Using WhatsApp Automation"
+      Target: "reduce clinic no-shows WhatsApp India"
+      Format: Problem-solution article with statistics. Extremely strong AEO and GEO candidate.
+      Opening line: "Clinic no-shows cost Indian doctors an estimated ₹15,000–₹50,000 per
+      month in lost appointments. WhatsApp appointment reminders reduce no-shows by 30–60%."
+
+  14. "Online Appointment Booking for Doctors: Complete Setup Guide for Indian Clinics"
+      Target: "online appointment booking for doctors India setup"
+      Format: HowTo guide with schema — 8 numbered steps, 1200+ words
+
+  15. "AI Receptionist for Clinics vs. Human Receptionist: Cost and Efficiency Comparison"
+      Target: "AI receptionist clinic India cost"
+      Format: Comparison article with table — cost per month, hours, missed calls,
+      errors, scalability. Very strong AEO/GEO target for "difference between" queries.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 8: GEO — GENERATIVE ENGINE OPTIMIZATION STRATEGIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GEO is about being cited by AI models (ChatGPT, Perplexity, Gemini, Claude,
+Bing AI) when users ask questions. AI models cite sources that are:
+  a) Factual and specific (named numbers, named dates, named outcomes)
+  b) Written by identified human authors with credentials
+  c) Published on trusted domains with consistent E-E-A-T signals
+  d) Structured with clear definitions, answers, and examples
+  e) Referenced or linked to by other authoritative sources
+
+IMPLEMENT THESE GEO SIGNALS:
+
+1. ADD FOUNDER/TEAM PAGE (/about-founder.html or /team.html)
+   Include: Full name, photo, credentials, professional bio 300+ words,
+   LinkedIn URL, published articles. This is the single most impactful
+   GEO improvement — AI models prioritize attributable human sources.
+
+2. ADD NAMED STATISTICS TO CONTENT
+   Replace vague claims with specific, citable data points:
+   BAD:  "We have helped many founders grow their businesses."
+   GOOD: "40% average improvement in lead response time for SaaS clients
+          using Koelai AI, based on 2024 client data."
+   AI models love citable statistics with a clear source attribution.
+
+3. WRITE CONTENT IN AUTHORITATIVE STATEMENT FORMAT
+   Every answer should start with a direct declarative statement:
+   BAD:  "There are many ways to think about book publishing..."
+   GOOD: "Book publishing in India via self-publishing takes 6–10 weeks
+          from final manuscript to Amazon listing."
+   AI models extract and quote direct, confident statements.
+
+4. CREATE A PRESS/MEDIA PAGE (/press.html)
+   Include: Any media mentions, podcast appearances, awards, recognitions.
+   Link to any external articles mentioning Free Mind Consultancy.
+   Even a single Forbes India mention or Economic Times quote dramatically
+   increases GEO citation probability.
+
+5. BUILD BACKLINKS FROM HIGH-AUTHORITY INDIAN DOMAINS
+   Target domains: YourStory, Inc42, Economic Times, Business Standard,
+   Hindustan Times, Deccan Herald, Times of India education section.
+   Method: Contribute expert op-eds. A single bylined article on YourStory
+   about "How Indian authors are self-publishing in 2025" — linking back to
+   freemindconsult.com — creates a GEO-quality citation source.
+
+6. ANSWER QUESTIONS ON QUORA AND REDDIT
+   When someone on Quora asks "How do I self-publish a book in India?" — write
+   a detailed answer and link to your blog post. AI models actively scrape
+   Quora and Reddit for training and citation data.
+
+7. CLAIM AND OPTIMIZE GOOGLE BUSINESS PROFILE
+   Add every service as a product/service listing. Collect 5-star reviews with
+   text mentioning specific services ("book publishing", "ISBN registration").
+   AI models and Google's own AI Overviews prioritize GBP-verified businesses.
+
+8. GET LISTED ON AUTHORITATIVE DIRECTORIES
+   Clutch.co, Goodfirms.co, Justdial, Sulekha, IndiaMART for services.
+   Each listing is a citation source for AI models.
+
+9. CREATE A GLOSSARY PAGE (/glossary.html)
+   Define 25+ industry terms: ISBN, SCORM, LMS, ghostwriting, IVR, AI calling
+   agent, curriculum design, Bloom's Taxonomy, KDP, IngramSpark, etc.
+   Glossary pages are extremely frequently cited by AI models because they
+   provide clean, authoritative definitions.
+
+10. PUBLISH ORIGINAL RESEARCH OR DATA
+    "Free Mind Consultancy surveyed 200 Indian self-published authors in 2024..."
+    Original data with a named methodology is the highest GEO signal possible.
+    Even a simple survey of 50 clients creates a citable primary source.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 9: AEO — ANSWER ENGINE OPTIMIZATION TACTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AEO targets Google's Answer Box (position zero), People Also Ask boxes, and
+voice search responses. Rules for winning these:
+
+RULE 1: Answer the question in the FIRST SENTENCE of every FAQ answer.
+  BAD:  "When it comes to publishing a book, there are many considerations..."
+  GOOD: "Publishing a book through Free Mind takes 6 to 10 weeks from final
+         manuscript to live on Amazon."
+
+RULE 2: Use the question's exact phrasing in the answer's first sentence.
+  Question: "How long does book publishing take?"
+  Answer start: "Book publishing takes 6 to 10 weeks..."
+
+RULE 3: Format listicle answers as numbered/bulleted lists. Google extracts
+  lists for featured snippets. Example — "How to self-publish a book in India":
+  Step 1: Finalize your manuscript
+  Step 2: Hire a professional editor
+  Step 3: Commission cover design
+  Step 4: Register for an ISBN
+  Step 5: Format for print and digital
+  Step 6: Upload to Amazon KDP
+  Step 7: Set your price and distribution
+  Step 8: Launch and market
+
+RULE 4: Add "What is X" definitions on every service page. These win definition
+  featured snippets and are heavily cited by AI. Example:
+  "What is an AI calling agent? An AI calling agent is software that makes and
+  receives phone calls using artificial intelligence to conduct natural
+  conversations, replacing or supplementing human call center agents."
+
+RULE 5: Use HowTo schema markup for step-by-step content:
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Self-Publish a Book in India",
+  "step": [
+    {"@type":"HowToStep","name":"Finalize your manuscript","text":"..."},
+    ...
+  ]
+}
+
+RULE 6: Target "comparison" and "difference between" queries with tables:
+  "Difference between ghostwriting and co-authoring"
+  "AI calling agent vs IVR vs chatbot"
+  "Self-publishing vs traditional publishing"
+  Google loves featuring comparison tables in AI Overviews.
+
+RULE 7: Add a "Quick Answer" box at the top of every blog post and long page:
+  ┌─────────────────────────────────────┐
+  │ Quick Answer                        │
+  │ Book publishing in India costs      │
+  │ ₹15,000 to ₹75,000 depending on    │
+  │ editing, design, and distribution   │
+  │ scope. Timeline: 6–10 weeks.        │
+  └─────────────────────────────────────┘
+  This visually signals to Google: "this content directly answers a question."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 10: TECHNICAL SEO CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Update sitemap.xml to include ALL new pages created in Part 7
+□ Update robots.txt to allow crawling of all content pages
+□ Add <link rel="preload"> for critical CSS and fonts
+□ Ensure all images have width and height attributes (prevents layout shift)
+□ Add loading="lazy" to ALL below-the-fold images
+□ Add fetchpriority="high" to hero image / logo
+□ Compress all images to WebP format where possible
+□ Implement 301 redirects if any URLs change during restructure
+□ Ensure all internal links use absolute or correct relative paths
+□ Add hreflang="en-IN" tag for India targeting
+□ Set up Google Search Console (if not already done) — submit sitemap
+□ Set up Bing Webmaster Tools — submit sitemap
+□ Test Core Web Vitals with PageSpeed Insights (target: LCP < 2.5s)
+□ Ensure contact form success/error messages are accessible (aria-live)
+□ Add structured data testing using Google's Rich Results Test tool
+□ Verify canonical tags point to final URLs (no trailing slash inconsistency)
+□ Check for duplicate H1 tags across all pages (should be exactly one per page)
+□ Add XML sitemap link to robots.txt:
+    Sitemap: https://www.freemindconsult.com/sitemap.xml
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 11: WEBSITE STRUCTURE REDESIGN RECOMMENDATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Current structure: Mostly a one-page site with anchor links.
+SEO-optimal structure: Multi-page site with clear topic silos.
+
+RECOMMENDED SITE ARCHITECTURE:
+
+  / (index.html) — Home — targets brand + general terms
+  /about.html — About + Founder bio — E-E-A-T signal
+  /services/ — Service category landing pages
+    /services/founders.html
+    /services/authors.html
+    /services/professors.html
+    /services/government-officers.html
+    /services/coaches.html
+  /products/ — Product pages
+    /products/koelai-ai.html
+    /products/publishmatch-ai.html (expand current ai-publisher-finder.html)
+  /blog/ — Blog index + individual posts
+    /blog/index.html
+    /blog/how-to-self-publish-india.html
+    /blog/isbn-registration-india.html
+    ... (10 posts, Part 7)
+  /case-studies/ — Client outcome stories (anonymized)
+    /case-studies/saas-founder-ai-calling-agent.html
+    /case-studies/author-book-publishing.html
+  /resources/ — Free tools and guides
+    /ai-publisher-finder.html (move here or keep at root)
+    /glossary.html
+    /how-to-self-publish-india.html (step-by-step guide)
+  /press.html — Media mentions, podcast appearances
+  /contact.html — Dedicated contact page (also keep form on homepage)
+  /privacy.html, /terms.html, /disclaimer.html (existing)
+
+INTERNAL LINKING TOPOLOGY:
+  - Home → all service pages (footer + nav)
+  - Each service page → 2–3 relevant blog posts + contact page
+  - Each blog post → 1 service page + 1–2 other related blog posts
+  - Koelai AI page → founders service page + clinic-automation page
+  - Glossary terms → relevant service/blog pages
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 12: CONTENT CALENDAR — FIRST 90 DAYS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MONTH 1 — FOUNDATIONS:
+Week 1: Fix all on-page SEO on index.html (Part 5)
+Week 1: Expand FAQPage JSON-LD to all 40 questions (Part 6)
+Week 2: Build /services/authors.html and /services/founders.html
+Week 2: Create /products/koelai-ai.html
+Week 3: Build /services/professors.html, /services/coaches.html,
+         /services/government-officers.html
+Week 4: Add /glossary.html with 25 definitions
+         Claim Google Business Profile
+
+MONTH 2 — CONTENT ENGINE:
+Week 5: Publish blog post 1 — "How to Self-Publish in India"
+         Add /how-to-self-publish-india.html as standalone guide
+Week 6: Publish blog post 2 — "ISBN Registration Guide"
+         Add /about.html with founder bio
+Week 7: Publish blog post 3 — "AI Calling Agent vs IVR"
+         Publish blog post 4 — "Hire a Ghostwriter in India"
+Week 8: Update sitemap.xml with all new URLs
+         Submit to Google Search Console and Bing Webmaster Tools
+
+MONTH 3 — AUTHORITY BUILDING:
+Week 9: Publish blog posts 5 and 6
+         Begin Quora/Reddit Q&A answering (10 answers minimum)
+Week 10: Publish blog posts 7 and 8
+          Reach out to YourStory/Inc42 for guest post submission
+Week 11: Publish blog posts 9 and 10
+          Add case studies page with 3 anonymized case studies
+Week 12: Review Google Search Console data — identify pages getting impressions
+          but low clicks → optimize title tags and meta descriptions
+          Review and expand top-performing FAQ items
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 13: EXECUTION INSTRUCTIONS FOR CLAUDE CODE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When this prompt is fed back to Claude Code, execute in this exact order:
+
+TASK 1 — index.html on-page fixes:
+  a. Update <title> tag per Part 5
+  b. Update meta description per Part 5
+  c. Add visually hidden SEO H1 per Part 5
+  d. Update section H2 headings per Part 5
+  e. Fix all image alt text per Part 5
+  f. Replace the 7 FAQ accordion items with all 40 from Part 4
+  g. Add matching Category headers to FAQ section (General / Book Publishing /
+     Ghostwriting / AI Calling Agent / LMS / Curriculum / Personal Branding /
+     Professors / Government Officers / Process / Pricing)
+
+TASK 2 — JSON-LD schema upgrades in index.html:
+  a. Replace existing FAQPage JSON-LD with full 40-question version from Part 4
+  b. Add BreadcrumbList schema
+  c. Add 8 Service schema blocks (Part 6)
+  d. Add Person schema for founder (Part 6)
+  e. Add hreflang="en-IN" to <head>
+
+TASK 3 — Create /services/authors.html
+  Full page with: keyword-optimized title, meta, H1, 800+ words content
+  explaining all 6 author services in detail, publishing timeline infographic
+  (CSS-only), 8 FAQ items with FAQPage schema, internal links, contact CTA
+
+TASK 4 — Create /services/founders.html
+  Full page: all 7 founder services + Koelai AI highlight + ROI stats + 8 FAQs
+
+TASK 5 — Create /products/koelai-ai.html
+  Full product page with demo call CTA, use cases table, 8 FAQs, schema
+
+TASK 6 — Create /glossary.html
+  25+ definitions with anchor links, each term in Definition schema format
+
+TASK 7 — Create /blog/index.html (blog listing page) +
+  /blog/how-to-self-publish-a-book-india.html (first full blog post with HowTo
+  schema, 1200+ words, step-by-step guide)
+
+TASK 8 — Update sitemap.xml with all new page URLs
+
+TASK 9 — Update robots.txt to confirm all paths are crawlable and add
+  Sitemap: directive pointing to sitemap.xml
+
+TASK 10 — Create /about.html with company story, founder bio section
+  (placeholder for name/photo), team values, Person schema markup
+
+TASK 11 — SEO upgrade for /meme-marketing/index.html (existing page):
+  a. Update <title> and <meta description> per Priority 3 in Part 7
+  b. Add Open Graph + Twitter Card meta tags (currently 100% missing)
+  c. Add <link rel="canonical"> tag
+  d. Add Google Analytics gtag block (same G-EWH4E2G82R tag as main site)
+  e. Add FAQPage JSON-LD with Q41–Q46 from Part 4
+  f. Add BreadcrumbList schema
+  g. Add hreflang="en-IN"
+  h. Add a visible "What is Meme Marketing?" definition section near the top (AEO block)
+  i. Add an internal nav link back to freemindconsult.com homepage and /services/founders.html
+  j. Add a comparison table section: Meme Marketing vs. Paid Ads vs. Traditional Social
+
+TASK 12 — SEO upgrade for /clinic-automation/index.html (existing page):
+  a. Update <title> and <meta description> per Priority 3B in Part 7
+  b. Expand existing FAQPage JSON-LD (currently only 3 questions) to include Q47–Q54
+  c. Add Service schema blocks for all 8 clinic services
+  d. Add HowTo schema — "How to Set Up Clinic Automation in 5 Steps"
+  e. Add BreadcrumbList schema
+  f. Add hreflang="en-IN"
+  g. Add "Quick Answer" box at very top of <main> (before hero section):
+     "Clinic Automation Definition: A clinic automation system digitally manages
+      patient appointment booking, WhatsApp reminders, AI receptionist calling,
+      and online patient acquisition — replacing manual registers and phone
+      management with an automated digital workflow."
+  h. Add a comparison table section: Manual Clinic vs. Automated Clinic
+     Columns: Feature | Manual Process | Automated System
+     Rows: Appointment booking, Patient reminders, Reception calls, No-show rate,
+     Staff workload, New patient acquisition, Working hours
+  i. Add internal link to /products/koelai-ai.html (AI receptionist powered by Koelai)
+  j. Add visible note: "Part of the Free Mind Consultancy technology ecosystem"
+     with link back to freemindconsult.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 14: QUICK WINS — DO THESE FIRST (Zero Development Required)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+These can be done RIGHT NOW, before any code changes:
+
+1. Claim Google Business Profile at business.google.com
+   Category: "Business Consultant" + "Publisher" + "Technology Consultant"
+   Add all 30 services as individual service listings
+   Upload logo and team photos
+   Post 2 updates per week minimum
+
+2. Set up Google Search Console
+   Verify domain, submit sitemap.xml
+   Check for crawl errors, page indexing status
+
+3. Set up Bing Webmaster Tools
+   Same as above — Bing is critical for Microsoft Copilot/ChatGPT citations
+
+4. Create and fill LinkedIn Company Page properly
+   Add all services, company description with keywords, post twice a week
+   LinkedIn posts are indexed by Google and cited by AI models
+
+5. Answer 10 relevant questions on Quora
+   Search "self publish book India", "ISBN registration India",
+   "AI calling agent India" — answer thoroughly with link to freemindconsult.com
+
+6. Submit to these free directories (free backlinks + GEO citations):
+   clutch.co (business consulting category)
+   goodfirms.co
+   justdial.com
+   sulekha.com
+   indianceo.in
+
+7. Ask 5 past satisfied clients to leave Google reviews mentioning the
+   specific service they used ("book publishing", "ghostwriting", etc.)
+   Google reviews directly feed into AI Overviews / local search ranking
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 15: WH QUESTIONS CONTENT TARGETS — COMPLETE LIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+These are the most searched WH question formats for Free Mind's topics.
+Each one below MUST have a direct written answer on the website — either in FAQ,
+blog, or a service page. Questions marked (AEO*) are especially high-value for
+featured snippet and People Also Ask capture.
+
+WHAT questions:
+  What is book publishing services? (AEO*)
+  What is ISBN registration?  (AEO*)
+  What is ghostwriting? (AEO*)
+  What is an AI calling agent? (AEO*)
+  What is a learning management system? (AEO*)
+  What is curriculum design? (AEO*)
+  What is SCORM in eLearning? (AEO*)
+  What is personal branding for founders?
+  What is business process automation?
+  What is an ERP system for small business?
+  What is an MVP product?
+  What is book translation and localization?
+  What is a textbook vs a reference book?
+  What is a research monograph?
+  What is KDP (Kindle Direct Publishing)?
+  What is IngramSpark?
+  What services does Free Mind Consultancy offer?
+
+HOW questions:
+  How to self-publish a book in India? (AEO*)
+  How to get an ISBN in India? (AEO*)
+  How to hire a ghostwriter? (AEO*)
+  How does an AI calling agent work? (AEO*)
+  How to build an LMS for a coaching institute?
+  How long does book publishing take?
+  How much does ghostwriting cost in India?
+  How to publish a book on Amazon India?
+  How to translate a book to Hindi?
+  How to design a curriculum for a training institute?
+  How to get a research paper published in an international journal?
+  How to build a personal brand on LinkedIn?
+  How to start a podcast in India?
+  How does Koelai AI work?
+
+WHY questions:
+  Why should I self-publish instead of traditional publishing?
+  Why do I need an ISBN for my book?
+  Why is ghostwriting legal and ethical?
+  Why use an AI calling agent instead of a human call center?
+  Why does my coaching institute need an LMS?
+  Why is curriculum design important?
+  Why should a founder invest in personal branding?
+
+WHERE questions:
+  Where to publish a book in India?
+  Where to get ISBN in India?
+  Where to find ghostwriters in India?
+  Where to build an LMS in India?
+
+WHEN questions:
+  When should I start marketing my book?
+  When is the right time to hire a ghostwriter?
+  When should a startup invest in an AI calling agent?
+
+WHO questions:
+  Who needs book publishing services?
+  Who is Koelai AI designed for?
+  Who are the clients of Free Mind Consultancy?
+  Who should write a memoir?
+
+WHICH questions:
+  Which LMS platform is best for coaching institutes in India?
+  Which languages does Koelai AI support?
+  Which Indian publishers accept self-submitted manuscripts?
+  Which type of editing does my manuscript need?
+
+CAN questions (high AEO value):
+  Can a government officer publish a book in India?
+  Can I publish a book without a traditional publisher?
+  Can an AI make phone calls like a human?
+  Can a coaching institute build its own LMS affordably?
+  Can I translate my book into multiple languages at the same time?
+  Can I retain rights to a ghostwritten book?
+  Can I hire Free Mind for just one service?
+
+MEME MARKETING WH QUESTIONS:
+  What is meme marketing? (AEO*)
+  What is trend hijacking in social media? (AEO*)
+  What is comment section marketing?
+  How does meme marketing work for Indian brands?
+  How much does meme marketing cost in India? (AEO*)
+  How to make a brand viral on Instagram India?
+  How to use memes for brand marketing?
+  Why do memes spread faster than ads?
+  Why use meme marketing instead of traditional social media?
+  Which brands use meme marketing in India?
+  What is viral reel marketing?
+  Can small businesses afford meme marketing in India?
+  Does meme marketing work for B2B brands?
+
+CLINIC AUTOMATION AND APPOINTMENT BOOKING WH QUESTIONS:
+  What is clinic automation? (AEO*)
+  What is an AI receptionist for a clinic? (AEO*)
+  What is WhatsApp appointment automation for doctors? (AEO*)
+  How does online appointment booking work for clinics? (AEO*)
+  How to set up appointment booking for a doctor's clinic online?
+  How to reduce no-shows at a clinic?
+  How to automate patient reminders via WhatsApp?
+  How much does a clinic appointment booking system cost in India?
+  How does an AI receptionist handle patient calls?
+  How to get more patients for a clinic through Google?
+  Why do clinics need appointment booking software?
+  Why are clinic no-shows so expensive for doctors?
+  Where can doctors get an AI receptionist system in India?
+  Which medical specialities can use clinic automation?
+  Can multiple doctors share one appointment booking system?
+  Can patients book appointments via WhatsApp directly?
+  When should a clinic switch to digital appointment management?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 16: COMPETITOR AWARENESS (DO NOT COPY — OUTPOSITION)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Free Mind competes across multiple service verticals. For each, be aware of:
+
+Book Publishing competitors: Notion Press, Pothi.com, White Falcon Publishing,
+Evincepub, Pencil (formerly Writeink). Out-position by: offering multi-service
+bundles (publishing + podcast + branding), by having deeper FAQ content, by
+having real named client results, by offering the AI Publisher Finder tool free.
+
+AI Calling Agent competitors: Ozonetel, Agara AI, Vernacular.ai, Exotel,
+Kavida.ai. Out-position by: being positioned as full-stack consultancy (not just
+a SaaS tool), being India-headquartered with regional language expertise, lower
+entry barriers for SMBs.
+
+LMS Development competitors: Brainware, Mastree, Graphy, Teachable (global).
+Out-position by: being a consulting firm (not a SaaS platform), customization
+depth, SCORM compliance, curriculum design bundling.
+
+NEVER mention competitor names in your website content. Instead:
+Position against generic phrases: "unlike generic SaaS tools", "where most
+publishers only cover print", "while typical call centers charge per agent",
+"compared to off-the-shelf LMS platforms." This captures competitor comparison
+searches without naming names (which would trigger brand-related complications).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PART 17: MEASURING SUCCESS — KPIs TO TRACK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Track these monthly in Google Search Console + Analytics:
+
+SEO KPIs:
+  - Organic search impressions (target: 10x growth in 6 months)
+  - Organic clicks (target: 5x growth in 6 months)
+  - Average position for target keywords (target: top 20 for Tier 1 in 6 months)
+  - Number of pages indexed (target: 30+ pages in 3 months)
+  - Core Web Vitals scores (target: all green)
+  - Backlinks (track via Ahrefs free / Google Search Console Links report)
+
+AEO KPIs:
+  - Featured snippet wins (track by searching target questions in incognito)
+  - People Also Ask appearances (manual check weekly for top 20 questions)
+  - Rich result appearances (check Google Search Console > Search Results >
+    filter by "FAQ" and "HowTo" appearance types)
+
+GEO KPIs:
+  - Ask ChatGPT, Perplexity, and Gemini monthly:
+    "What are the best book publishing services in India?"
+    "Who offers AI calling agents in India?"
+    "How to self-publish a book in India?"
+    — Is Free Mind Consultancy mentioned? Which URL is cited?
+  - Track Google Business Profile impressions/clicks (monthly)
+  - Track referral traffic from Quora, Reddit, LinkedIn (Analytics)
+
+CONVERSION KPIs:
+  - Contact form submissions per month
+  - WhatsApp clicks per month
+  - "Book Free Consultation" CTA clicks per month
+  - Bounce rate on service pages (target: < 55%)
+  - Time on page for blog posts (target: > 3 minutes)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF PROMPT — FEED THIS ENTIRE FILE TO CLAUDE CODE TO BEGIN EXECUTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+File generated: 2026-05-24 (updated with Meme Marketing + Clinic Automation additions)
+Website analyzed: freemindconsult.com / freemind-website/index.html
+                  freemind-website/meme-marketing/index.html
+                  freemind-website/clinic-automation/index.html
+Services covered: Book Publishing, Ghostwriting, ISBN Registration, Book
+Translation, AI Calling Agent (Koelai), Business Automation, Digital Marketing,
+Website Development, Personal Branding, ERP/MVP Systems, Meme Marketing
+(₹3,000/month — viral reels, trend hijacking, comment marketing), Podcast Features,
+LMS Development, Curriculum Design, Interactive Content, Presentation Design,
+AI Podcast Content, Research Paper Editing, Textbook Writing,
+Clinic/Doctor Automation (appointment booking, WhatsApp automation, AI receptionist
+powered by Koelai AI, SEO for doctors, Google Ads for clinics, patient follow-up)
+Target audiences: Founders, Authors, Professors, Government Officers, Coaches,
+                  Doctors/Clinics (healthcare), Social Media Managers/Brand Managers
+Target markets: India (primary), UAE, UK, USA, Australia, Southeast Asia
+Total FAQ questions: 54 (Q1–Q40 original + Q41–Q46 Meme Marketing + Q47–Q54 Clinic)
+Total execution tasks: 12 (TASK 1–10 original + TASK 11 meme-marketing SEO +
+                          TASK 12 clinic-automation SEO)

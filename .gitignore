@@ -1,0 +1,61 @@
+# Credentials — NEVER commit
+credentials/service-account.json
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Logs (keep directory structure)
+logs/**/*.log
+!logs/**/.gitkeep
+
+# Data — raw API pulls (keep directory structure)
+data/analytics/**/*.json
+data/analytics/**/*.csv
+data/search_console/**/*.json
+data/search_console/**/*.csv
+data/combined/**/*.csv
+data/processed/*.csv
+data/processed/*.json
+data/history/**/*.csv
+data/history/**/*.json
+data/cache/*.json
+!data/**/.gitkeep
+
+# Backups
+backups/*.xlsx
+!backups/.gitkeep
+
+# Output (generated reports)
+output/**/*.json
+!output/**/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
