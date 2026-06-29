@@ -185,6 +185,18 @@
       if (sheetsSaved || emailjsConfigured) {
         contactForm.style.display = 'none';
         if (formSuccess) formSuccess.style.display = 'block';
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            event_category: 'Contact',
+            event_label: templateParams.service_interest || templateParams.category,
+            value: 1
+          });
+          fbq && fbq('track', 'Lead', {
+            content_name: templateParams.service_interest || templateParams.category,
+            content_category: templateParams.category
+          });
+        }
       } else {
         if (formError) formError.style.display = 'block';
         if (submitBtn) {
