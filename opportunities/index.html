@@ -407,7 +407,7 @@ img { display: block; max-width: 100%; }
     <div class="hero-label">Indian Authors Global Community</div>
     <h1 class="hero-heading">Daily Publishing Opportunities<br>for Indian Authors</h1>
     <p class="hero-sub">
-      Verified international opportunities — literary magazines, writing contests, fellowships, grants, poetry journals, and residencies — curated and posted twice daily.
+      Verified international opportunities — literary magazines, writing contests, fellowships, grants, poetry journals, and residencies — curated daily for Indian writers.
     </p>
     <div class="hero-meta">
       <div class="hero-stat">
@@ -416,11 +416,11 @@ img { display: block; max-width: 100%; }
       </div>
       <div class="hero-stat">
         <div class="stat-dot"></div>
-        <span class="stat-text">Posted at <strong>11 AM</strong> and <strong>6 PM</strong> daily</span>
+        <span class="stat-text">All opportunities <strong>verified</strong> before posting</span>
       </div>
       <div class="hero-stat">
         <div class="stat-dot"></div>
-        <span class="stat-text">All opportunities <strong>verified</strong> before posting</span>
+        <span class="stat-text"><strong>Free</strong> to access — no registration needed</span>
       </div>
     </div>
   </div>
@@ -488,12 +488,20 @@ const OPPORTUNITIES = [
     label: "Today",
     sessions: [
       {
-        time: "Evening — 6 PM",
-        items: []
-      },
-      {
-        time: "Morning — 11 AM",
-        items: []
+        time: "",
+        items: [
+          {
+            type: "Literary Magazine",
+            name: "Aké Review 2026",
+            organizer: "Aké Arts & Book Festival",
+            deadline: "2026-07-20",
+            genre: "Poetry, fiction, reflections, artwork — theme: 'Native Intelligence'",
+            payment: "Token payment + publication in Aké Review",
+            fee: "Free",
+            eligible: "Open internationally — Indians eligible",
+            link: "https://akefestival.org"
+          }
+        ]
       }
     ]
   }
@@ -566,12 +574,10 @@ function renderAll(filterType) {
         : session.items.filter(function(i) { return i.type === filterType; });
 
       if (session.items.length === 0 && di === 0) {
-        // Today's empty session — show placeholder
         dayHasContent = true;
-        dayHtml += `<div class="session-label">${session.time}</div>
-          <div class="empty-state">
-            <div class="empty-title">Opportunities posting soon</div>
-            <div class="empty-sub">This batch will appear here at the scheduled time.<br>Join the WhatsApp group to get them instantly.</div>
+        dayHtml += `<div class="empty-state">
+            <div class="empty-title">New opportunities will appear here</div>
+            <div class="empty-sub">Join the WhatsApp group to get them instantly.</div>
           </div>`;
         dayHtml += '<div style="margin-bottom:24px;"></div>';
         return;
@@ -582,7 +588,7 @@ function renderAll(filterType) {
       dayHasContent = true;
       totalCards += filtered.length;
 
-      dayHtml += `<div class="session-label">${session.time}</div>`;
+      if (session.time) dayHtml += `<div class="session-label">${session.time}</div>`;
       dayHtml += '<div class="opp-grid">';
       filtered.forEach(function(item) {
         dayHtml += cardHTML(item);
