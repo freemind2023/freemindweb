@@ -188,55 +188,50 @@ img { display: block; max-width: 100%; }
   margin-bottom: 28px;
 }
 
-/* ── Source Image ── */
-.source-post {
-  margin-bottom: 32px;
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
+/* ── Day Content — two-column layout ── */
+.day-content {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 32px;
+  align-items: start;
 }
-.source-img-wrap {
-  flex-shrink: 0;
+.day-cards .opp-grid {
+  grid-template-columns: 1fr;
+  margin-bottom: 0;
 }
-.source-img-label {
+.day-image {
+  position: sticky;
+  top: 120px;
+}
+.day-img-label {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #2a2a2a;
   margin-bottom: 10px;
 }
-.source-img-wrap img {
-  width: 180px;
-  border-radius: 6px;
+.day-image img {
+  width: 100%;
+  border-radius: 8px;
   border: 1px solid #1a1a1a;
   display: block;
 }
-.source-intro {
-  padding-top: 4px;
-}
-.source-intro-heading {
-  font-size: 13px;
-  font-weight: 600;
-  color: #555;
-  margin-bottom: 6px;
-}
-.source-intro-count {
-  font-size: 22px;
-  font-weight: 700;
-  color: #FFFFFF;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-  margin-bottom: 8px;
-}
-.source-intro-sub {
-  font-size: 13px;
-  color: #333;
+.day-img-meta {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #2a2a2a;
   line-height: 1.6;
 }
-@media (max-width: 580px) {
-  .source-post { flex-direction: column; gap: 16px; }
-  .source-img-wrap img { width: 100%; max-width: 260px; }
+@media (max-width: 740px) {
+  .day-content {
+    grid-template-columns: 1fr;
+  }
+  .day-image {
+    position: static;
+    order: -1;
+  }
+  .day-image img { max-width: 260px; }
 }
 .day-badge {
   font-size: 11px;
@@ -661,17 +656,11 @@ function renderAll(filterType) {
     const allItems = day.sessions.reduce(function(acc, s) { return acc.concat(s.items); }, []);
     const count = allItems.length;
 
-    const sourceBlock = `
-      <div class="source-post">
-        <div class="source-img-wrap">
-          <div class="source-img-label">Source Post</div>
-          <img src="${imgSrc}" alt="Opportunities post for ${day.label || day.date}" onerror="this.closest('.source-img-wrap').style.display='none'"/>
-        </div>
-        <div class="source-intro">
-          <div class="source-intro-heading">Verified opportunities</div>
-          <div class="source-intro-count">${count} ${count === 1 ? 'Opportunity' : 'Opportunities'}</div>
-          <div class="source-intro-sub">Open to Indian writers. All deadlines verified.<br>Free to apply unless stated otherwise.</div>
-        </div>
+    const imageCol = `
+      <div class="day-image">
+        <div class="day-img-label">Source Post</div>
+        <img src="${imgSrc}" alt="Opportunity post — ${day.label || day.date}" onerror="this.closest('.day-image').style.display='none'"/>
+        <div class="day-img-meta">Verified before posting.<br>Free to apply unless stated.</div>
       </div>`;
 
     html += `
@@ -680,8 +669,10 @@ function renderAll(filterType) {
           <span class="day-badge ${isToday ? 'today' : ''}">${day.label || day.date}</span>
           <div class="day-rule"></div>
         </div>
-        ${count > 0 ? sourceBlock : ''}
-        ${dayHtml}
+        <div class="day-content">
+          <div class="day-cards">${dayHtml}</div>
+          ${imageCol}
+        </div>
       </div>`;
   });
 
