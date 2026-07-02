@@ -187,6 +187,57 @@ img { display: block; max-width: 100%; }
   gap: 16px;
   margin-bottom: 28px;
 }
+
+/* ── Source Image ── */
+.source-post {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+.source-img-wrap {
+  flex-shrink: 0;
+}
+.source-img-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+.source-img-wrap img {
+  width: 180px;
+  border-radius: 6px;
+  border: 1px solid #1a1a1a;
+  display: block;
+}
+.source-intro {
+  padding-top: 4px;
+}
+.source-intro-heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+.source-intro-count {
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.source-intro-sub {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+}
+@media (max-width: 580px) {
+  .source-post { flex-direction: column; gap: 16px; }
+  .source-img-wrap img { width: 100%; max-width: 260px; }
+}
 .day-badge {
   font-size: 11px;
   font-weight: 700;
@@ -513,6 +564,12 @@ const OPPORTUNITIES = [
 
 const WHATSAPP = "https://chat.whatsapp.com/ECPoSWbHN20GSaMfc0z5nt";
 
+function dateToImageName(isoDate) {
+  // "2026-07-02" -> "02_07_2026"
+  var p = isoDate.split('-');
+  return p[2] + '_' + p[1] + '_' + p[0];
+}
+
 function daysLeft(deadlineStr) {
   if (!deadlineStr) return null;
   const today = new Date();
@@ -599,12 +656,31 @@ function renderAll(filterType) {
     if (!dayHasContent) return;
 
     const isToday = di === 0;
+    const imgName = dateToImageName(day.date);
+    const imgSrc = '/opportunities/images of message/' + imgName + '.png';
+    const allItems = day.sessions.reduce(function(acc, s) { return acc.concat(s.items); }, []);
+    const count = allItems.length;
+
+    const sourceBlock = `
+      <div class="source-post">
+        <div class="source-img-wrap">
+          <div class="source-img-label">Source Post</div>
+          <img src="${imgSrc}" alt="Opportunities post for ${day.label || day.date}" onerror="this.closest('.source-img-wrap').style.display='none'"/>
+        </div>
+        <div class="source-intro">
+          <div class="source-intro-heading">Verified opportunities</div>
+          <div class="source-intro-count">${count} ${count === 1 ? 'Opportunity' : 'Opportunities'}</div>
+          <div class="source-intro-sub">Open to Indian writers. All deadlines verified.<br>Free to apply unless stated otherwise.</div>
+        </div>
+      </div>`;
+
     html += `
       <div class="day-block">
         <div class="day-header">
           <span class="day-badge ${isToday ? 'today' : ''}">${day.label || day.date}</span>
           <div class="day-rule"></div>
         </div>
+        ${count > 0 ? sourceBlock : ''}
         ${dayHtml}
       </div>`;
   });
