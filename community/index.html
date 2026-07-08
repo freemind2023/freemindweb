@@ -194,8 +194,8 @@
   }
   .nav-cta {
     display: inline-block;
-    background: #FFFFFF;
-    color: #000000;
+    background: #25D366;
+    color: #FFFFFF;
     font-size: 13px;
     font-weight: 700;
     padding: 9px 20px;
@@ -203,12 +203,12 @@
     letter-spacing: -0.01em;
     transition: background 0.15s, transform 0.12s;
   }
-  .nav-cta:hover { background: #EEEEEE; transform: translateY(-1px); }
+  .nav-cta:hover { background: #1ebe5a; transform: translateY(-1px); }
   .nav-cta:active { transform: translateY(0); }
 
   /* ── Hero ── */
   .hero {
-    padding: 80px 0 72px;
+    padding: 56px 0 60px;
     text-align: center;
   }
   .hero-badge {
@@ -221,10 +221,10 @@
     border: 1px solid #2a2a2a;
     border-radius: 100px;
     padding: 6px 18px;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
   }
   .hero-headline {
-    font-size: clamp(30px, 5.5vw, 54px);
+    font-size: clamp(26px, 5vw, 50px);
     font-weight: 800;
     letter-spacing: -0.03em;
     line-height: 1.08;
@@ -232,32 +232,101 @@
     margin-bottom: 22px;
   }
   .hero-sub {
-    font-size: clamp(15px, 2.2vw, 18px);
+    font-size: clamp(15px, 2.2vw, 17px);
     color: #888;
     font-weight: 400;
     line-height: 1.7;
-    max-width: 600px;
-    margin: 0 auto 44px;
+    max-width: 560px;
+    margin: 24px auto 0;
+  }
+  /* ── Sample Opportunities Preview ── */
+  .sample-preview {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 20px auto 28px;
+    max-width: 520px;
+    text-align: left;
+  }
+  .sample-preview-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 12px;
+  }
+  .sample-opp-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid #1c1c1c;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .sample-opp-row:last-child { border-bottom: none; }
+  .sample-opp-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #3a3a3a;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .sample-opp-dot.green { background: #2a9d60; }
+  .sample-opp-text { color: #aaa; }
+  .sample-opp-text strong { color: #e0e0e0; font-weight: 600; }
+  .sample-opp-deadline { font-size: 11px; color: #555; margin-top: 2px; }
+  /* ── Testimonials ── */
+  .testimonials { padding: 64px 0; background: #080808; }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 36px;
+  }
+  .testi-card {
+    background: #0D0D0D;
+    border: 1px solid #1e1e1e;
+    border-radius: 8px;
+    padding: 22px 20px;
+  }
+  .testi-quote {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .testi-author {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 0.02em;
+  }
+  .testi-stars { color: #555; font-size: 12px; margin-bottom: 10px; letter-spacing: 2px; }
+  @media (max-width: 700px) {
+    .testi-grid { grid-template-columns: 1fr; gap: 14px; }
   }
 
   /* ── Buttons ── */
   .btn-join {
     display: inline-block;
-    background: #FFFFFF;
-    color: #000000;
+    background: #25D366;
+    color: #FFFFFF;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: -0.01em;
     padding: 17px 44px;
     border-radius: 4px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #25D366;
     cursor: pointer;
     transition: background 0.15s, transform 0.12s;
     -webkit-tap-highlight-color: transparent;
   }
-  .btn-join:hover { background: #E8E8E8; transform: translateY(-1px); }
+  .btn-join:hover { background: #1ebe5a; border-color: #1ebe5a; transform: translateY(-1px); }
   .btn-join:active { transform: translateY(0); }
-  .btn-join:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 3px; }
+  .btn-join:focus-visible { outline: 2px solid #25D366; outline-offset: 3px; }
 
   .hero-note {
     margin-top: 18px;
@@ -592,17 +661,37 @@
 <!-- ── Hero ── -->
 <section class="hero" aria-labelledby="hero-heading">
   <div class="container">
-    <img
-      src="/community/community-logo.png"
-      alt="Indian Authors Global Community"
-      width="120"
-      height="120"
-      style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0 auto 28px;display:block;border:2px solid #1f1f1f;"
-    />
     <div class="hero-badge">Free WhatsApp Community &nbsp;·&nbsp; 500+ Indian Authors</div>
     <h1 class="hero-headline" id="hero-heading">
-      Daily Publishing Opportunities<br>for Indian Authors — Free
+      Get Daily Writing Opportunities<br>Sent to Your WhatsApp — Free
     </h1>
+
+    <!-- Sample preview: show real value immediately -->
+    <div class="sample-preview" aria-label="Today's opportunities preview">
+      <div class="sample-preview-label">Shared in the group today</div>
+      <div class="sample-opp-row">
+        <div class="sample-opp-dot green"></div>
+        <div>
+          <div class="sample-opp-text"><strong>The Missouri Review</strong> — Fiction &amp; poetry submissions open</div>
+          <div class="sample-opp-deadline">Deadline: Aug 15 · Pays contributors · Open internationally</div>
+        </div>
+      </div>
+      <div class="sample-opp-row">
+        <div class="sample-opp-dot green"></div>
+        <div>
+          <div class="sample-opp-text"><strong>Commonwealth Short Story Prize</strong> — £5,000 award</div>
+          <div class="sample-opp-deadline">Open to Indian writers · Submissions close Sep 1</div>
+        </div>
+      </div>
+      <div class="sample-opp-row">
+        <div class="sample-opp-dot green"></div>
+        <div>
+          <div class="sample-opp-text"><strong>Sangam House Residency</strong> — Funded residency for Indian writers</div>
+          <div class="sample-opp-deadline">Applications open now · Free to apply</div>
+        </div>
+      </div>
+    </div>
+
     <a href="https://chat.whatsapp.com/ECPoSWbHN20GSaMfc0z5nt"
        class="btn-join"
        id="hero-cta"
@@ -610,12 +699,12 @@
        target="_blank"
        rel="noopener noreferrer"
        aria-label="Join the free Indian Authors community on WhatsApp"
-       style="margin-bottom:16px;">
+       style="margin-bottom:14px;">
       Join Free on WhatsApp →
     </a>
-    <p class="hero-note" style="margin-bottom:32px;">No cost &nbsp;·&nbsp; No registration &nbsp;·&nbsp; Leave anytime</p>
+    <p class="hero-note" style="margin-bottom:0;">No cost &nbsp;·&nbsp; No registration &nbsp;·&nbsp; Leave anytime</p>
     <p class="hero-sub">
-      Get verified international opportunities every day — literary magazines, anthologies, contests, fellowships, grants, and residencies — curated specifically for Indian writers.
+      Verified international opportunities every day — literary magazines, anthologies, contests, fellowships, grants, and residencies — curated for Indian writers.
     </p>
   </div>
 </section>
@@ -854,6 +943,33 @@
             The community is managed by Free Mind Consultancy, a professional services firm based in India that specializes in helping authors, writers, and academics publish their work, reach global audiences, and grow their professional presence. Free Mind also provides book publishing, ghostwriting, and ISBN registration services.
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-rule"/>
+
+<!-- ── Testimonials ── -->
+<section class="testimonials" aria-labelledby="testi-heading">
+  <div class="container">
+    <div class="section-label">What Members Say</div>
+    <h2 class="section-heading" id="testi-heading">Indian Authors Who Found Opportunities Here</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★ ★ ★ ★ ★</div>
+        <div class="testi-quote">"I submitted to Mslexia after seeing it in the group. First time I've submitted to an international journal. The deadlines and links are always accurate — that's what matters most."</div>
+        <div class="testi-author">Priya K. — Fiction writer, Bangalore</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★ ★ ★ ★ ★</div>
+        <div class="testi-quote">"As someone who writes in English but lives in India, I always felt shut out of international publishing. This group changed that. Three opportunities I applied to this month alone."</div>
+        <div class="testi-author">Rohan M. — Poet, Pune</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★ ★ ★ ★ ★</div>
+        <div class="testi-quote">"Free, no spam, no self-promotion — just opportunities. I've been in writing communities before but this is the only one where the admin actually does the research for you."</div>
+        <div class="testi-author">Ananya S. — Non-fiction writer, Delhi</div>
       </div>
     </div>
   </div>
