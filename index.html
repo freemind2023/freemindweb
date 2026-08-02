@@ -115,7 +115,7 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "Free Mind Consultancy",
     "image": "https://www.freemindconsult.com/images/logo.png",
     "url": "https://www.freemindconsult.com",
@@ -125,8 +125,9 @@
     "description": "Professional consulting firm helping founders, authors, professors, government officers, and coaches amplify their impact through publishing, technology, and branding services.",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "IN",
-      "addressRegion": "India"
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
@@ -140,7 +141,14 @@
       {"@type": "Country","name": "United States"},
       {"@type": "Country","name": "Australia"}
     ],
-    "openingHours": "Mo-Sa 09:00-18:00",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
     "sameAs": [
       "https://www.linkedin.com/company/freemindconsultancy",
       "https://www.instagram.com/freemind_consultancy/"
