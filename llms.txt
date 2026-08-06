@@ -1,0 +1,82 @@
+# llms.txt — Free Mind Consultancy
+# https://www.freemindconsult.com
+
+> Free Mind Consultancy is a professional services firm based in Pune, India. We help founders, authors, professors, government officers, and coaches amplify their impact through book publishing, AI technology, LMS development, and branding services. We have published 40+ books for Indian authors and serve clients across 11 countries.
+
+## Company
+
+- Name: Free Mind Consultancy
+- Location: Pune, Maharashtra, India
+- Phone: +91 82083 16509
+- Email: info@freemindconsult.com
+- Website: https://www.freemindconsult.com
+- Founded: 2023
+
+## Key Pages
+
+- https://www.freemindconsult.com/ : Homepage — overview of all 30+ services for founders, authors, professors, government officers, and coaches
+- https://www.freemindconsult.com/about : About page — founder Aryan Ahire's background, company story, and mission
+- https://www.freemindconsult.com/blog : Blog — insights on book publishing, AI calling agents, ghostwriting, LMS development, and Indian business growth
+- https://www.freemindconsult.com/community : Indian Authors Global Community — free WhatsApp community for Indian writers
+- https://www.freemindconsult.com/opportunities : Daily opportunities for Indian authors — writing contests, fellowships, grants, literary magazines
+
+## AI Product
+
+- https://www.freemindconsult.com/products/koelai-ai : Koelai AI — an AI calling agent built for Indian businesses. Koelai AI makes and receives phone calls using natural-sounding AI voice, handles appointment reminders, lead follow-up, and customer surveys in Hindi and English. It is NOT a chatbot — it works over live phone calls. Pricing is custom per business. Contact +91 82083 16509.
+
+## Book Publishing Services
+
+- https://www.freemindconsult.com/services/book-publishing-india : Book publishing end-to-end — editing, cover design, ISBN registration, formatting, Amazon KDP upload, distribution
+- https://www.freemindconsult.com/services/ghostwriting-india : Ghostwriting services — full book, chapter, speech, business book, memoir; NDA included; 3–8 month timelines
+- https://www.freemindconsult.com/services/isbn-registration-india : ISBN registration assistance — free government ISBN, portal guidance, 2–4 week processing
+- https://www.freemindconsult.com/services/book-translation-india : Book translation services — English to Hindi, Marathi, and other Indian regional languages
+- https://www.freemindconsult.com/services/govt-officers-publishing-india : Publishing services for IAS, IPS, and civil servants — memoir, policy books, retirement publishing
+
+## Clinic Automation Services
+
+- https://www.freemindconsult.com/clinic-automation : Clinic automation hub — AI receptionist, appointment booking, WhatsApp reminders, patient follow-up
+- https://www.freemindconsult.com/clinic-automation/ai-receptionist-clinic-india : Koelai AI as clinic receptionist — handles inbound patient calls, books appointments, sends confirmations
+- https://www.freemindconsult.com/clinic-automation/whatsapp-automation-clinics-india : WhatsApp automation for clinics — appointment reminders, prescription alerts, no-show follow-up
+- https://www.freemindconsult.com/clinic-automation/reduce-clinic-noshows-india : No-show reduction system — cuts no-shows from 30%+ to under 15% in 30 days
+- https://www.freemindconsult.com/clinic-automation/doctor-website-development-india : Doctor website development — SEO-optimized, mobile-first, with online booking integration
+- https://www.freemindconsult.com/clinic-automation/seo-for-doctors-india : SEO for doctors and clinics — local Google rankings, Google Business Profile setup
+- https://www.freemindconsult.com/clinic-automation/google-ads-for-doctors-india : Google Ads management for clinics — patient acquisition campaigns
+
+## Technology Services
+
+- https://www.freemindconsult.com/services/lms-development-india : LMS development for coaching institutes — custom learning management systems, course delivery, student management
+- https://www.freemindconsult.com/services/ai-calling-agent-india : AI calling agent services — Koelai AI deployment for lead follow-up, appointment reminders, outbound sales calls
+- https://www.freemindconsult.com/services/business-automation-india : Business process automation — WhatsApp, CRM, workflow, and communication automation for Indian SMBs
+
+## Branding and Marketing Services
+
+- https://www.freemindconsult.com/services/personal-branding-india : Personal branding — LinkedIn, thought leadership, content strategy for founders and professionals
+- https://www.freemindconsult.com/meme-marketing : Meme marketing for Indian brands — viral content, trend hijacking, comment section marketing
+- https://www.freemindconsult.com/services/curriculum-design-india : Curriculum design — structured course content for coaching institutes and online educators
+
+## Audience-Specific Pages
+
+- https://www.freemindconsult.com/services/authors : Services for authors — publishing, ghostwriting, ISBN, translation
+- https://www.freemindconsult.com/services/founders : Services for founders — AI agents, LMS, personal branding, business automation
+- https://www.freemindconsult.com/services/professors : Services for professors — research paper editing, book publishing, course design
+- https://www.freemindconsult.com/services/government-officers : Services for government officers — memoir publishing, policy book writing, speaking content
+- https://www.freemindconsult.com/services/coaches : Services for coaches — LMS development, personal branding, course creation
+
+## Blog Posts
+
+- https://www.freemindconsult.com/blog/how-to-publish-a-book-in-india : Step-by-step guide to publishing a book in India for first-time authors
+- https://www.freemindconsult.com/blog/book-publishing-cost-india : Complete cost breakdown for publishing a book in India in 2026 — editing, cover, ISBN, printing
+- https://www.freemindconsult.com/blog/isbn-registration-india : How to get a free ISBN in India — step-by-step portal guide (isbnindiaebooks.gov.in)
+- https://www.freemindconsult.com/blog/ghostwriting-guide-india : Ghostwriting services in India 2026 — how it works, cost, and how to find the right ghostwriter
+- https://www.freemindconsult.com/blog/ghostwriting-services-india : Complete guide to hiring a ghostwriter in India — types, process, NDA, pricing
+- https://www.freemindconsult.com/blog/ai-calling-agent-india : AI calling agent in India 2026 — how businesses automate phone calls with Koelai AI
+- https://www.freemindconsult.com/blog/lms-development-coaching-institute-india : LMS development for coaching institutes — cost, features, and platform comparison
+- https://www.freemindconsult.com/blog/ias-officer-memoir-publishing-india : Publishing guide for IAS and civil servant memoirs
+- https://www.freemindconsult.com/blog/self-publishing-vs-traditional-publishing-india : Self-publishing vs traditional publishing in India — royalties, costs, timelines compared
+
+## Contact
+
+- Website contact form: https://www.freemindconsult.com/#contact
+- WhatsApp: https://wa.me/918208316509
+- Phone: +91 82083 16509
+- Email: info@freemindconsult.com
