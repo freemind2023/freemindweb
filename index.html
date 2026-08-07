@@ -1782,7 +1782,29 @@ Join the Free Community
 </div>
 </section>
 <!-- ── Section 11: Contact ───────────────────────────── -->
-<section aria-labelledby="contact-heading" class="section section-light" id="contact">
+<style>
+  #contact.contact-texture {
+    position: relative;
+    overflow: hidden;
+  }
+  #contact.contact-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(160deg, rgba(10,10,15,0.93), rgba(10,10,15,0.85)),
+      url("images/decor/gradient-wave-texture.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    pointer-events: none;
+  }
+  #contact.contact-texture > .container {
+    position: relative;
+    z-index: 1;
+  }
+</style>
+<section aria-labelledby="contact-heading" class="section section-light contact-texture" id="contact">
 <div class="container">
 <div class="section-header">
 <span class="section-label">Get in Touch</span>
