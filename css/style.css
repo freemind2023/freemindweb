@@ -361,6 +361,46 @@ p { line-height: 1.7; }
   pointer-events: all;
 }
 
+/* Collapsed "Menu" dropdown — single horizontal row of links, left-anchored
+   under its trigger (the trigger sits at the far left of the nav, so a
+   centered mega-menu would overflow off-screen). */
+.nav-menu-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: max-content;
+  max-width: 92vw;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.nav-dropdown-trigger:hover .nav-menu-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.nav-menu-panel a {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.nav-menu-panel a:hover {
+  color: var(--color-black);
+}
+
 /* Narrow single-column dropdown for Products */
 .mega-menu--narrow {
   width: 280px;
