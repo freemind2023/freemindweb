@@ -31,15 +31,19 @@
   <!-- Product Pages -->
   <url><loc>https://www.freemindconsult.com/products/koelai-ai</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
+  <!-- Community & Opportunities -->
+  <url><loc>https://www.freemindconsult.com/community</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.freemindconsult.com/opportunities</loc><lastmod>2026-08-07</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+
   <!-- Meme Marketing -->
-  <url><loc>https://www.freemindconsult.com/meme-marketing/</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.freemindconsult.com/meme-marketing</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.freemindconsult.com/meme-marketing/viral-reels-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.freemindconsult.com/meme-marketing/trend-hijacking-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.freemindconsult.com/meme-marketing/comment-section-marketing</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.freemindconsult.com/meme-marketing/meme-marketing-for-startups-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Clinic Automation -->
-  <url><loc>https://www.freemindconsult.com/clinic-automation/</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.freemindconsult.com/clinic-automation</loc><lastmod>2026-08-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.freemindconsult.com/clinic-automation/online-appointment-booking-doctors-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.freemindconsult.com/clinic-automation/whatsapp-automation-clinics-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.freemindconsult.com/clinic-automation/ai-receptionist-clinic-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -50,17 +54,17 @@
   <url><loc>https://www.freemindconsult.com/clinic-automation/reduce-clinic-noshows-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Blog Index -->
-  <url><loc>https://www.freemindconsult.com/blog/</loc><lastmod>2026-06-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog</loc><lastmod>2026-08-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
   <!-- Blog Posts -->
   <url><loc>https://www.freemindconsult.com/blog/how-to-publish-a-book-in-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.freemindconsult.com/blog/book-publishing-cost-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.freemindconsult.com/blog/self-publishing-vs-traditional-publishing-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://www.freemindconsult.com/blog/isbn-registration-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://www.freemindconsult.com/blog/ghostwriting-services-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://www.freemindconsult.com/blog/ai-calling-agent-for-startups-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.freemindconsult.com/blog/lms-development-coaching-institute-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://www.freemindconsult.com/blog/ias-officer-memoir-publishing-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog/book-publishing-cost-india</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog/self-publishing-vs-traditional-publishing-india</loc><lastmod>2026-08-04</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog/isbn-registration-india</loc><lastmod>2026-08-04</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog/ghostwriting-services-india</loc><lastmod>2026-08-04</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog/ai-calling-agent-for-startups-india</loc><lastmod>2026-08-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog/lms-development-coaching-institute-india</loc><lastmod>2026-08-04</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://www.freemindconsult.com/blog/ias-officer-memoir-publishing-india</loc><lastmod>2026-08-04</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
 
   <!-- Legal Pages -->
   <url><loc>https://www.freemindconsult.com/privacy</loc><lastmod>2026-06-29</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
