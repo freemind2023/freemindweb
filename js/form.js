@@ -67,6 +67,14 @@
       'Curriculum Design',
       'AI Podcast Content Creation'
     ],
+    'Institute / College / Corporate L&D': [
+      'Moodle LMS Setup',
+      'Moodle SSO / SIS / HRMS Integration',
+      'Moodle SCORM / H5P Content Setup',
+      'Custom Integrated Application Development',
+      'Managed Moodle Hosting & Maintenance',
+      'General Inquiry'
+    ],
     'Other': [
       'General Inquiry'
     ]
