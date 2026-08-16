@@ -1,7 +1,35 @@
+# Free Mind Consultancy — robots.txt
+# https://www.freemindconsult.com
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
+
+# Explicit image crawling permissions
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /blog/
+Allow: /products/
+
+# AI crawler access (supports llms.txt indexing)
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 Sitemap: https://www.freemindconsult.com/sitemap.xml
