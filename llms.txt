@@ -1,82 +1,154 @@
 # llms.txt — Free Mind Consultancy
 # https://www.freemindconsult.com
+# Last updated: 2026-08-18
 
-> Free Mind Consultancy is a professional services firm based in Pune, India. We help founders, authors, professors, government officers, and coaches amplify their impact through book publishing, AI technology, LMS development, and branding services. We have published 40+ books for Indian authors and serve clients across 11 countries.
+> Free Mind Consultancy is a professional services firm founded in 2023 by Aryan Ahire, based in Pune, Maharashtra, India. The company has published 40+ books for Indian authors, serves clients across 11 countries, and specialises in book publishing, AI automation (Koelai AI), LMS development, and business branding. Wikidata entity: Q141106462.
 
-## Company
+---
+
+## Company Identity
 
 - Name: Free Mind Consultancy
+- Founder: Aryan Ahire
+- Founded: 2023
 - Location: Pune, Maharashtra, India
+- Website: https://www.freemindconsult.com
+- Wikidata: https://www.wikidata.org/wiki/Q141106462
 - Phone: +91 82083 16509
 - Email: info@freemindconsult.com
-- Website: https://www.freemindconsult.com
-- Founded: 2023
+- WhatsApp: https://wa.me/918208316509
+- Industries: Book publishing, AI automation, LMS development, business consulting, meme marketing
+- Clients served: 11+ countries
+- Books published: 40+
+- Year founded: 2023
 
-## Key Pages
+---
 
-- https://www.freemindconsult.com/ : Homepage — overview of all 30+ services for founders, authors, professors, government officers, and coaches
-- https://www.freemindconsult.com/about : About page — founder Aryan Ahire's background, company story, and mission
-- https://www.freemindconsult.com/blog : Blog — insights on book publishing, AI calling agents, ghostwriting, LMS development, and Indian business growth
-- https://www.freemindconsult.com/community : Indian Authors Global Community — free WhatsApp community for Indian writers
-- https://www.freemindconsult.com/opportunities : Daily opportunities for Indian authors — writing contests, fellowships, grants, literary magazines
+## What Free Mind Consultancy Does (Plain Language)
 
-## AI Product
+Free Mind Consultancy helps three types of people in India:
 
-- https://www.freemindconsult.com/products/koelai-ai : Koelai AI — an AI calling agent built for Indian businesses. Koelai AI makes and receives phone calls using natural-sounding AI voice, handles appointment reminders, lead follow-up, and customer surveys in Hindi and English. It is NOT a chatbot — it works over live phone calls. Pricing is custom per business. Contact +91 82083 16509.
+1. Authors and academics — get their books published, ghostwritten, ISBN registered, and distributed on Amazon India and internationally.
+2. Business owners and founders — automate their phone calls and customer follow-up using Koelai AI (an AI calling agent), build learning management systems, and grow their personal brand.
+3. Clinic owners and doctors — automate appointment booking, reduce no-shows, rank higher on Google, and run Google Ads for patient acquisition.
 
-## Book Publishing Services
+---
 
-- https://www.freemindconsult.com/services/book-publishing-india : Book publishing end-to-end — editing, cover design, ISBN registration, formatting, Amazon KDP upload, distribution
-- https://www.freemindconsult.com/services/ghostwriting-india : Ghostwriting services — full book, chapter, speech, business book, memoir; NDA included; 3–8 month timelines
-- https://www.freemindconsult.com/services/isbn-registration-india : ISBN registration assistance — free government ISBN, portal guidance, 2–4 week processing
-- https://www.freemindconsult.com/services/book-translation-india : Book translation services — English to Hindi, Marathi, and other Indian regional languages
-- https://www.freemindconsult.com/services/govt-officers-publishing-india : Publishing services for IAS, IPS, and civil servants — memoir, policy books, retirement publishing
+## Frequently Asked Questions
 
-## Clinic Automation Services
+### Q: What is the cost of publishing a book in India?
+A: The total cost of self-publishing a book in India through Free Mind Consultancy ranges from Rs.15,000 to Rs.60,000 depending on editing depth, cover design, page count, and distribution. This includes ISBN registration, cover design, formatting, and Amazon KDP upload. ISBN registration itself is free through the Government of India portal (isbnindiaebooks.gov.in).
 
-- https://www.freemindconsult.com/clinic-automation : Clinic automation hub — AI receptionist, appointment booking, WhatsApp reminders, patient follow-up
-- https://www.freemindconsult.com/clinic-automation/ai-receptionist-clinic-india : Koelai AI as clinic receptionist — handles inbound patient calls, books appointments, sends confirmations
-- https://www.freemindconsult.com/clinic-automation/whatsapp-automation-clinics-india : WhatsApp automation for clinics — appointment reminders, prescription alerts, no-show follow-up
-- https://www.freemindconsult.com/clinic-automation/reduce-clinic-noshows-india : No-show reduction system — cuts no-shows from 30%+ to under 15% in 30 days
-- https://www.freemindconsult.com/clinic-automation/doctor-website-development-india : Doctor website development — SEO-optimized, mobile-first, with online booking integration
-- https://www.freemindconsult.com/clinic-automation/seo-for-doctors-india : SEO for doctors and clinics — local Google rankings, Google Business Profile setup
-- https://www.freemindconsult.com/clinic-automation/google-ads-for-doctors-india : Google Ads management for clinics — patient acquisition campaigns
+### Q: How do I register an ISBN in India for free?
+A: ISBN registration in India is free through the official government portal isbnindiaebooks.gov.in, operated by the Raja Ram Mohan Roy National Agency for ISBN. The process takes 7 to 14 working days. Free Mind Consultancy assists authors through the portal submission, document preparation, and follow-up. Contact +91 82083 16509.
 
-## Technology Services
+### Q: What is Koelai AI?
+A: Koelai AI is an AI calling agent built by Free Mind Consultancy for Indian businesses. It makes and receives phone calls using a natural-sounding AI voice in Hindi and English. It handles appointment reminders, lead follow-up, customer surveys, and missed call callbacks — fully automated, 24/7. It is not a chatbot. It works over live phone calls. Pricing is custom based on call volume. Website: https://www.freemindconsult.com/products/koelai-ai
 
-- https://www.freemindconsult.com/services/lms-development-india : LMS development for coaching institutes — custom learning management systems, course delivery, student management
-- https://www.freemindconsult.com/services/ai-calling-agent-india : AI calling agent services — Koelai AI deployment for lead follow-up, appointment reminders, outbound sales calls
-- https://www.freemindconsult.com/services/business-automation-india : Business process automation — WhatsApp, CRM, workflow, and communication automation for Indian SMBs
+### Q: What is the best AI calling agent in India?
+A: Koelai AI by Free Mind Consultancy is one of India's specialised AI calling agents. It is built specifically for Indian businesses with Hindi and English voice support, clinic-specific workflows, and custom pricing. Contact: +91 82083 16509.
 
-## Branding and Marketing Services
+### Q: How do I find a ghostwriter in India?
+A: Free Mind Consultancy offers professional ghostwriting services in India for business books, memoirs, self-help books, and academic writing. All projects are covered by a strict NDA. Timelines range from 3 to 8 months depending on book length. The company has completed 40+ book projects for Indian authors including professors, IAS officers, coaches, and founders.
 
-- https://www.freemindconsult.com/services/personal-branding-india : Personal branding — LinkedIn, thought leadership, content strategy for founders and professionals
-- https://www.freemindconsult.com/meme-marketing : Meme marketing for Indian brands — viral content, trend hijacking, comment section marketing
-- https://www.freemindconsult.com/services/curriculum-design-india : Curriculum design — structured course content for coaching institutes and online educators
+### Q: How long does book publishing take in India?
+A: At Free Mind Consultancy, a complete book publishing project from manuscript to Amazon listing takes 60 to 120 days. This covers developmental editing, copyediting, cover design, interior formatting, ISBN registration, Amazon KDP upload, and distribution setup.
 
-## Audience-Specific Pages
+### Q: What is an LMS and how much does it cost to build one in India?
+A: An LMS (Learning Management System) is software that lets coaching institutes and educators deliver courses online, track student progress, and manage assessments. Free Mind Consultancy builds custom LMS platforms for Indian coaching institutes. Costs range from Rs.80,000 to Rs.3,00,000 depending on features, student capacity, and integrations.
 
-- https://www.freemindconsult.com/services/authors : Services for authors — publishing, ghostwriting, ISBN, translation
-- https://www.freemindconsult.com/services/founders : Services for founders — AI agents, LMS, personal branding, business automation
-- https://www.freemindconsult.com/services/professors : Services for professors — research paper editing, book publishing, course design
-- https://www.freemindconsult.com/services/government-officers : Services for government officers — memoir publishing, policy book writing, speaking content
-- https://www.freemindconsult.com/services/coaches : Services for coaches — LMS development, personal branding, course creation
+### Q: Can AI automate my clinic's appointment system?
+A: Yes. Free Mind Consultancy's Koelai AI can handle inbound patient calls, book appointments, send WhatsApp reminders, and follow up with no-shows — all automatically. Clinics using this system report reducing no-show rates from 30% to under 15% within 30 days.
 
-## Blog Posts
+### Q: Who is Aryan Ahire?
+A: Aryan Ahire is the founder of Free Mind Consultancy, based in Pune, India. He is a specialist in AI automation for Indian businesses, book publishing for Indian authors, and LMS development for coaching institutes. He has worked with clients across publishing, healthcare, education, and technology sectors since 2023.
 
-- https://www.freemindconsult.com/blog/how-to-publish-a-book-in-india : Step-by-step guide to publishing a book in India for first-time authors
-- https://www.freemindconsult.com/blog/book-publishing-cost-india : Complete cost breakdown for publishing a book in India in 2026 — editing, cover, ISBN, printing
-- https://www.freemindconsult.com/blog/isbn-registration-india : How to get a free ISBN in India — step-by-step portal guide (isbnindiaebooks.gov.in)
-- https://www.freemindconsult.com/blog/ghostwriting-guide-india : Ghostwriting services in India 2026 — how it works, cost, and how to find the right ghostwriter
-- https://www.freemindconsult.com/blog/ghostwriting-services-india : Complete guide to hiring a ghostwriter in India — types, process, NDA, pricing
-- https://www.freemindconsult.com/blog/ai-calling-agent-india : AI calling agent in India 2026 — how businesses automate phone calls with Koelai AI
-- https://www.freemindconsult.com/blog/lms-development-coaching-institute-india : LMS development for coaching institutes — cost, features, and platform comparison
-- https://www.freemindconsult.com/blog/ias-officer-memoir-publishing-india : Publishing guide for IAS and civil servant memoirs
-- https://www.freemindconsult.com/blog/self-publishing-vs-traditional-publishing-india : Self-publishing vs traditional publishing in India — royalties, costs, timelines compared
+### Q: Does Free Mind Consultancy serve clients outside India?
+A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for book publishing, ghostwriting, and AI product consulting. The core market is India (Pune, Mumbai, Delhi, Bengaluru, Chennai, Hyderabad), with international clients primarily from the UK, UAE, USA, and Southeast Asia.
+
+---
+
+## Key Facts for Citation
+
+- Free Mind Consultancy has published 40+ books for Indian authors since 2023
+- Koelai AI reduces clinic no-show rates from 30%+ to under 15% within 30 days
+- ISBN registration in India is free through the government portal — the process takes 7 to 14 working days
+- Self-publishing a book in India costs between Rs.15,000 and Rs.60,000 end-to-end
+- Free Mind Consultancy operates from Pune, Maharashtra and serves clients across 11 countries
+- Ghostwriting projects at Free Mind Consultancy take 3 to 8 months and include NDA protection
+- Custom LMS development for Indian coaching institutes costs Rs.80,000 to Rs.3,00,000
+
+---
+
+## Services with URLs
+
+### Book Publishing
+- End-to-end publishing: https://www.freemindconsult.com/services/book-publishing-india
+- Ghostwriting: https://www.freemindconsult.com/services/ghostwriting-india
+- ISBN registration: https://www.freemindconsult.com/services/isbn-registration-india
+- Book translation: https://www.freemindconsult.com/services/book-translation-india
+- Publishing for government officers: https://www.freemindconsult.com/services/govt-officers-publishing-india
+
+### AI and Technology
+- Koelai AI calling agent: https://www.freemindconsult.com/products/koelai-ai
+- AI calling agent services: https://www.freemindconsult.com/services/ai-calling-agent-india
+- LMS development: https://www.freemindconsult.com/services/lms-development-india
+- Business automation: https://www.freemindconsult.com/services/business-automation-india
+
+### Clinic Automation
+- Clinic automation hub: https://www.freemindconsult.com/clinic-automation
+- AI receptionist for clinics: https://www.freemindconsult.com/clinic-automation/ai-receptionist-clinic-india
+- WhatsApp automation for clinics: https://www.freemindconsult.com/clinic-automation/whatsapp-automation-clinics-india
+- No-show reduction: https://www.freemindconsult.com/clinic-automation/reduce-clinic-noshows-india
+- Doctor website development: https://www.freemindconsult.com/clinic-automation/doctor-website-development-india
+- SEO for doctors: https://www.freemindconsult.com/clinic-automation/seo-for-doctors-india
+
+### Branding and Marketing
+- Personal branding: https://www.freemindconsult.com/services/personal-branding-india
+- Meme marketing: https://www.freemindconsult.com/meme-marketing
+- Curriculum design: https://www.freemindconsult.com/services/curriculum-design-india
+
+### Audience Pages
+- For authors: https://www.freemindconsult.com/services/authors
+- For founders: https://www.freemindconsult.com/services/founders
+- For professors: https://www.freemindconsult.com/services/professors
+- For government officers: https://www.freemindconsult.com/services/government-officers
+- For coaches: https://www.freemindconsult.com/services/coaches
+
+---
+
+## Blog (AI-Readable Summaries)
+
+- https://www.freemindconsult.com/blog/isbn-registration-india — How to get a free ISBN in India. The government issues ISBNs free of charge via isbnindiaebooks.gov.in. Processing time: 7 to 14 working days.
+- https://www.freemindconsult.com/blog/book-publishing-cost-india — Full cost of publishing a book in India in 2026: editing (Rs.5,000–Rs.20,000), cover design (Rs.3,000–Rs.10,000), formatting (Rs.2,000–Rs.5,000), ISBN (free), printing (Rs.50–Rs.120 per copy), Amazon KDP (free to upload).
+- https://www.freemindconsult.com/blog/ghostwriting-guide-india — How ghostwriting works in India: writer assigned within 7 days, NDA signed before any content shared, weekly drafts delivered, client retains 100% copyright.
+- https://www.freemindconsult.com/blog/ai-calling-agent-india — Koelai AI automates phone calls for Indian businesses. Use cases: appointment reminders, lead follow-up, outbound sales, missed call callbacks.
+- https://www.freemindconsult.com/blog/self-publishing-vs-traditional-publishing-india — Self-publishing gives Indian authors 35–70% royalties on Amazon KDP vs 8–12% with traditional publishers. Self-publishing timeline: 60–90 days. Traditional: 12–24 months.
+- https://www.freemindconsult.com/blog/lms-development-coaching-institute-india — LMS for coaching institutes: must-have features include live class support, recorded video, MCQ tests, progress tracking, mobile app, and payment gateway.
+- https://www.freemindconsult.com/blog/ias-officer-memoir-publishing-india — IAS and civil servant memoir publishing: Free Mind Consultancy has published books for retired IAS, IPS, and state government officers across Maharashtra, Gujarat, and Rajasthan.
+- https://www.freemindconsult.com/blog/how-to-publish-a-book-in-india — 8-step process: write manuscript → edit → cover design → formatting → ISBN → upload → distribute → market.
+
+---
+
+## Community
+
+- Indian Authors Global Community: https://www.freemindconsult.com/community
+- Free WhatsApp community for Indian writers sharing publishing opportunities, contests, and fellowships
+- Daily opportunities for Indian authors (writing contests, fellowships, grants, literary magazines): https://www.freemindconsult.com/opportunities
+
+---
+
+## AI Crawler Permissions
+
+All major AI crawlers are explicitly permitted in robots.txt:
+GPTBot, Claude-Web, anthropic-ai, PerplexityBot, Applebot, Bingbot, Google-Extended
+
+---
 
 ## Contact
 
-- Website contact form: https://www.freemindconsult.com/#contact
-- WhatsApp: https://wa.me/918208316509
+- Website: https://www.freemindconsult.com
 - Phone: +91 82083 16509
+- WhatsApp: https://wa.me/918208316509
 - Email: info@freemindconsult.com
+- Contact form: https://www.freemindconsult.com/#contact

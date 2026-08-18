@@ -434,7 +434,7 @@ img { display: block; max-width: 100%; }
 <nav class="lp-nav">
   <div class="nav-inner">
     <a class="nav-brand" href="https://www.freemindconsult.com">
-      <img src="/community/community-logo.png" alt="Free Mind" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;"/>
+      <img src="/community/community-logo.png" alt="Free Mind" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;" fetchpriority="high">
       <div>
         <div class="nav-brand-text">Free Mind Consultancy</div>
         <div class="nav-brand-sub">Writing Opportunities</div>
@@ -945,7 +945,7 @@ function renderAll(filterType) {
     const imageCol = `
       <div class="day-image">
         <div class="day-img-label">Source Post</div>
-        <img src="${imgSrc}" alt="Opportunity post — ${day.label || day.date}" onerror="this.closest('.day-image').style.display='none'"/>
+        <img src="${imgSrc}" alt="Opportunity post — ${day.label || day.date}" onerror="this.closest('.day-image').style.display='none'" loading="lazy">
         <div class="day-img-meta">Verified before posting.<br>Free to apply unless stated.</div>
       </div>`;
 
