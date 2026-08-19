@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEO GEO Agency — Is Your Business Invisible to AI?</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --bg:#0A0F1E;
+    --blue:#3B82F6;
+    --green:#10B981;
+    --red:#EF4444;
+    --gold:#F59E0B;
+    --text:#F8FAFC;
+    --card:#111827;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Segoe UI',ui-sans-serif,system-ui,-apple-system,sans-serif;
+    overflow-x:hidden;
+  }
+  .font-display{font-family:'Georgia','Iowan Old Style',serif;}
+
+  /* ---------- Glass card ---------- */
+  .glass{
+    background:rgba(17,24,39,0.55);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border:1px solid rgba(148,163,184,0.12);
+  }
+
+  /* ---------- Floating animation ---------- */
+  @keyframes floaty{
+    0%,100%{transform:translateY(0px);}
+    50%{transform:translateY(-8px);}
+  }
+  .float{animation:floaty 4s ease-in-out infinite;}
+  .float-delay-1{animation-delay:.6s;}
+  .float-delay-2{animation-delay:1.2s;}
+
+  /* ---------- Glow pulse on CTA ---------- */
+  @keyframes glowpulse{
+    0%,100%{box-shadow:0 0 0px 0 rgba(59,130,246,0.55),0 0 24px 4px rgba(59,130,246,0.35);}
+    50%{box-shadow:0 0 0px 0 rgba(59,130,246,0.85),0 0 46px 12px rgba(59,130,246,0.55);}
+  }
+  .glow-pulse{animation:glowpulse 2.4s ease-in-out infinite;}
+
+  @keyframes goldpulse{
+    0%,100%{box-shadow:0 0 20px 2px rgba(245,158,11,0.25);}
+    50%{box-shadow:0 0 42px 8px rgba(245,158,11,0.45);}
+  }
+  .gold-pulse{animation:goldpulse 3s ease-in-out infinite;}
+
+  /* ---------- Red warning pulse ---------- */
+  @keyframes redpulse{
+    0%,100%{box-shadow:0 0 0px 0 rgba(239,68,68,0.4);}
+    50%{box-shadow:0 0 30px 6px rgba(239,68,68,0.5);}
+  }
+  .red-pulse{animation:redpulse 2.2s ease-in-out infinite;}
+
+  /* ---------- Glowing border on hover ---------- */
+  .glow-border{
+    position:relative;
+    transition:transform .35s cubic-bezier(.22,1,.36,1);
+  }
+  .glow-border::before{
+    content:'';
+    position:absolute;
+    inset:-1px;
+    border-radius:inherit;
+    padding:1px;
+    background:linear-gradient(120deg,var(--blue),transparent 40%,transparent 60%,var(--blue));
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+    opacity:0;
+    transition:opacity .35s ease;
+  }
+  .glow-border:hover{transform:translateY(-6px);}
+  .glow-border:hover::before{opacity:1;}
+
+  /* ---------- Ticker ---------- */
+  .ticker-track{
+    display:flex;
+    width:max-content;
+    animation:ticker 38s linear infinite;
+  }
+  @keyframes ticker{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  .ticker-logo{
+    filter:grayscale(1) brightness(1.6) opacity(0.55);
+    transition:filter .3s ease, transform .3s ease;
+  }
+  .ticker-logo:hover{
+    filter:grayscale(0) brightness(1) opacity(1);
+    transform:scale(1.08);
+  }
+
+  /* ---------- Fade in on scroll ---------- */
+  .reveal{
+    opacity:0;
+    transform:translateY(24px);
+    transition:opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1);
+  }
+  .reveal.in-view{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  /* ---------- Score ring ---------- */
+  .ring-svg circle{
+    transition:stroke-dashoffset 1.6s cubic-bezier(.22,1,.36,1);
+  }
+
+  /* ---------- Accordion ---------- */
+  .faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .5s ease, opacity .4s ease;
+    opacity:0;
+  }
+  .faq-item.open .faq-answer{
+    max-height:300px;
+    opacity:1;
+  }
+  .faq-item.open .faq-icon{transform:rotate(45deg);}
+  .faq-icon{transition:transform .35s ease;}
+
+  /* ---------- Hero video overlay ---------- */
+  .hero-video{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+  }
+
+  ::selection{background:var(--blue);color:#fff;}
+
+  .btn-primary{
+    background:linear-gradient(135deg,#3B82F6,#2563EB);
+    transition:transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease;
+  }
+  .btn-primary:hover{transform:translateY(-3px) scale(1.02);}
+  .btn-primary:active{transform:translateY(-1px) scale(.99);}
+  .btn-primary:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+
+  .btn-gold{
+    background:linear-gradient(135deg,#F59E0B,#D97706);
+    transition:transform .3s cubic-bezier(.22,1,.36,1), box-shadow .3s ease;
+  }
+  .btn-gold:hover{transform:translateY(-3px) scale(1.02);}
+  .btn-gold:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+  .noise-overlay{
+    position:absolute;inset:0;pointer-events:none;
+    opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .bg-radial-glow{
+    background:radial-gradient(ellipse 60% 50% at 50% 0%, rgba(59,130,246,0.18), transparent 70%),
+               radial-gradient(ellipse 50% 40% at 80% 100%, rgba(245,158,11,0.10), transparent 70%);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#0A0F1E]/70 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="font-bold text-lg tracking-tight">AEO<span class="text-[#3B82F6]">GEO</span> Agency</div>
+    <a href="#pricing" class="btn-primary text-sm font-semibold px-5 py-2 rounded-full">Get Report — ₹999</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <video class="hero-video absolute inset-0 z-0" autoplay muted loop playsinline>
+    <source src="hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="absolute inset-0 z-10 bg-[#0A0F1E]" style="opacity:0.55;"></div>
+  <div class="absolute inset-0 z-10 bg-gradient-to-t from-[#0A0F1E] via-transparent to-[#0A0F1E]/40"></div>
+
+  <div class="relative z-20 max-w-4xl mx-auto px-6 text-center pt-20">
+    <div class="reveal in-view inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full glass text-xs font-medium text-slate-300">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
+      Now checking 20 AI platforms
+    </div>
+    <h1 class="reveal in-view font-display text-4xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-[-0.03em] mb-6">
+      Is your business<br class="hidden sm:block"> <span class="bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">invisible to AI?</span>
+    </h1>
+    <p class="reveal in-view text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-[1.7]">
+      When customers ask ChatGPT or Gemini for services like yours — your competitor shows up. Not you.
+    </p>
+    <a href="#pricing" class="reveal in-view glow-pulse btn-primary inline-block px-8 py-4 rounded-full font-semibold text-base sm:text-lg mb-6">
+      Get Your Report — ₹999
+    </a>
+    <p class="reveal in-view text-xs sm:text-sm text-slate-400 tracking-wide">
+      20 AI platforms &nbsp;·&nbsp; Report in 24 hours &nbsp;·&nbsp; Plain English
+    </p>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-slate-500 text-xs animate-bounce">↓ scroll</div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<section class="relative py-14 border-y border-white/5 bg-[#080C18]">
+  <h2 class="reveal text-center text-sm sm:text-base font-medium text-slate-400 mb-8 px-6">
+    We check your visibility across <span class="text-white font-semibold">20 AI platforms</span>
+  </h2>
+  <div class="relative overflow-hidden">
+    <div class="absolute left-0 top-0 h-full w-16 sm:w-32 z-10 bg-gradient-to-r from-[#080C18] to-transparent"></div>
+    <div class="absolute right-0 top-0 h-full w-16 sm:w-32 z-10 bg-gradient-to-l from-[#080C18] to-transparent"></div>
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="relative py-24 sm:py-32 px-6 bg-radial-glow">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <div class="reveal">
+      <div class="text-5xl sm:text-6xl font-display font-bold text-[#EF4444] leading-none mb-6 tracking-[-0.03em]">
+        87%
+      </div>
+      <p class="text-xl sm:text-2xl font-semibold mb-5 leading-snug tracking-[-0.01em]">
+        of Indian businesses are invisible to AI
+      </p>
+      <p class="text-slate-400 text-base leading-[1.7]">
+        When your customer asks ChatGPT for the best service in your city — does your name appear?
+        Or does your competitor?
+      </p>
+    </div>
+
+    <div class="reveal">
+      <div class="glass red-pulse rounded-2xl p-6 sm:p-8 max-w-md mx-auto">
+        <div class="flex items-center gap-2 mb-5 text-slate-400 text-xs">
+          <span class="w-2 h-2 rounded-full bg-[#EF4444]"></span> ChatGPT
+        </div>
+        <div class="bg-white/5 rounded-xl rounded-tr-sm px-4 py-3 mb-4 ml-auto max-w-[85%] text-sm">
+          "Best CA firm in Pune?"
+        </div>
+        <div class="bg-white/[0.03] border border-white/5 rounded-xl rounded-tl-sm px-4 py-3 mb-4 max-w-[95%] text-sm text-slate-300 leading-relaxed">
+          I recommend <span class="text-white font-medium">XYZ Associates</span> and <span class="text-white font-medium">ABC &amp; Co.</span> for reliable CA services in Pune...
+        </div>
+        <div class="border border-[#EF4444]/40 bg-[#EF4444]/10 rounded-xl px-4 py-3 text-sm font-semibold text-[#EF4444] flex items-center gap-2">
+          ✕ Your firm was NOT mentioned
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="relative py-24 sm:py-32 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="reveal text-center font-display text-3xl sm:text-4xl font-bold tracking-[-0.02em] mb-16">How it works</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="reveal glow-border glass rounded-2xl p-8 relative float">
+        <span class="absolute top-5 right-6 text-4xl font-display font-bold text-white/5">01</span>
+        <div class="w-12 h-12 rounded-xl bg-[#3B82F6]/15 flex items-center justify-center mb-6 text-2xl">🔍</div>
+        <h3 class="text-lg font-semibold mb-2">We scan your entire website</h3>
+        <p class="text-slate-400 text-sm leading-[1.7]">47 SEO and AEO factors checked, from schema markup to content structure.</p>
+      </div>
+
+      <div class="reveal glow-border glass rounded-2xl p-8 relative float float-delay-1">
+        <span class="absolute top-5 right-6 text-4xl font-display font-bold text-white/5">02</span>
+        <div class="w-12 h-12 rounded-xl bg-[#10B981]/15 flex items-center justify-center mb-6 text-2xl">🤖</div>
+        <h3 class="text-lg font-semibold mb-2">We test 20 AI platforms</h3>
+        <p class="text-slate-400 text-sm leading-[1.7]">One master prompt, 20 responses — we see exactly what each AI says about you.</p>
+      </div>
+
+      <div class="reveal glow-border glass rounded-2xl p-8 relative float float-delay-2">
+        <span class="absolute top-5 right-6 text-4xl font-display font-bold text-white/5">03</span>
+        <div class="w-12 h-12 rounded-xl bg-[#F59E0B]/15 flex items-center justify-center mb-6 text-2xl">📄</div>
+        <h3 class="text-lg font-semibold mb-2">You get a clear report</h3>
+        <p class="text-slate-400 text-sm leading-[1.7]">Plain English. What to fix. Delivered straight to your inbox in 24 hours.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 SCORES ============ -->
+<section class="relative py-24 sm:py-32 px-6 bg-[#080C18]">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="reveal text-center font-display text-3xl sm:text-4xl font-bold tracking-[-0.02em] mb-16">Your website gets 3 scores</h2>
+    <div class="grid sm:grid-cols-3 gap-10 place-items-center">
+
+      <div class="reveal text-center">
+        <svg class="ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <circle cx="80" cy="80" r="70" fill="none" stroke="#1E293B" stroke-width="12"/>
+          <circle data-target="60" data-max="60" cx="80" cy="80" r="70" fill="none" stroke="#3B82F6" stroke-width="12"
+            stroke-linecap="round" stroke-dasharray="439.8" stroke-dashoffset="439.8"
+            transform="rotate(-90 80 80)"/>
+          <text x="80" y="72" text-anchor="middle" font-size="26" font-weight="700" fill="#F8FAFC" class="ring-num">0</text>
+          <text x="80" y="94" text-anchor="middle" font-size="12" fill="#64748B">/ 60</text>
+        </svg>
+        <p class="font-semibold mt-3">SEO Score</p>
+        <p class="text-slate-400 text-sm mt-1 leading-[1.6] max-w-[220px] mx-auto">How well search engines can crawl, index, and rank your site.</p>
+      </div>
+
+      <div class="reveal text-center">
+        <svg class="ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <circle cx="80" cy="80" r="70" fill="none" stroke="#1E293B" stroke-width="12"/>
+          <circle data-target="18" data-max="25" cx="80" cy="80" r="70" fill="none" stroke="#10B981" stroke-width="12"
+            stroke-linecap="round" stroke-dasharray="439.8" stroke-dashoffset="439.8"
+            transform="rotate(-90 80 80)"/>
+          <text x="80" y="72" text-anchor="middle" font-size="26" font-weight="700" fill="#F8FAFC" class="ring-num">0</text>
+          <text x="80" y="94" text-anchor="middle" font-size="12" fill="#64748B">/ 25</text>
+        </svg>
+        <p class="font-semibold mt-3">AEO Score</p>
+        <p class="text-slate-400 text-sm mt-1 leading-[1.6] max-w-[220px] mx-auto">How well AI answer engines can find and cite your content.</p>
+      </div>
+
+      <div class="reveal text-center">
+        <svg class="ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <circle cx="80" cy="80" r="70" fill="none" stroke="#1E293B" stroke-width="12"/>
+          <circle data-target="9" data-max="15" cx="80" cy="80" r="70" fill="none" stroke="#F59E0B" stroke-width="12"
+            stroke-linecap="round" stroke-dasharray="439.8" stroke-dashoffset="439.8"
+            transform="rotate(-90 80 80)"/>
+          <text x="80" y="72" text-anchor="middle" font-size="26" font-weight="700" fill="#F8FAFC" class="ring-num">0</text>
+          <text x="80" y="94" text-anchor="middle" font-size="12" fill="#64748B">/ 15</text>
+        </svg>
+        <p class="font-semibold mt-3">GEO Score</p>
+        <p class="text-slate-400 text-sm mt-1 leading-[1.6] max-w-[220px] mx-auto">How well positioned you are for generative search experiences.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAMPLE REPORT ============ -->
+<section class="relative py-24 sm:py-32 px-6">
+  <div class="max-w-3xl mx-auto text-center mb-14">
+    <h2 class="reveal font-display text-3xl sm:text-4xl font-bold tracking-[-0.02em]">What you get</h2>
+  </div>
+
+  <div class="reveal relative max-w-lg mx-auto">
+    <div class="absolute -top-4 -right-4 z-20 glass rounded-full px-4 py-1.5 text-xs font-semibold text-[#10B981] border border-[#10B981]/30">
+      Full report in 24 hours
+    </div>
+    <div class="glass rounded-2xl p-7 sm:p-8 relative overflow-hidden">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <p class="text-xs text-slate-400">Business</p>
+          <p class="font-semibold">Your Business Name</p>
+        </div>
+        <div class="text-right">
+          <p class="text-xs text-slate-400">Overall Score</p>
+          <p class="text-2xl font-bold text-[#EF4444]">52<span class="text-sm text-slate-500">/100</span></p>
+        </div>
+      </div>
+
+      <div class="space-y-3 mb-6">
+        <div class="flex items-center justify-between text-sm bg-white/[0.03] rounded-lg px-4 py-2.5">
+          <span class="text-slate-300">Google indexing</span><span class="text-[#10B981]">✓</span>
+        </div>
+        <div class="flex items-center justify-between text-sm bg-white/[0.03] rounded-lg px-4 py-2.5">
+          <span class="text-slate-300">Schema markup</span><span class="text-[#EF4444]">✕</span>
+        </div>
+        <div class="flex items-center justify-between text-sm bg-white/[0.03] rounded-lg px-4 py-2.5">
+          <span class="text-slate-300">Page speed</span><span class="text-[#10B981]">✓</span>
+        </div>
+        <div class="flex items-center justify-between text-sm bg-white/[0.03] rounded-lg px-4 py-2.5">
+          <span class="text-slate-300">AI crawlability</span><span class="text-[#EF4444]">✕</span>
+        </div>
+        <div class="flex items-center justify-between text-sm bg-white/[0.03] rounded-lg px-4 py-2.5">
+          <span class="text-slate-300">Content structure</span><span class="text-[#EF4444]">✕</span>
+        </div>
+      </div>
+
+      <div class="border border-[#EF4444]/30 bg-[#EF4444]/10 rounded-lg px-4 py-3 text-sm text-[#EF4444] font-medium mb-6">
+        ChatGPT does not mention your business
+      </div>
+
+      <div class="relative">
+        <div class="space-y-2 blur-sm select-none pointer-events-none">
+          <div class="h-3 bg-white/10 rounded w-full"></div>
+          <div class="h-3 bg-white/10 rounded w-5/6"></div>
+          <div class="h-3 bg-white/10 rounded w-2/3"></div>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <span class="text-xs font-semibold text-slate-400 tracking-wide bg-[#111827]/80 px-3 py-1 rounded-full">🔒 Full report unlocks here</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" class="relative py-24 sm:py-32 px-6 bg-[#080C18]">
+  <div class="reveal gold-pulse glass border border-[#F59E0B]/25 rounded-3xl max-w-md mx-auto p-8 sm:p-10 text-center">
+    <p class="text-xs uppercase tracking-[0.15em] text-[#F59E0B] font-semibold mb-3">Website Doctor Report</p>
+    <div class="font-display text-5xl font-bold mb-6 tracking-[-0.02em]">₹999</div>
+    <ul class="text-left space-y-3 mb-8 text-sm text-slate-300">
+      <li class="flex items-start gap-3"><span class="text-[#10B981] mt-0.5">✓</span> Scanned across 20 AI platforms</li>
+      <li class="flex items-start gap-3"><span class="text-[#10B981] mt-0.5">✓</span> 47-point SEO &amp; AEO audit</li>
+      <li class="flex items-start gap-3"><span class="text-[#10B981] mt-0.5">✓</span> SEO, AEO &amp; GEO scores explained</li>
+      <li class="flex items-start gap-3"><span class="text-[#10B981] mt-0.5">✓</span> Plain-English fix list, prioritized</li>
+      <li class="flex items-start gap-3"><span class="text-[#10B981] mt-0.5">✓</span> Delivered within 24 hours</li>
+    </ul>
+    <a href="#" class="btn-gold block w-full text-center font-semibold py-4 rounded-full mb-5">Order Your Report</a>
+    <a href="#" class="text-sm text-slate-400 hover:text-white inline-flex items-center gap-2 transition-colors">
+      💬 Questions? WhatsApp us
+    </a>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="relative py-24 sm:py-32 px-6">
+  <div class="max-w-2xl mx-auto">
+    <h2 class="reveal text-center font-display text-3xl sm:text-4xl font-bold tracking-[-0.02em] mb-14">Frequently asked</h2>
+    <div class="space-y-0 divide-y divide-white/10 border-t border-b border-white/10" id="faqList">
+
+      <div class="faq-item reveal py-5">
+        <button class="faq-q w-full flex items-center justify-between text-left gap-4">
+          <span class="font-medium">What is AEO and why does it matter?</span>
+          <span class="faq-icon text-xl text-slate-400 shrink-0">+</span>
+        </button>
+        <div class="faq-answer text-sm text-slate-400 leading-[1.7] pt-3 pr-8">
+          AEO (Answer Engine Optimization) is how well your website is positioned to be cited when someone asks an AI like ChatGPT or Gemini a question. As more customers skip Google and ask AI directly, showing up in those answers matters as much as ranking on page one.
+        </div>
+      </div>
+
+      <div class="faq-item reveal py-5">
+        <button class="faq-q w-full flex items-center justify-between text-left gap-4">
+          <span class="font-medium">How is this different from regular SEO?</span>
+          <span class="faq-icon text-xl text-slate-400 shrink-0">+</span>
+        </button>
+        <div class="faq-answer text-sm text-slate-400 leading-[1.7] pt-3 pr-8">
+          Traditional SEO gets you ranked on Google. AEO and GEO get you cited inside AI-generated answers — a different set of technical and content factors, including structured data, crawlability for AI bots, and answer-friendly content formatting.
+        </div>
+      </div>
+
+      <div class="faq-item reveal py-5">
+        <button class="faq-q w-full flex items-center justify-between text-left gap-4">
+          <span class="font-medium">Which AI platforms do you check?</span>
+          <span class="faq-icon text-xl text-slate-400 shrink-0">+</span>
+        </button>
+        <div class="faq-answer text-sm text-slate-400 leading-[1.7] pt-3 pr-8">
+          All 20 major platforms — including ChatGPT, Gemini, Claude, Perplexity, Grok, DeepSeek, Meta AI, Microsoft Copilot, and more. See the full list in the ticker above.
+        </div>
+      </div>
+
+      <div class="faq-item reveal py-5">
+        <button class="faq-q w-full flex items-center justify-between text-left gap-4">
+          <span class="font-medium">How do I receive the report?</span>
+          <span class="faq-icon text-xl text-slate-400 shrink-0">+</span>
+        </button>
+        <div class="faq-answer text-sm text-slate-400 leading-[1.7] pt-3 pr-8">
+          After you order, we run the full audit and email your PDF report within 24 hours — written in plain English, no jargon.
+        </div>
+      </div>
+
+      <div class="faq-item reveal py-5">
+        <button class="faq-q w-full flex items-center justify-between text-left gap-4">
+          <span class="font-medium">What if I want you to fix the issues too?</span>
+          <span class="faq-icon text-xl text-slate-400 shrink-0">+</span>
+        </button>
+        <div class="faq-answer text-sm text-slate-400 leading-[1.7] pt-3 pr-8">
+          The ₹999 report tells you exactly what to fix. If you'd rather we implement the fixes for you, message us on WhatsApp after your report arrives and we'll share implementation options.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative py-16 px-6 border-t border-white/5 text-center">
+  <p class="font-display text-lg font-semibold mb-2">Free Mind Consultancy</p>
+  <p class="text-slate-500 text-sm mb-1">freemindconsult.com</p>
+  <p class="text-slate-500 text-sm">Helping Indian businesses become visible to AI</p>
+</footer>
+
+<script>
+  // ---------- Logo ticker ----------
+  const logos = [
+    ["Claude.png","Claude"],
+    ["Cohere.png","Cohere"],
+    ["GLM.jpg","GLM"],
+    ["GPT (ChatGPT).png","ChatGPT"],
+    ["Gemini.jpg","Gemini"],
+    ["Jais.png","Jais"],
+    ["Microsoft Copilot.png","Microsoft Copilot"],
+    ["OLMo.png","OLMo"],
+    ["Reka.jpg","Reka"],
+    ["perplexity.jpg","Perplexity"],
+    ["images.jpg","Poe"],
+    ["images.png","Grok"],
+    ["images (1).jpg","Sarvam"],
+    ["images (1).png","DeepSeek"],
+    ["images (2).jpg","SEA-LION"],
+    ["images (2).png","Qwen"],
+    ["images (3).jpg","Falcon"],
+    ["images (3).png","Kimi"],
+    ["images (4).jpg","Meta AI"],
+    ["images (4).png","Mistral"]
+  ];
+
+  const track = document.getElementById('tickerTrack');
+  function buildTicker(){
+    const doubled = [...logos, ...logos];
+    track.innerHTML = doubled.map(([file,name]) => `
+      <div class="ticker-logo flex flex-col items-center justify-center gap-2 mx-6 sm:mx-8 shrink-0" style="width:96px;">
+        <img src="images/${encodeURIComponent(file)}" alt="${name}" style="height:44px;width:96px;object-fit:contain;">
+        <span class="text-[10px] text-slate-500 whitespace-nowrap">${name}</span>
+      </div>
+    `).join('');
+  }
+  buildTicker();
+
+  // ---------- Reveal on scroll ----------
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.15});
+  revealEls.forEach(el=>revealObserver.observe(el));
+
+  // ---------- Score rings ----------
+  const ringCircles = document.querySelectorAll('.ring-svg circle[data-target]');
+  const ringObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const circle = entry.target;
+        const target = parseFloat(circle.dataset.target);
+        const max = parseFloat(circle.dataset.max);
+        const circumference = 439.8;
+        const offset = circumference - (target/max)*circumference;
+        circle.style.strokeDashoffset = offset;
+
+        const numEl = circle.parentElement.querySelector('.ring-num');
+        let current = 0;
+        const duration = 1600;
+        const start = performance.now();
+        function step(now){
+          const p = Math.min((now-start)/duration, 1);
+          const eased = 1 - Math.pow(1-p, 3);
+          current = Math.round(eased*target);
+          numEl.textContent = current;
+          if(p<1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+
+        ringObserver.unobserve(circle);
+      }
+    });
+  },{threshold:0.4});
+  ringCircles.forEach(c=>ringObserver.observe(c));
+
+  // ---------- FAQ accordion ----------
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    item.querySelector('.faq-q').addEventListener('click', ()=>{
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
