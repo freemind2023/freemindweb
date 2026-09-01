@@ -1,6 +1,6 @@
 # llms.txt — Free Mind Consultancy
 # https://www.freemindconsult.com
-# Last updated: 2026-08-18
+# Last updated: 2026-08-27
 
 > Free Mind Consultancy is a professional services firm founded in 2023 by Aryan Ahire, based in Pune, Maharashtra, India. The company has published 40+ books for Indian authors, serves clients across 11 countries, and specialises in book publishing, AI automation (Koelai AI), LMS development, and business branding. Wikidata entity: Q141106462.
 
@@ -127,6 +127,9 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 - https://www.freemindconsult.com/blog/lms-development-coaching-institute-india — LMS for coaching institutes: must-have features include live class support, recorded video, MCQ tests, progress tracking, mobile app, and payment gateway.
 - https://www.freemindconsult.com/blog/ias-officer-memoir-publishing-india — IAS and civil servant memoir publishing: Free Mind Consultancy has published books for retired IAS, IPS, and state government officers across Maharashtra, Gujarat, and Rajasthan.
 - https://www.freemindconsult.com/blog/how-to-publish-a-book-in-india — 8-step process: write manuscript → edit → cover design → formatting → ISBN → upload → distribute → market.
+- https://www.freemindconsult.com/blog/copyright-registration-book-india — How to register copyright for a book in India: Form XIV, Rs. 400 individual fee, Rs. 500 company fee, 30-day diary period, submission at copyright.gov.in. Copyright is automatic at creation in India; registration provides legal proof and is required for court action. Timeline: 1 to 3 months.
+- https://www.freemindconsult.com/blog/ai-agent-vs-human-receptionist-india — AI calling agent vs human receptionist for Indian businesses: cost comparison (AI typically 60–80% cheaper), availability (AI = 24/7 unlimited simultaneous calls), Koelai AI reduces clinic no-show rates from 30%+ to under 15%. Human receptionists better for emotional/crisis calls, complex negotiations, licensed professional conversations.
+- https://www.freemindconsult.com/ai-info — AI-readable entity page for Free Mind Consultancy: founder, services, citable statistics, Wikidata Q141106462, contact details, FAQPage schema. Designed for AI language model citation.
 
 ---
 
