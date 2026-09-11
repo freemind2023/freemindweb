@@ -26,6 +26,7 @@
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-display: 'Fraunces', Georgia, 'Times New Roman', serif;
   --font-weight-light:  300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
@@ -142,6 +143,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
   color: var(--color-text);
+}
+
+h1, h2 {
+  font-family: var(--font-family-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1 { font-size: clamp(36px, 5vw, 56px); }
@@ -332,7 +339,8 @@ p { line-height: 1.7; }
   transition: transform var(--transition-fast);
 }
 
-.nav-dropdown-trigger:hover > a::after {
+.nav-dropdown-trigger:hover > a::after,
+.nav-dropdown-trigger:focus-within > a::after {
   transform: rotate(180deg);
 }
 
@@ -355,7 +363,8 @@ p { line-height: 1.7; }
   transition: opacity var(--transition-normal), visibility var(--transition-normal);
 }
 
-.nav-dropdown-trigger:hover .mega-menu {
+.nav-dropdown-trigger:hover .mega-menu,
+.nav-dropdown-trigger:focus-within .mega-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -384,7 +393,8 @@ p { line-height: 1.7; }
   transition: opacity var(--transition-normal), visibility var(--transition-normal);
 }
 
-.nav-dropdown-trigger:hover .nav-menu-panel {
+.nav-dropdown-trigger:hover .nav-menu-panel,
+.nav-dropdown-trigger:focus-within .nav-menu-panel {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -526,12 +536,14 @@ p { line-height: 1.7; }
   z-index: 999;
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--transition-slow);
+  visibility: hidden;
+  transition: max-height var(--transition-slow), visibility var(--transition-slow);
 }
 
 .nav-mobile.open {
   max-height: 85vh;
   overflow-y: auto;
+  visibility: visible;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -576,12 +588,14 @@ p { line-height: 1.7; }
 .mobile-sub-links {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 500ms ease;
+  visibility: hidden;
+  transition: max-height 500ms ease, visibility 500ms ease;
   padding-left: var(--spacing-md);
 }
 
 .mobile-sub-links.open {
   max-height: 1200px; /* enough for all 30 services + category headers */
+  visibility: visible;
 }
 
 .mobile-sub-links a {
@@ -714,16 +728,10 @@ p { line-height: 1.7; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: var(--color-white);
+  background:
+    linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.94)),
+    url('../images/hero-bg.jpg') center 32% / cover no-repeat;
   padding-top: 38px; /* ticker height */
-}
-
-#particle-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
 }
 
 .hero-content {
@@ -2239,7 +2247,6 @@ p { line-height: 1.7; }
   background: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: 0;
-  outline: none;
   transition: border-color var(--transition-fast);
   appearance: none;
   -webkit-appearance: none;
@@ -2612,10 +2619,37 @@ p { line-height: 1.7; }
   border-bottom: 1px solid var(--color-border);
 }
 
+.legal-content a.btn {
+  border-bottom: none;
+}
+
+.legal-content a.btn-primary {
+  color: var(--color-black);
+}
+
 /* ── Focus Styles (Accessibility) ────────────────────────── */
 :focus-visible {
   outline: 2px solid var(--color-black);
   outline-offset: 2px;
+}
+
+/* ── Skip to Content Link ─────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 8px;
+  z-index: 10000;
+  padding: 12px 20px;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 8px;
 }
 
 /* ── Scroll Reveal Helper Classes ─────────────────────────── */

@@ -17,10 +17,22 @@ Allow: /products/
 User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: PerplexityBot
@@ -30,6 +42,9 @@ User-agent: Applebot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://www.freemindconsult.com/sitemap.xml

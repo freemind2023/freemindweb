@@ -35,6 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1200);
   }
 
+  /* ── 1b. Skip to Content Link ───────────────────────────── */
+  const mainEl = document.getElementById('main-content') || document.querySelector('main');
+  if (mainEl) {
+    if (!mainEl.id) mainEl.id = 'main-content';
+    const skipLink = document.createElement('a');
+    skipLink.className = 'skip-link';
+    skipLink.href = '#' + mainEl.id;
+    skipLink.textContent = 'Skip to main content';
+    document.body.insertBefore(skipLink, document.body.firstChild);
+  }
+
   /* ── 2. Dark Mode ───────────────────────────────────────── */
   const THEME_KEY = 'freemind-theme';
   const themeToggle = document.getElementById('theme-toggle');
@@ -76,12 +87,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', handleScroll, { passive: true });
 
+  /* ── 3b. Mega-Menu Keyboard Escape ──────────────────────── */
+  // Dropdowns open via :focus-within (CSS); Escape moves focus back to the
+  // trigger link so the menu closes and keyboard focus isn't left inside it.
+  document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const triggerLink = trigger.querySelector(':scope > a');
+        if (triggerLink) triggerLink.focus();
+      }
+    });
+  });
+
   /* ── 4. Mobile Hamburger Menu ───────────────────────────── */
   const hamburger    = document.getElementById('nav-hamburger');
   const mobileNav    = document.getElementById('nav-mobile');
   const categoryBtns = document.querySelectorAll('.mobile-category-btn');
 
   if (hamburger && mobileNav) {
+    if (!hamburger.hasAttribute('aria-label')) {
+      hamburger.setAttribute('aria-label', 'Toggle navigation menu');
+    }
+    if (!mobileNav.hasAttribute('aria-label')) {
+      mobileNav.setAttribute('aria-label', 'Mobile navigation');
+    }
+    if (mobileNav.id) hamburger.setAttribute('aria-controls', mobileNav.id);
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+
     hamburger.addEventListener('click', () => {
       const isOpen = mobileNav.classList.toggle('open');
       hamburger.classList.toggle('active', isOpen);
@@ -91,9 +128,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Close on outside click
     document.addEventListener('click', (e) => {
       if (!nav.contains(e.target) && !mobileNav.contains(e.target)) {
-        mobileNav.classList.remove('open');
-        hamburger.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
+        closeMobileNav();
+      }
+    });
+
+    // Close on Escape and return focus to the trigger
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+        closeMobileNav();
+        hamburger.focus();
       }
     });
 
@@ -110,10 +153,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Mobile accordion categories — toggle sub-links open/close
-  categoryBtns.forEach(btn => {
+  categoryBtns.forEach((btn, i) => {
+    const subLinks = btn.nextElementSibling;
+    if (subLinks && subLinks.classList.contains('mobile-sub-links')) {
+      if (!subLinks.id) subLinks.id = 'mobile-sub-links-' + i;
+      btn.setAttribute('aria-controls', subLinks.id);
+    }
+
     btn.addEventListener('click', (e) => {
       e.stopPropagation(); // prevent outside-click handler from firing
-      const subLinks = btn.nextElementSibling;
       if (!subLinks) return;
       const isOpen = subLinks.classList.toggle('open');
       btn.classList.toggle('active', isOpen);
@@ -281,16 +329,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const isOpen = details.classList.toggle('open');
       btn.textContent = isOpen ? 'Show Less' : 'Learn More';
+      btn.setAttribute('aria-expanded', isOpen.toString());
+      details.setAttribute('aria-hidden', (!isOpen).toString());
     });
   });
 
   /* ── 10. FAQ Accordion ──────────────────────────────────── */
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item   = btn.closest('.faq-item');
-      const answer = item && item.querySelector('.faq-answer');
-      if (!item || !answer) return;
+  document.querySelectorAll('.faq-question').forEach((btn, i) => {
+    const item   = btn.closest('.faq-item');
+    const answer = item && item.querySelector('.faq-answer');
+    if (answer) {
+      if (!answer.id) answer.id = 'faq-answer-' + i;
+      btn.setAttribute('aria-controls', answer.id);
+    }
 
+    btn.addEventListener('click', () => {
+      if (!item || !answer) return;
       const isOpen = item.classList.toggle('open');
       btn.setAttribute('aria-expanded', isOpen.toString());
     });

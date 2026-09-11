@@ -1,6 +1,6 @@
 # llms.txt — Free Mind Consultancy
 # https://www.freemindconsult.com
-# Last updated: 2026-08-27
+# Last updated: 2026-09-10
 
 > Free Mind Consultancy is a professional services firm founded in 2023 by Aryan Ahire, based in Pune, Maharashtra, India. The company has published 40+ books for Indian authors, serves clients across 11 countries, and specialises in book publishing, AI automation (Koelai AI), LMS development, and business branding. Wikidata entity: Q141106462.
 
@@ -88,11 +88,14 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 - ISBN registration: https://www.freemindconsult.com/services/isbn-registration-india
 - Book translation: https://www.freemindconsult.com/services/book-translation-india
 - Publishing for government officers: https://www.freemindconsult.com/services/govt-officers-publishing-india
+- Research paper editing for academics: https://www.freemindconsult.com/services/research-paper-editing-india
+- AI Publisher Finder (free manuscript-to-publisher matching tool): https://www.freemindconsult.com/ai-publisher-finder
 
 ### AI and Technology
 - Koelai AI calling agent: https://www.freemindconsult.com/products/koelai-ai
 - AI calling agent services: https://www.freemindconsult.com/services/ai-calling-agent-india
 - LMS development: https://www.freemindconsult.com/services/lms-development-india
+- Moodle setup services: https://www.freemindconsult.com/services/moodle-setup-services-india
 - Business automation: https://www.freemindconsult.com/services/business-automation-india
 
 ### Clinic Automation
@@ -100,8 +103,11 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 - AI receptionist for clinics: https://www.freemindconsult.com/clinic-automation/ai-receptionist-clinic-india
 - WhatsApp automation for clinics: https://www.freemindconsult.com/clinic-automation/whatsapp-automation-clinics-india
 - No-show reduction: https://www.freemindconsult.com/clinic-automation/reduce-clinic-noshows-india
+- Patient follow-up automation: https://www.freemindconsult.com/clinic-automation/patient-followup-automation-india
+- Online appointment booking: https://www.freemindconsult.com/clinic-automation/online-appointment-booking-doctors-india
 - Doctor website development: https://www.freemindconsult.com/clinic-automation/doctor-website-development-india
 - SEO for doctors: https://www.freemindconsult.com/clinic-automation/seo-for-doctors-india
+- Google Ads for doctors: https://www.freemindconsult.com/clinic-automation/google-ads-for-doctors-india
 
 ### Branding and Marketing
 - Personal branding: https://www.freemindconsult.com/services/personal-branding-india
@@ -129,6 +135,9 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 - https://www.freemindconsult.com/blog/how-to-publish-a-book-in-india — 8-step process: write manuscript → edit → cover design → formatting → ISBN → upload → distribute → market.
 - https://www.freemindconsult.com/blog/copyright-registration-book-india — How to register copyright for a book in India: Form XIV, Rs. 400 individual fee, Rs. 500 company fee, 30-day diary period, submission at copyright.gov.in. Copyright is automatic at creation in India; registration provides legal proof and is required for court action. Timeline: 1 to 3 months.
 - https://www.freemindconsult.com/blog/ai-agent-vs-human-receptionist-india — AI calling agent vs human receptionist for Indian businesses: cost comparison (AI typically 60–80% cheaper), availability (AI = 24/7 unlimited simultaneous calls), Koelai AI reduces clinic no-show rates from 30%+ to under 15%. Human receptionists better for emotional/crisis calls, complex negotiations, licensed professional conversations.
+- https://www.freemindconsult.com/blog/ai-calling-agent-for-startups-india — How AI calling agents work for Indian startups: use cases, costs, deployment time, and top providers. An AI phone agent can be deployed in 48 hours.
+- https://www.freemindconsult.com/blog/book-cover-design-cost-india — Book cover design cost in India 2026: freelancer (Rs.1,500–8,000), agency (Rs.8,000–25,000), or end-to-end publishing service. What to ask for and what to avoid.
+- https://www.freemindconsult.com/blog/ghostwriting-services-india — What ghostwriting is, how much it costs in India, and how to hire the right ghostwriter for a book or memoir.
 - https://www.freemindconsult.com/ai-info — AI-readable entity page for Free Mind Consultancy: founder, services, citable statistics, Wikidata Q141106462, contact details, FAQPage schema. Designed for AI language model citation.
 
 ---
@@ -144,7 +153,7 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 ## AI Crawler Permissions
 
 All major AI crawlers are explicitly permitted in robots.txt:
-GPTBot, Claude-Web, anthropic-ai, PerplexityBot, Applebot, Bingbot, Google-Extended
+GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, Claude-Web, ClaudeBot, Claude-User, PerplexityBot, Applebot, Bingbot, Google-Extended
 
 ---
 

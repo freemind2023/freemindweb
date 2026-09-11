@@ -115,7 +115,9 @@
 
 /* ── Hero ─────────────────────────────────────────────────── */
 [data-theme="dark"] .hero {
-  background: var(--color-bg);
+  background:
+    linear-gradient(rgba(10,10,10,0.82), rgba(10,10,10,0.88)),
+    url('../images/hero-bg.jpg') center 32% / cover no-repeat;
 }
 
 [data-theme="dark"] .hero-headline {
@@ -418,6 +420,10 @@
 [data-theme="dark"] .legal-content a {
   color: var(--color-text);
   border-bottom-color: var(--color-border);
+}
+
+[data-theme="dark"] .legal-content a.btn-primary {
+  color: var(--color-black);
 }
 
 /* ── Section Heading Colors ───────────────────────────────── */

@@ -211,6 +211,9 @@
           submitBtn.disabled = false;
           submitBtn.textContent = 'Send Inquiry';
         }
+        if (typeof gtag === 'function') {
+          gtag('event', 'form_submission_error', { event_category: 'Contact' });
+        }
       }
     });
   }
