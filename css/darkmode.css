@@ -95,7 +95,8 @@
 }
 
 /* ── Mega Menu ────────────────────────────────────────────── */
-[data-theme="dark"] .mega-menu {
+[data-theme="dark"] .mega-menu,
+[data-theme="dark"] .nav-menu-panel {
   background: #111111;
   border-color: var(--color-border);
 }
@@ -113,24 +114,14 @@
   color: var(--color-text);
 }
 
+[data-theme="dark"] .mega-col a:hover,
+[data-theme="dark"] .nav-menu-panel a:hover {
+  color: var(--color-white);
+}
+
 /* ── Hero ─────────────────────────────────────────────────── */
-[data-theme="dark"] .hero {
-  background:
-    linear-gradient(rgba(10,10,10,0.82), rgba(10,10,10,0.88)),
-    url('../images/hero-bg.jpg') center 32% / cover no-repeat;
-}
-
-[data-theme="dark"] .hero-headline {
-  color: var(--color-text);
-}
-
-[data-theme="dark"] .hero-cursor {
-  background: var(--color-text);
-}
-
-[data-theme="dark"] .hero-rule {
-  background: var(--color-border);
-}
+/* Split-hero background/headline/visual border all use theme-aware
+   tokens directly in style.css — no dark-mode override needed. */
 
 /* ── Buttons ──────────────────────────────────────────────── */
 [data-theme="dark"] .btn-primary {

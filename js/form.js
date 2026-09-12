@@ -140,7 +140,15 @@
 
       // Gather form data
       const formData = new FormData(contactForm);
+      const firstTouch = (window.FreeMindAttribution && window.FreeMindAttribution.getFirstTouch()) || {};
+      const lastTouch = (window.FreeMindAttribution && window.FreeMindAttribution.getLastTouch()) || {};
+      // Client-generated lead ID: lets the Sheet row, EmailJS copy, and the generate_lead
+      // GA4 event all reference the same lead for future CRM/n8n deduplication and sync.
+      const leadId = (window.crypto && window.crypto.randomUUID)
+        ? window.crypto.randomUUID()
+        : 'fm-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
       const templateParams = {
+        lead_id:         leadId,
         from_name:       formData.get('from_name')      || '',
         from_email:      formData.get('from_email')     || '',
         from_phone:      formData.get('from_phone')     || '',
@@ -148,6 +156,17 @@
         service_interest:formData.get('service_interest')|| '',
         message:         formData.get('message')        || '',
         referral_source: formData.get('referral_source')|| '',
+        first_touch_source:   firstTouch.utm_source   || '',
+        first_touch_medium:   firstTouch.utm_medium   || '',
+        first_touch_campaign: firstTouch.utm_campaign || '',
+        first_touch_content:  firstTouch.utm_content  || '',
+        first_touch_term:     firstTouch.utm_term     || '',
+        first_touch_landing_page: firstTouch.landing_page || '',
+        last_touch_source:    lastTouch.utm_source    || '',
+        last_touch_medium:    lastTouch.utm_medium    || '',
+        last_touch_campaign:  lastTouch.utm_campaign  || '',
+        last_touch_gclid:     lastTouch.gclid  || '',
+        last_touch_fbclid:    lastTouch.fbclid || '',
         to_email_1:      'freemind.aryan@gmail.com',
         to_email_2:      'info@freemindconsult.com'
       };
@@ -160,6 +179,7 @@
 
       // Always save to Google Sheets first (works even without EmailJS)
       const sheetsPayload = {
+        lead_id:           templateParams.lead_id,
         from_name:        templateParams.from_name,
         from_email:       templateParams.from_email,
         from_phone:       templateParams.from_phone,
@@ -167,7 +187,18 @@
         service_interest: templateParams.service_interest,
         message:          templateParams.message,
         referral_source:  templateParams.referral_source,
-        source_page:      window.location.pathname
+        source_page:      window.location.pathname,
+        first_touch_source:   templateParams.first_touch_source,
+        first_touch_medium:   templateParams.first_touch_medium,
+        first_touch_campaign: templateParams.first_touch_campaign,
+        first_touch_content:  templateParams.first_touch_content,
+        first_touch_term:     templateParams.first_touch_term,
+        first_touch_landing_page: templateParams.first_touch_landing_page,
+        last_touch_gclid:     templateParams.last_touch_gclid,
+        last_touch_fbclid:    templateParams.last_touch_fbclid,
+        last_touch_source:    templateParams.last_touch_source,
+        last_touch_medium:    templateParams.last_touch_medium,
+        last_touch_campaign:  templateParams.last_touch_campaign
       };
 
       let sheetsSaved = false;
@@ -198,6 +229,7 @@
           gtag('event', 'generate_lead', {
             event_category: 'Contact',
             event_label: templateParams.service_interest || templateParams.category,
+            lead_id: templateParams.lead_id,
             value: 1
           });
           fbq && fbq('track', 'Lead', {

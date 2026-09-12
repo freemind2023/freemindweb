@@ -32,5 +32,18 @@
         method: 'email'
       });
     }
+
+    // "Book Free Consultation" style CTAs that route to the homepage contact
+    // form — a click here is intent, not yet a lead (generate_lead already
+    // fires separately on actual form submission in js/form.js).
+    if (link.classList.contains('btn-primary') && href.indexOf('#contact') !== -1) {
+      var placement = link.closest('header') ? 'nav' : (link.closest('section[id]') || {}).id || 'body';
+      gtag('event', 'service_cta_click', {
+        event_category: 'CTA',
+        cta_text: (link.textContent || '').trim(),
+        placement: placement,
+        page_path: window.location.pathname
+      });
+    }
   });
 })();
