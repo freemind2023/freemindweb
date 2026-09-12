@@ -3255,11 +3255,17 @@ p { line-height: 1.7; }
 
 .logo-wall-item {
   flex-shrink: 0;
-  height: 34px;
+  height: 56px;
   width: auto;
   opacity: 0.65;
   filter: grayscale(1);
   transition: opacity var(--transition-fast), filter var(--transition-fast);
+}
+
+@media (max-width: 640px) {
+  .logo-wall-item {
+    height: 44px;
+  }
 }
 
 .logo-wall-item:hover {
