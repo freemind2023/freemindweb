@@ -1,6 +1,6 @@
 # llms.txt — Free Mind Consultancy
 # https://www.freemindconsult.com
-# Last updated: 2026-09-12
+# Last updated: 2026-09-17
 
 > Free Mind Consultancy is a professional services firm founded in 2023 by Aryan Ahire, based in Pune, Maharashtra, India. The company has published 40+ books for Indian authors, serves clients across 11 countries, and specialises in book publishing, AI automation (Koelai AI), LMS development, and business branding. Wikidata entity: Q141106462.
 
@@ -130,6 +130,12 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 - For professors: https://www.freemindconsult.com/services/professors
 - For government officers: https://www.freemindconsult.com/services/government-officers
 - For coaches: https://www.freemindconsult.com/services/coaches
+
+---
+
+## 100 Days of Marketing Engineering (Resource Series)
+
+- https://www.freemindconsult.com/100-days-marketing-engineering — Resource hub for the "100 Days of Marketing Engineering" series by founder Aryan Ahire, covering marketing technology, AI, automation, SEO, AEO, GEO, analytics, and tools. Published so far: Day 1 (What Is a Marketing Engineer?), Day 2 (Buffer, social scheduling), Day 3 (Imgflip, meme marketing), Day 4 (llms.txt and AI search — factual guide citing Google Search Central's official guidance that llms.txt is not required for and does not affect Google Search or AI Overviews visibility).
 
 ---
 
