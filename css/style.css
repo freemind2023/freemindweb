@@ -3225,28 +3225,39 @@ p { line-height: 1.7; }
 }
 
 /* ── Technology / Platform Logo Wall ───────────────────────── */
+/* Logo files have white backgrounds, so the wall is always a white
+   section with full-colour logos (both light and dark theme). */
+html[data-theme] .logo-wall,
 .logo-wall {
+  background: #ffffff;
   overflow: hidden;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
+
+.logo-wall .section-label,
+.logo-wall .section-subtitle { color: #555555; }
+.logo-wall .section-heading { color: #111111; }
 
 .logo-wall-row {
   overflow: hidden;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  padding: 8px 0;
 }
 
 .logo-wall-track {
   display: flex;
   align-items: center;
-  gap: var(--spacing-2xl);
+  gap: var(--spacing-xl);
   width: max-content;
-  animation: logo-wall-scroll 42s linear infinite;
+  animation: logo-wall-scroll 45s linear infinite;
 }
 
 .logo-wall-row--reverse .logo-wall-track {
   animation-direction: reverse;
-  animation-duration: 50s;
+  animation-duration: 55s;
 }
 
 .logo-wall-row:hover .logo-wall-track {
@@ -3255,22 +3266,17 @@ p { line-height: 1.7; }
 
 .logo-wall-item {
   flex-shrink: 0;
-  height: 56px;
+  height: 64px;
   width: auto;
-  opacity: 0.65;
-  filter: grayscale(1);
-  transition: opacity var(--transition-fast), filter var(--transition-fast);
-}
-
-@media (max-width: 640px) {
-  .logo-wall-item {
-    height: 44px;
-  }
+  transition: transform var(--transition-fast);
 }
 
 .logo-wall-item:hover {
-  opacity: 1;
-  filter: grayscale(0);
+  transform: translateY(-4px) scale(1.08);
+}
+
+@media (max-width: 640px) {
+  .logo-wall-item { height: 48px; }
 }
 
 @keyframes logo-wall-scroll {
@@ -3289,19 +3295,22 @@ p { line-height: 1.7; }
     -webkit-mask-image: none;
     mask-image: none;
   }
+  .logo-wall-item:hover { transform: none; }
 }
 
 .logo-strip {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-lg);
   flex-wrap: wrap;
-  padding: var(--spacing-lg) 0;
+  padding: 12px 18px;
+  background: #ffffff;
+  border-radius: 12px;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .logo-strip-item {
-  height: 28px;
+  height: 36px;
   width: auto;
-  opacity: 0.75;
-  filter: grayscale(1);
 }
