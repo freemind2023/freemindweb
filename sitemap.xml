@@ -67,7 +67,14 @@
 
   <!-- Blog Index -->
   <url><loc>https://www.freemindconsult.com/blog</loc><lastmod>2026-08-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering</loc><lastmod>2026-09-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering/day-6-competitor-reviews-marketing-research</loc><lastmod>2026-09-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering/day-5-marketing-tool-partner-programs</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering/day-4-llms-txt-and-ai-search</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering/day-3-imgflip-meme-marketing</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering/day-2-buffer-social-media-scheduling</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.freemindconsult.com/100-days-marketing-engineering/day-1-what-is-a-marketing-engineer</loc><lastmod>2026-09-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Blog Posts -->
   <url><loc>https://www.freemindconsult.com/blog/how-to-publish-a-book-in-india</loc><lastmod>2026-06-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

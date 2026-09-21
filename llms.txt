@@ -1,6 +1,6 @@
 # llms.txt — Free Mind Consultancy
 # https://www.freemindconsult.com
-# Last updated: 2026-09-18
+# Last updated: 2026-09-21
 
 > Free Mind Consultancy is a professional services firm founded in 2023 by Aryan Ahire, based in Pune, Maharashtra, India. The company has published 40+ books for Indian authors, serves clients across 11 countries, and specialises in book publishing, AI automation (Koelai AI), LMS development, and business branding. Wikidata entity: Q141106462.
 
@@ -135,7 +135,14 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 
 ## 100 Days of Marketing Engineering (Resource Series)
 
-- https://www.freemindconsult.com/100-days-marketing-engineering — Resource hub for the "100 Days of Marketing Engineering" series by founder Aryan Ahire, covering marketing technology, AI, automation, SEO, AEO, GEO, analytics, and tools. Published so far: Day 1 (What Is a Marketing Engineer?), Day 2 (Buffer, social scheduling), Day 3 (Imgflip, meme marketing), Day 4 (llms.txt and AI search — factual guide citing Google Search Central's official guidance that llms.txt is not required for and does not affect Google Search or AI Overviews visibility), Day 5 (30+ verified marketing tool partner programs for agencies, across automation, CRM, design, websites, social media, SEO, and advertising platforms, each linking to the platform's own official page).
+- https://www.freemindconsult.com/100-days-marketing-engineering — Resource hub for the "100 Days of Marketing Engineering" series by founder Aryan Ahire (marketing technology, AI, automation, SEO, AEO, GEO, analytics, tools). Each day has its own page, newest first:
+- https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture — Day 7: how to find and read a competitor's sitemap.xml to understand their content architecture and spot content gaps, including what Google ignores (priority, changefreq) and why lastmod and coverage should be treated with caution.
+- https://www.freemindconsult.com/100-days-marketing-engineering/day-6-competitor-reviews-marketing-research — Day 6: how to use competitors' reviews (especially 1-star) as marketing research, turning recurring complaints into ad angles, landing page sections, service fixes and offers, with notes on collecting reviews within platform terms.
+- https://www.freemindconsult.com/100-days-marketing-engineering/day-5-marketing-tool-partner-programs — Day 5: researched list of 32 official agency partner programs (automation, CRM, design, websites, social media, SEO, advertising), each linking to the platform's own official page.
+- https://www.freemindconsult.com/100-days-marketing-engineering/day-4-llms-txt-and-ai-search — Day 4: what llms.txt is, and Google Search Central's official guidance that Google Search does not use it and it neither helps nor hurts visibility or rankings.
+- https://www.freemindconsult.com/100-days-marketing-engineering/day-3-imgflip-meme-marketing — Day 3: using Imgflip to turn a marketing idea into a meme, with brand-fit and copyright considerations.
+- https://www.freemindconsult.com/100-days-marketing-engineering/day-2-buffer-social-media-scheduling — Day 2: scheduling social content across platforms with Buffer (free plan plus paid plans).
+- https://www.freemindconsult.com/100-days-marketing-engineering/day-1-what-is-a-marketing-engineer — Day 1: what a Marketing Engineer is and what the series covers.
 
 ---
 

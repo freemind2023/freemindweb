@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EWH4E2G82R"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EWH4E2G82R');</script>
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2618965074964872');
+  fbq('track', 'PageView');
+  </script>
+<noscript><img alt="" height="1" src="https://www.facebook.com/tr?id=2618965074964872&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Apollo Website Tracker -->
+<script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+  o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+  o.onload=function(){window.trackingFunctions.onLoad({appId:"69115bab9d3b6f00211c621e"})},
+  document.head.appendChild(o)}initApollo();</script>
+<!-- End Apollo Website Tracker -->
+<meta charset="utf-8"/>
+<meta name="author" content="Aryan Ahire — Free Mind Consultancy, Pune, India"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="How to find and read a competitor's sitemap.xml to see their content architecture, spot content gaps, and what to ignore, with a workflow, a tested script and an AI prompt." name="description"/>
+<meta content="index, follow" name="robots"/>
+<title>Read a Competitor's Sitemap for Content Gaps | Day 7 — Free Mind</title>
+<link href="https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture" rel="canonical"/>
+<link href="https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture" hreflang="en-IN" rel="alternate"/>
+<link href="https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture" hreflang="en" rel="alternate"/>
+<link href="https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="Read Your Competitor's Sitemap to Reverse-Engineer Their Content Strategy — Day 7 of 100 Days of Marketing Engineering" property="og:title"/>
+<meta content="How to find and read a competitor's sitemap.xml to see their content architecture, spot content gaps, and what to ignore, with a workflow, a tested script and an AI prompt." property="og:description"/>
+<meta content="https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture" property="og:url"/>
+<meta content="https://www.freemindconsult.com/images/logo.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="../images/logo.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap"/></noscript>
+<link href="../css/style.css" rel="stylesheet"/>
+<link rel="preload" as="style" href="../css/animations.css" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="../css/animations.css"/></noscript>
+<link href="../css/darkmode.css" rel="stylesheet"/>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.freemindconsult.com/"},{"@type":"ListItem","position":2,"name":"100 Days of Marketing Engineering","item":"https://www.freemindconsult.com/100-days-marketing-engineering"},{"@type":"ListItem","position":3,"name":"Day 7: Read Your Competitor's Sitemap to Reverse-Engineer Their Content Strategy","item":"https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture"}]}
+  </script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Read Your Competitor's Sitemap to Reverse-Engineer Their Content Strategy","description":"How to find and read a competitor's sitemap.xml to see their content architecture, spot content gaps, and what to ignore, with a workflow, a tested script and an AI prompt.","author":{"@type":"Person","name":"Aryan Ahire","jobTitle":"Founder","url":"https://www.freemindconsult.com/about"},"publisher":{"@type":"Organization","name":"Free Mind Consultancy","logo":{"@type":"ImageObject","url":"https://www.freemindconsult.com/images/logo.png"}},"datePublished":"2026-09-21","dateModified":"2026-09-21","mainEntityOfPage":"https://www.freemindconsult.com/100-days-marketing-engineering/day-7-competitor-sitemap-content-architecture","isPartOf":{"@type":"CollectionPage","name":"100 Days of Marketing Engineering","url":"https://www.freemindconsult.com/100-days-marketing-engineering"},"image":{"@type":"ImageObject","url":"https://www.freemindconsult.com/images/logo.png","width":512,"height":512}}
+  </script>
+<style>
+  .day-hero { padding: 48px 0 32px; }
+  .day-meta { font-size: 13px; color: var(--color-text-muted); margin-top: 16px; }
+  .day-badge { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); }
+  .day-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted); border: 1px solid var(--color-border); padding: 3px 10px; margin-left: 10px; }
+  .day-article { padding-bottom: 56px; }
+  .day-article-inner { max-width: 720px; }
+  .day-article h2 { font-family: var(--font-family-display); font-size: clamp(20px, 2.6vw, 26px); font-weight: 800; margin: 36px 0 12px; }
+  .day-article h3 { font-size: 16px; font-weight: 700; margin: 24px 0 8px; }
+  .day-article p { font-size: 16px; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 18px; }
+  .day-article ul, .day-article ol { padding-left: 22px; margin-bottom: 18px; }
+  .day-article li { font-size: 15px; line-height: 1.75; color: var(--color-text-muted); margin-bottom: 8px; }
+  .day-article strong { color: var(--color-text); }
+  .day-article a { color: var(--color-text); text-decoration: underline; }
+  .day-article a.btn { text-decoration: none; }
+  .day-article a.btn-primary { color: var(--color-white); }
+  .day-workflow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 20px 0 24px; font-size: 14px; }
+  .day-workflow-step { border: 1px solid var(--color-border); background: var(--color-bg); padding: 10px 16px; font-weight: 600; color: var(--color-text); }
+  .day-workflow-arrow { color: var(--color-text-muted); }
+  .external-resource-box { border: 1px solid var(--color-border); padding: 24px; margin: 24px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+  .external-resource-box p { margin: 0; font-size: 14px; color: var(--color-text-muted); flex: 1; min-width: 200px; }
+  .source-note { font-size: 13px; color: var(--color-text-muted); border-left: 3px solid var(--color-border); padding-left: 16px; margin: 24px 0; }
+  .checklist-box { border: 1px solid var(--color-border); background: var(--color-bg-card); padding: 28px; margin: 28px 0; text-align: center; }
+  .checklist-box p { max-width: 480px; margin: 0 auto 18px; }
+  .program-group { margin-bottom: 32px; }
+  .program-group h2 { margin-top: 0; margin-bottom: 14px; font-size: 20px; }
+  .program-list { list-style: none; padding-left: 0; margin-bottom: 0; border-top: 1px solid var(--color-border); }
+  .program-list li { border-bottom: 1px solid var(--color-border); padding: 14px 0; margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+  .program-name { font-weight: 600; color: var(--color-text); font-size: 15px; flex: 1; min-width: 180px; }
+  .program-desc { font-size: 13px; color: var(--color-text-muted); flex: 2; min-width: 220px; }
+  .program-link { font-size: 13px; font-weight: 600; color: var(--color-text); white-space: nowrap; }
+  .disclaimer-note { font-size: 13px; color: var(--color-text-muted); border-left: 3px solid var(--color-border); padding-left: 16px; margin: 28px 0; }
+  .day-pager { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; border-top: 1px solid var(--color-border); padding-top: 24px; margin-top: 40px; }
+  .day-pager a { display: block; border: 1px solid var(--color-border); padding: 16px 20px; text-decoration: none; flex: 1; min-width: 220px; transition: border-color 0.15s; }
+  .day-pager a:hover { border-color: var(--color-text); }
+  .day-pager-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 6px; }
+  .day-pager-title { font-size: 15px; font-weight: 700; color: var(--color-text); line-height: 1.35; }
+  .day-pager .next { text-align: right; }
+  .example-box { border: 1px solid var(--color-border); background: var(--color-bg-card); padding: 20px 24px; margin: 16px 0; }
+  .example-box h3 { margin-top: 0; }
+  .example-box ul { margin-bottom: 0; }
+  .prompt-box { border: 1px solid var(--color-border); background: var(--color-bg-card); padding: 20px; margin: 16px 0 20px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.7; color: var(--color-text); white-space: pre-wrap; word-wrap: break-word; }
+  .day-article code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.9em; background: var(--color-bg-card); border: 1px solid var(--color-border); padding: 1px 6px; }
+</style>
+</head>
+<body>
+<header>
+<nav aria-label="Main navigation" class="site-nav">
+<div class="nav-inner">
+<div class="nav-links" role="menubar">
+<a href="../index.html#about">About</a>
+<div class="nav-dropdown-trigger"><a aria-haspopup="true" href="#">Products</a>
+<div class="mega-menu mega-menu--narrow" role="menu"><div class="mega-col"><div class="mega-col-title">Our Products</div>
+<a href="../products/koelai-ai"><strong>Koelai AI</strong> — AI Calling Agent</a>
+<a href="../ai-publisher-finder"><strong>PublishMatch AI</strong> — Publisher Finder</a>
+</div></div>
+</div>
+<div class="nav-dropdown-trigger"><a aria-haspopup="true" href="../index.html#services">Services</a>
+<div class="mega-menu" role="menu">
+<div class="mega-col"><div class="mega-col-title">AI &amp; Automation</div><a href="../services/business-automation-india">All AI &amp; Automation</a><a href="../services/ai-consulting">AI Consulting</a></div>
+<div class="mega-col"><div class="mega-col-title">Search &amp; AI Visibility</div><a href="../services/search-ai-visibility">All Search &amp; AI Visibility</a><a href="../services/aeo-geo-services">AEO &amp; GEO Services</a></div>
+<div class="mega-col"><div class="mega-col-title">Publishing</div><a href="../services/authors">All Publishing Services</a></div>
+</div>
+</div>
+<a href="../blog/index" role="menuitem">Blog</a>
+<a href="/100-days-marketing-engineering" role="menuitem" style="font-weight:600;">100 Days Series</a>
+<a href="../index.html#contact">Contact</a>
+</div>
+<div class="nav-right">
+<a class="btn btn-primary nav-cta" href="../index.html#contact">Book Free Consultation</a>
+<button aria-label="Toggle dark mode" class="theme-toggle" id="theme-toggle">Dark</button>
+<button aria-expanded="false" aria-label="Toggle navigation menu" class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
+</div>
+</div>
+</nav>
+<div class="nav-mobile" id="nav-mobile"><div class="nav-mobile-inner">
+<a class="nav-mobile-link" href="../index.html#about">About</a>
+<a class="nav-mobile-link" href="../blog/index">Blog</a>
+<a class="nav-mobile-link" href="/100-days-marketing-engineering">100 Days Series</a>
+<a class="nav-mobile-link" href="../index.html#contact">Contact</a>
+<div class="nav-mobile-cta">
+<a class="btn btn-primary btn-full" href="../index.html#contact">Book Free Consultation</a>
+<button class="btn btn-outline btn-full" id="mobile-theme-toggle">Dark Mode</button>
+</div>
+</div></div>
+</header>
+<main id="main-content">
+<nav aria-label="Breadcrumb" style="margin-top:var(--nav-height);padding:12px 0;border-bottom:1px solid var(--color-border);">
+<div class="container"><p style="font-size:13px;color:var(--color-text-muted);margin:0;"><a href="../index" style="color:var(--color-text-muted);">Home</a> › <a href="/100-days-marketing-engineering" style="color:var(--color-text-muted);">100 Days of Marketing Engineering</a> › <span>Day 7</span></p></div>
+</nav>
+
+<article>
+<header class="day-hero">
+<div class="container"><div class="day-article-inner">
+<span class="day-badge">Day 7 / 100</span><span class="day-tag">SEO · Research</span>
+<h1 style="font-family:var(--font-family-display);font-size:clamp(30px,4.6vw,48px);font-weight:800;letter-spacing:-0.03em;line-height:1.12;margin:16px 0 0;">Read Your Competitor's Sitemap to Reverse-Engineer Their Content Strategy</h1>
+<p class="day-meta">By <strong style="color:var(--color-text);">Aryan Ahire</strong>, Founder — Free Mind Consultancy · Published September 21, 2026 · Part of <a href="/100-days-marketing-engineering" style="color:var(--color-text-muted);text-decoration:underline;">100 Days of Marketing Engineering</a></p>
+</div></div>
+</header>
+<div class="day-article">
+<div class="container"><div class="day-article-inner">
+<p>Most people study a competitor's homepage. It shows what they want you to see. Their <strong>sitemap.xml</strong> shows what they actually built: every service page, blog post, category and landing page they want search engines to find, in one file. Read it well and you can see how they've structured their site, and where they haven't published anything yet.</p>
+
+<h2>What a sitemap is (and why it's public)</h2>
+<p>A sitemap is a file where a website lists the URLs it wants search engines to crawl. It's public by design, so search engines can read it. Reading one is like reading a public index, not breaking into anything. Reading it manually in a browser is fine. If you automate requests, be polite: fetch it once, don't hammer the server, and follow the site's terms.</p>
+
+<h2>How to find a competitor's sitemap</h2>
+<ul>
+<li><strong>Try the usual addresses:</strong> <code>/sitemap.xml</code>, <code>/sitemap_index.xml</code> and <code>/sitemap-index.xml</code> on their domain.</li>
+<li><strong>Check robots.txt:</strong> open <code>/robots.txt</code> and look for a line starting with <code>Sitemap:</code>. That line can point to a sitemap at any address, and there can be several.</li>
+<li><strong>Expect an index file:</strong> larger sites often publish a sitemap index that lists several smaller sitemaps (for example one for blog posts, one for products).</li>
+</ul>
+<p>Some sites don't publish a sitemap at all, and some list only part of their pages. Treat what you find as a partial picture.</p>
+
+<h2>What a sitemap can reveal</h2>
+<ul>
+<li><strong>Content architecture</strong> — how they group pages: <code>/services/</code>, <code>/blog/</code>, <code>/resources/</code>, <code>/locations/</code>.</li>
+<li><strong>Topics they invest in</strong> — many pages in one section usually means it's a priority.</li>
+<li><strong>Service and landing pages</strong> — which offers they promote with dedicated pages.</li>
+<li><strong>Blog scale and themes</strong> — how many posts, and which topics recur in the URLs.</li>
+<li><strong>Location or audience pages</strong> — signs of local SEO or segment targeting.</li>
+<li><strong>Update activity</strong> — the <code>lastmod</code> dates, with a caveat covered below.</li>
+</ul>
+
+<h2>The workflow</h2>
+<div class="day-workflow">
+<span class="day-workflow-step">Find</span><span class="day-workflow-arrow">→</span>
+<span class="day-workflow-step">Extract</span><span class="day-workflow-arrow">→</span>
+<span class="day-workflow-step">Group</span><span class="day-workflow-arrow">→</span>
+<span class="day-workflow-step">Compare</span><span class="day-workflow-arrow">→</span>
+<span class="day-workflow-step">Decide</span>
+</div>
+<ul>
+<li><strong>Find</strong> the sitemap and any child sitemaps.</li>
+<li><strong>Extract</strong> every URL into a spreadsheet.</li>
+<li><strong>Group</strong> the URLs by their first path segment (<code>/blog/</code>, <code>/services/</code>) and then by topic keywords in the slug.</li>
+<li><strong>Compare</strong> the result with your own sitemap, section by section.</li>
+<li><strong>Decide</strong> which gaps are worth filling, and in what order.</li>
+</ul>
+
+<h2>Find content gaps</h2>
+<p>Once you have your competitor's URLs grouped, look for these patterns:</p>
+<ul>
+<li><strong>Topics they cover that you don't</strong> — a cluster of pages about a subject you've never written on.</li>
+<li><strong>Sections they have that you lack</strong> — for example a <code>/case-studies/</code> or <code>/guides/</code> section.</li>
+<li><strong>Service pages you're missing</strong> — offers they explain in depth while you mention them in passing.</li>
+<li><strong>Depth differences</strong> — they have twelve pages where you have one.</li>
+<li><strong>Topics neither of you covers</strong> — the real opening.</li>
+</ul>
+<p>A gap only tells you a topic exists. Whether it's worth covering depends on your audience and whether people search for it, which you check separately (for example in Google Search Console or a keyword tool). Don't copy their pages. Write your own, based on what your customers need.</p>
+
+<h2>Read the sitemap with healthy skepticism</h2>
+<ul>
+<li><strong>Not every page is listed.</strong> A sitemap is what the site chooses to submit. Pages can be missing, and some sitemaps are auto-generated with gaps.</li>
+<li><strong>Listed isn't the same as ranking.</strong> A page in the sitemap may be thin, unindexed or unimportant. Google says submitting a sitemap is a hint and doesn't guarantee crawling.</li>
+<li><strong>Ignore priority and changefreq.</strong> Google says it ignores the <code>&lt;priority&gt;</code> and <code>&lt;changefreq&gt;</code> tags, so don't read strategy into them.</li>
+<li><strong>Be careful with lastmod.</strong> Google only uses <code>lastmod</code> when it's consistently and verifiably accurate. Many sites set it to the same date for every page, so a recent date doesn't prove real updates.</li>
+<li><strong>Check for auto-generated pages.</strong> Tag pages, filters and pagination can inflate a URL count without being real content.</li>
+</ul>
+
+<h2>A small script to map a sitemap</h2>
+<p>You can do the extract-and-group step in a spreadsheet, but this short Python script does it for you. It reads a sitemap (following sitemap index files) and counts URLs by top-level section. Run it once against a sitemap you're entitled to read, and respect the site's terms.</p>
+<pre class="prompt-box">import sys, urllib.request
+import xml.etree.ElementTree as ET
+from collections import Counter
+from urllib.parse import urlparse
+
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "sitemap-research/1.0"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return ET.fromstring(r.read())
+
+def urls(sitemap_url):
+    root = fetch(sitemap_url)
+    ns = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+    if root.tag == ns + "sitemapindex":          # index file: follow child sitemaps
+        for loc in root.iter(ns + "loc"):
+            yield from urls(loc.text.strip())
+    else:
+        for loc in root.iter(ns + "loc"):
+            yield loc.text.strip()
+
+all_urls = list(urls(sys.argv[1]))
+groups = Counter()
+for u in all_urls:
+    parts = [p for p in urlparse(u).path.split("/") if p]
+    groups[parts[0] if parts else "(home)"] += 1
+
+print(f"{len(all_urls)} URLs")
+for section, n in groups.most_common():
+    print(f"{n:4d}  /{section}/")</pre>
+<p>Run it as <code>python sitemap_map.py https://example.com/sitemap.xml</code>. It prints the total URL count and how many URLs sit under each section, which is a quick picture of where a site puts its effort.</p>
+
+<h2>Use AI to structure the results</h2>
+<p>Once you have the URL list, an AI assistant can group it into a content architecture faster than doing it by hand. Give it clear instructions and check the output, because it can misread a slug or over-generalize.</p>
+<pre class="prompt-box">You are an SEO content strategist. Below is a list of URLs from a competitor's sitemap.
+
+My business: [describe it in one sentence]
+
+1. Group the URLs into sections and topic clusters, based only on the URL paths.
+2. For each cluster, say how many URLs it has.
+3. List the site's main service or landing pages.
+4. Compare with my own site sections below and list topics the competitor covers that I don't.
+5. Do not guess traffic, rankings, or performance. Work only from the URLs. Flag anything you are unsure about.
+
+Competitor URLs:
+[paste URLs here]
+
+My site sections:
+[paste my section list here]</pre>
+
+<h2>Where this fits with your own site</h2>
+<p>Run the same exercise on your own sitemap first. It shows how your site looks to a search engine, and it often reveals orphaned sections or thin areas you'd want to fix before chasing a competitor. Day 4 of this series covers what to focus on for search visibility, and Day 6 covers using competitor reviews for market research.</p>
+
+<h2>Use it responsibly</h2>
+<ul>
+<li>Study <strong>structure and topics</strong>, not their copy. Never copy a competitor's pages or text.</li>
+<li>Reading a public sitemap is normal research. Aggressive automated crawling of a site is not, so keep any requests light and respect its robots.txt and terms.</li>
+<li>Don't treat a competitor's structure as proof of what works. They may have made mistakes too.</li>
+</ul>
+
+<div class="checklist-box">
+<p><strong>Want the Claude Skill from the Day 7 video?</strong> It analyzes a competitor's sitemap and turns it into a structured content architecture. Follow the instructions in the video to get access, or message Free Mind and ask for it.</p>
+<a class="btn btn-primary" href="../index.html#contact">Ask for the Claude Skill</a>
+</div>
+
+<div class="source-note">
+<strong>Sources:</strong> the <a href="https://www.sitemaps.org/protocol.html" rel="noopener noreferrer" target="_blank">Sitemaps protocol</a> (limits of 50,000 URLs and 50MB per sitemap file, optional tags, and the robots.txt <code>Sitemap:</code> directive) and Google Search Central's <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap" rel="noopener noreferrer" target="_blank">guide to building a sitemap</a> (Google ignores priority and changefreq, uses lastmod only when accurate, and treats a submitted sitemap as a hint).
+</div>
+
+<div class="day-pager"><a class="prev" href="/100-days-marketing-engineering/day-6-competitor-reviews-marketing-research"><span class="day-pager-label">← Previous · Day 6</span><span class="day-pager-title">Turn Your Competitor's 1-Star Reviews into Marketing Research</span></a></div>
+</div></div>
+</div>
+</article>
+
+<section style="padding:40px 0;border-top:1px solid var(--color-border);">
+<div class="container">
+<p style="font-size:13px;color:var(--color-text-muted);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">Related</p>
+<div style="display:flex;gap:16px;flex-wrap:wrap;">
+<a href="/100-days-marketing-engineering" style="font-size:14px;color:var(--color-text);text-decoration:underline;">All days in the series</a><a href="../services/search-ai-visibility" style="font-size:14px;color:var(--color-text);text-decoration:underline;">Search &amp; AI Visibility</a><a href="../services/growth-business-intelligence" style="font-size:14px;color:var(--color-text);text-decoration:underline;">Growth &amp; Business Intelligence</a><a href="../services/ai-consulting" style="font-size:14px;color:var(--color-text);text-decoration:underline;">AI Consulting</a>
+<a href="../blog/index" style="font-size:14px;color:var(--color-text);text-decoration:underline;">Blog</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div><div class="footer-logo"><span style="font-size:20px;font-weight:800;">Free Mind</span></div><div class="footer-tagline">Consulting for Change</div><p class="footer-desc">AI, automation, growth &amp; publishing consulting for founders and institutions.</p></div>
+<div><div class="footer-col-title">Services</div><nav class="footer-links">
+<a href="../services/business-automation-india">AI &amp; Automation</a><a href="../services/search-ai-visibility">Search &amp; AI Visibility</a>
+<a href="../services/performance-marketing">Performance Marketing</a><a href="../services/authors">Publishing</a>
+</nav></div>
+<div><div class="footer-col-title">Resources</div><nav class="footer-links"><a href="../blog/index">Blog</a><a href="/100-days-marketing-engineering">100 Days Series</a><a href="../community/">Community</a></nav></div>
+<div><div class="footer-col-title">Contact</div>
+<div class="footer-contact-item"><a href="mailto:info@freemindconsult.com">info@freemindconsult.com</a></div>
+<div class="footer-contact-item"><a href="https://wa.me/918208316509">WhatsApp: +91 82083 16509</a></div>
+</div>
+</div>
+<div class="footer-bottom"><div class="footer-bottom-inner">
+<span class="footer-copyright">Copyright 2026 Free Mind Consultancy. All Rights Reserved.</span>
+<nav class="footer-legal"><a href="../privacy">Privacy Policy</a><a href="../terms">Terms of Service</a></nav>
+</div></div>
+</div></footer>
+<script defer="" src="../js/main.js"></script>
+<script defer="" src="../js/attribution.js"></script>
+<script defer="" src="../js/ga4-events.js"></script>
+</body>
+</html>
