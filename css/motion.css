@@ -1,0 +1,176 @@
+/* ============================================================
+   FREE MIND — motion.css
+   One motion language for the whole site. Everything that hides
+   or moves content is gated behind html.motion-on, which motion.js
+   only sets when the user has NOT asked for reduced motion and JS
+   is running. With no JS or reduced motion, the page is static and
+   fully visible.
+
+   Intensity: LOW = reveal, MEDIUM = reveal + stagger,
+              HIGH = scroll-scrubbed (words, scene, focus, progress,
+              horizontal). Only storytelling sections use HIGH.
+   ============================================================ */
+
+:root {
+  /* durations */
+  --motion-fast: 240ms;
+  --motion-normal: 650ms;
+  --motion-slow: 1000ms;
+  /* easings */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-cine: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  /* distances / rhythm */
+  --motion-distance: 40px;
+  --motion-stagger: 80ms;
+}
+
+/* ── Hero entrance: pure CSS so there is no flash and no JS needed ── */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes m-hero-up {
+    from { opacity: 0; transform: translate3d(0, 34px, 0); }
+    to   { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  @keyframes m-hero-visual {
+    from { opacity: 0; transform: scale(0.96); clip-path: inset(6% 6% 6% 6% round 4px); }
+    to   { opacity: 1; transform: scale(1);    clip-path: inset(0 0 0 0 round 0); }
+  }
+  /* `backwards` = only the from-state is held during the delay; afterwards
+     normal styles (and the scroll-driven exit) take over with no jump. */
+  .hero-content > *,
+  .inner-page .container > div:first-child > *,
+  .blog-hero .container > *,
+  .day-hero .container > div > *,
+  .series-hero .container > div > * {
+    animation: m-hero-up var(--motion-slow) var(--ease-cine) backwards;
+  }
+  .hero-content > :nth-child(1), .inner-page .container > div:first-child > :nth-child(1), .blog-hero .container > :nth-child(1), .day-hero .container > div > :nth-child(1), .series-hero .container > div > :nth-child(1) { animation-delay: 0.05s; }
+  .hero-content > :nth-child(2), .inner-page .container > div:first-child > :nth-child(2), .blog-hero .container > :nth-child(2), .day-hero .container > div > :nth-child(2), .series-hero .container > div > :nth-child(2) { animation-delay: 0.15s; }
+  .hero-content > :nth-child(3), .inner-page .container > div:first-child > :nth-child(3), .blog-hero .container > :nth-child(3), .day-hero .container > div > :nth-child(3), .series-hero .container > div > :nth-child(3) { animation-delay: 0.28s; }
+  .hero-content > :nth-child(4), .inner-page .container > div:first-child > :nth-child(4), .blog-hero .container > :nth-child(4), .day-hero .container > div > :nth-child(4), .series-hero .container > div > :nth-child(4) { animation-delay: 0.4s; }
+  .hero-content > :nth-child(n+5), .inner-page .container > div:first-child > :nth-child(n+5), .blog-hero .container > :nth-child(n+5), .day-hero .container > div > :nth-child(n+5), .series-hero .container > div > :nth-child(n+5) { animation-delay: 0.5s; }
+  .hero-visual-img, .hero-visual .hero-visual-img {
+    animation: m-hero-visual 1.3s var(--ease-cine) 0.3s backwards;
+  }
+  /* Homepage page-loader (main.js): hold the entrance paused until the loader starts
+     its fade (`loader-overlay-out`), so it plays through the fade instead of finishing
+     unseen behind the opaque overlay. Fixed delays can't do this: main.js starts its
+     timer only after parsing, which varies with load speed. Browsers without :has()
+     just play the entrance immediately. Pages without a loader are unaffected. */
+  html:has(#page-loader:not(.loader-overlay-out)) .hero-content > *,
+  html:has(#page-loader:not(.loader-overlay-out)) .hero-visual-img { animation-play-state: paused; }
+}
+
+/* ── Reveal (LOW / MEDIUM): only elements below the fold are hidden ── */
+.motion-on .m-hide,
+.motion-on .m-in {
+  transition:
+    opacity var(--motion-normal) var(--ease-cine) calc(var(--i, 0) * var(--motion-stagger)),
+    transform var(--motion-slow) var(--ease-cine) calc(var(--i, 0) * var(--motion-stagger)),
+    clip-path var(--motion-slow) var(--ease-cine) calc(var(--i, 0) * var(--motion-stagger));
+}
+.motion-on .m-hide { will-change: opacity, transform; }
+.motion-on .m-hide[data-motion="fade-up"]    { opacity: 0; transform: translate3d(0, var(--motion-distance), 0); }
+.motion-on .m-hide[data-motion="scale"]      { opacity: 0; transform: scale(0.94); }
+.motion-on .m-hide[data-motion="slide-left"] { opacity: 0; transform: translate3d(-48px, 0, 0); }
+.motion-on .m-hide[data-motion="slide-right"]{ opacity: 0; transform: translate3d(48px, 0, 0); }
+.motion-on .m-hide[data-motion="reveal"]     { opacity: 0; transform: scale(1.05); clip-path: inset(8% 8% 8% 8% round 4px); }
+.motion-on .m-in { clip-path: inset(0 0 0 0 round 0); }
+
+/* ── HIGH: scroll-scrubbed words. --p (0→1) is written by motion.js ── */
+.motion-on .mw {
+  opacity: clamp(0.14, calc(var(--p, 1) * (var(--n, 1) + 1) - var(--i, 0)), 1);
+}
+
+/* ── HIGH: scene-out — hero leaves as the next scene takes over ── */
+.motion-on [data-motion="scene-out"] .hero-content,
+.motion-on [data-motion="scene-out"] > .container {
+  transform: translate3d(0, calc(var(--p, 0) * -56px), 0);
+  opacity: calc(1 - var(--p, 0) * 1.1);
+}
+.motion-on [data-motion="scene-out"] .hero-visual {
+  transform: translate3d(0, calc(var(--p, 0) * -24px), 0) scale(calc(1 + var(--p, 0) * 0.05));
+  opacity: calc(1 - var(--p, 0) * 0.9);
+}
+/* scene-leave — a section recedes slightly as the next one arrives */
+.motion-on [data-motion="scene-leave"] > .container {
+  transform: translate3d(0, calc(var(--p, 0) * -28px), 0) scale(calc(1 - var(--p, 0) * 0.025));
+  opacity: calc(1 - var(--p, 0) * 0.55);
+}
+
+/* ── HIGH: parallax (desktop only; --par is 0 elsewhere) ── */
+.motion-on [data-motion="parallax"] {
+  transform: translate3d(0, calc((var(--p, 0.5) - 0.5) * var(--par, 0px)), 0);
+}
+
+/* ── HIGH: focus list — the card nearest the viewport centre is "active" ── */
+.motion-on .m-focus-item {
+  opacity: calc(1 - var(--d, 0) * 0.42);
+  transform: scale(calc(1 - var(--d, 0) * 0.02));
+  transform-origin: 50% 60%;
+}
+
+/* ── HIGH: process progress line + steps lighting up ── */
+.motion-on .timeline[data-motion="progress"]::after {
+  content: '';
+  position: absolute; top: 32px;
+  left: calc(10% + 20px); right: calc(10% + 20px);
+  height: 1px; background: var(--color-text);
+  transform-origin: left center;
+  transform: scaleX(var(--p, 0));
+  z-index: 0;
+}
+.motion-on .timeline[data-motion="progress"] .step-number {
+  transition: border-color var(--motion-normal) var(--ease-out), color var(--motion-normal) var(--ease-out), transform var(--motion-normal) var(--ease-cine);
+}
+.motion-on .timeline[data-motion="progress"] .timeline-step:not(.is-on) .step-number { opacity: 0.55; }
+.motion-on .timeline[data-motion="progress"] .timeline-step.is-on .step-number {
+  border-color: var(--color-text); color: var(--color-text); transform: scale(1.08);
+}
+@media (max-width: 767px) {
+  .motion-on .timeline[data-motion="progress"]::after { display: none; }
+}
+
+/* ── HIGH (desktop): pinned horizontal track ── */
+.hs-on { position: relative; }
+.hs-on > .container {
+  position: sticky; top: var(--hs-top, var(--nav-height));
+  overflow: hidden;
+  /* full-bleed so cards slide off the screen edge, header stays on the page grid */
+  max-width: none;
+  padding-inline: max(var(--spacing-lg), calc((100% - var(--container-max)) / 2 + var(--spacing-lg)));
+}
+.hs-on .hs-track {
+  display: flex; gap: 24px; width: max-content;
+  grid-template-columns: none;
+  transform: translate3d(calc(var(--hx, 0px) * -1), 0, 0);
+  will-change: transform;
+}
+.hs-on .hs-track > * { flex: 0 0 clamp(320px, 30vw, 420px); }
+
+/* ── Footer: one calm reveal, not per-link ── */
+
+/* ── Cross-page fade: cross-document view transitions (progressive) ── */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 180ms; }
+  .site-nav { view-transition-name: site-nav; }
+}
+
+/* ── Safety nets ── */
+@media print {
+  [data-motion], .m-hide, .m-in, .mw, .m-focus-item {
+    opacity: 1 !important; transform: none !important; clip-path: none !important; transition: none !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-content > *, .hero-visual-img { animation: none !important; }
+}
+
+/* Off-screen slide-in starts (pre-reveal translateX) must not widen the page.
+   Clip on <main>, NOT html/body: overflow on html stops body's overflow from
+   propagating to the viewport, which turns body into a scroll container and
+   breaks position:sticky (the pinned track). `clip` on <main> creates no scroll
+   container, so sticky still works. Browsers without `clip` keep body's own
+   overflow-x:hidden from style.css. */
+.motion-on main { overflow-x: clip; }

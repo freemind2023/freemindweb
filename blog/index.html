@@ -48,8 +48,9 @@
 <link href="../css/style.css" rel="stylesheet"/>
 <link rel="preload" as="style" href="../css/animations.css" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="preload" as="style" href="../css/animations.css" onload="this.onload=null;this.rel='stylesheet'"/><noscript><link rel="stylesheet" href="../css/animations.css"/></noscript></noscript>
 <link href="../css/darkmode.css" rel="stylesheet"/>
+<link href="../css/motion.css" rel="stylesheet"/>
 <style>
-    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 28px; }
     .blog-card { border: 1px solid var(--color-border); background: var(--color-bg-card); transition: border-color 0.2s, transform 0.2s; text-decoration: none; display: flex; flex-direction: column; }
     .blog-card:hover { border-color: var(--color-text); transform: translateY(-2px); }
     .blog-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
@@ -291,10 +292,8 @@
     }
   </script>
 <script defer="" src="../js/main.js"></script>
-<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script defer="" src="../js/gsap-animations.js"></script>
 <script defer="" src="../js/attribution.js"></script>
 <script defer="" src="../js/ga4-events.js"></script>
+<script defer="" src="../js/motion.js"></script>
 </body>
 </html>

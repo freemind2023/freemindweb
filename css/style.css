@@ -3432,3 +3432,17 @@ html[data-theme] .logo-wall .section-subtitle { color: #1a1a1a; opacity: 1; }
   .faqc-card, .faqc-a, .faqc-icon, .faqc-tab { transition: none !important; }
   .faqc-q { animation: none !important; }
 }
+
+/* ── Small-screen overflow guards (found in motion QA) ───── */
+@media (max-width: 480px) {
+  .btn { white-space: normal; text-align: center; max-width: 100%; }
+}
+@media (max-width: 640px) {
+  .blog-post-body .compare-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+/* Decorative infinite pulses: off for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+  .kvr, .pm-cta-pulse, .koelai-call-pulse, .koelai-badge-dot, .pm-hook-dot,
+  .pm-brand-publish, .pm-brand-match, .pm-brand-ai { animation: none !important; }
+}
