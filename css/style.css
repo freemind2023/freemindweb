@@ -3235,9 +3235,9 @@ html[data-theme] .logo-wall,
   border-bottom: 1px solid #ececec;
 }
 
-.logo-wall .section-label,
-.logo-wall .section-subtitle { color: #555555; }
-.logo-wall .section-heading { color: #111111; }
+html[data-theme] .logo-wall .section-label { color: #333333; }
+html[data-theme] .logo-wall .section-heading { color: #000000; }
+html[data-theme] .logo-wall .section-subtitle { color: #1a1a1a; opacity: 1; }
 
 .logo-wall-row {
   overflow: hidden;
@@ -3250,14 +3250,14 @@ html[data-theme] .logo-wall,
 .logo-wall-track {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-lg);
   width: max-content;
-  animation: logo-wall-scroll 45s linear infinite;
+  animation: logo-wall-scroll 60s linear infinite;
 }
 
 .logo-wall-row--reverse .logo-wall-track {
   animation-direction: reverse;
-  animation-duration: 55s;
+  animation-duration: 70s;
 }
 
 .logo-wall-row:hover .logo-wall-track {
@@ -3266,7 +3266,7 @@ html[data-theme] .logo-wall,
 
 .logo-wall-item {
   flex-shrink: 0;
-  height: 64px;
+  height: 104px;
   width: auto;
   transition: transform var(--transition-fast);
 }
@@ -3276,7 +3276,7 @@ html[data-theme] .logo-wall,
 }
 
 @media (max-width: 640px) {
-  .logo-wall-item { height: 48px; }
+  .logo-wall-item { height: 76px; }
 }
 
 @keyframes logo-wall-scroll {
@@ -3313,4 +3313,122 @@ html[data-theme] .logo-wall,
 .logo-strip-item {
   height: 36px;
   width: auto;
+}
+
+/* ── FAQ cards (homepage) ─────────────────────────────────────
+   Scoped to .faqc so the shared .faq-* accordion (community, Moodle
+   page) is unaffected. Desktop: vertical cards, one expands.
+   Mobile: stacked accordion rows. Without JS everything is visible. */
+.faqc { max-width: 1200px; margin: 0 auto; }
+.faqc-panel { margin-bottom: var(--spacing-xl); }
+.faqc-title {
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--spacing-md);
+}
+.faqc-row { display: flex; flex-direction: column; gap: 10px; }
+.faqc-card { border: 1px solid var(--color-border); background: var(--color-bg-card); border-radius: 4px; }
+.faqc-btn {
+  display: flex; align-items: center; gap: 14px; width: 100%;
+  padding: 16px 18px; background: none; border: 0; cursor: pointer;
+  text-align: left; color: var(--color-text); font: inherit;
+}
+.faqc-num { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.faqc-q { flex: 1; font-size: 16px; font-weight: var(--font-weight-medium); line-height: 1.4; }
+.faqc-icon {
+  flex-shrink: 0; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--color-border); font-size: 18px; line-height: 1; color: var(--color-text-muted);
+}
+.faqc-a-inner { padding: 0 18px 20px 18px; }
+.faqc-a-text { font-size: 15px; line-height: 1.75; color: var(--color-text-muted); max-width: 64ch; }
+.faqc-btn:focus-visible, .faqc-tab:focus-visible { outline: 2px solid var(--color-text); outline-offset: -3px; }
+
+/* enhanced (JS on) */
+.faqc.is-enhanced .faqc-title {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;
+}
+.faqc-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--spacing-lg); }
+.faqc-tab {
+  font: inherit; font-size: 12px; font-weight: 600; letter-spacing: 0.05em;
+  padding: 10px 16px; min-height: 44px; border: 1px solid var(--color-border); background: none;
+  color: var(--color-text-muted); cursor: pointer; border-radius: 100px;
+  transition: background-color .2s, color .2s, border-color .2s; white-space: nowrap;
+}
+.faqc-tab:hover { border-color: var(--color-text); color: var(--color-text); }
+.faqc-tab[aria-selected="true"] { background: var(--color-text); color: var(--color-bg); border-color: var(--color-text); }
+.faqc-panel[hidden] { display: none; }
+
+/* mobile accordion (below 1000px) */
+@media (max-width: 999px) {
+  .faqc-tabs {
+    flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity; padding: 0 24px 8px 0; margin-right: -4px;
+    -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent);
+    mask-image: linear-gradient(90deg, #000 90%, transparent);
+    scrollbar-width: none;
+  }
+  .faqc-tabs::-webkit-scrollbar { display: none; }
+  .faqc-tab { scroll-snap-align: start; flex: 0 0 auto; }
+  .faqc.is-enhanced .faqc-btn { min-height: 56px; }
+  .faqc.is-enhanced .faqc-a {
+    display: grid; grid-template-rows: 0fr; visibility: hidden;
+    transition: grid-template-rows .3s ease, visibility 0s linear .3s;
+  }
+  .faqc.is-enhanced .faqc-a-inner { overflow: hidden; min-height: 0; padding-bottom: 0; }
+  .faqc.is-enhanced .faqc-card.is-active { border-color: var(--color-text); }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-a { grid-template-rows: 1fr; visibility: visible; transition-delay: 0s; }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-a-inner { padding-bottom: 20px; }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-icon { transform: rotate(45deg); background: var(--color-text); color: var(--color-bg); border-color: var(--color-text); }
+  .faqc-icon { transition: transform .25s ease, background-color .25s, color .25s; }
+}
+
+/* desktop vertical cards (1000px and up) */
+@media (min-width: 1000px) {
+  .faqc.is-enhanced .faqc-row { flex-direction: row; gap: 10px; height: 460px; }
+  .faqc.is-enhanced .faqc-card {
+    flex: 0 0 84px; min-width: 0; display: flex; flex-direction: column; overflow: hidden;
+    transition: flex-grow .45s cubic-bezier(.22,.61,.36,1), background-color .3s ease, border-color .3s ease, color .3s ease;
+  }
+  .faqc.is-enhanced .faqc-card:not(.is-active):hover { border-color: var(--color-text); }
+  .faqc.is-enhanced .faqc-btn {
+    flex: 1; flex-direction: column; align-items: center; justify-content: space-between;
+    padding: 18px 0; gap: 14px; min-height: 0;
+  }
+  .faqc.is-enhanced .faqc-q {
+    flex: 1; min-height: 0; writing-mode: vertical-rl; font-size: 14px; line-height: 1.35;
+    overflow: hidden; text-align: start;
+  }
+  .faqc.is-enhanced .faqc-a {
+    flex: 0 0 0; opacity: 0; visibility: hidden; overflow: hidden;
+    transition: opacity .15s ease, visibility 0s linear .15s;
+  }
+  .faqc.is-enhanced .faqc-card.is-active {
+    flex: 1 1 84px; background: var(--color-text); color: var(--color-bg); border-color: var(--color-text);
+  }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-btn {
+    flex: 0 0 auto; flex-direction: row; align-items: flex-start; justify-content: flex-start;
+    padding: 24px 28px 8px; cursor: default;
+  }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-num { color: var(--color-bg); opacity: .6; padding-top: 6px; }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-q {
+    writing-mode: horizontal-tb; overflow: visible; color: var(--color-bg);
+    font-family: var(--font-family-display); font-size: clamp(18px, 1.7vw, 24px); font-weight: var(--font-weight-bold); line-height: 1.25;
+    animation: faqc-in .45s ease .12s both;
+  }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-icon { display: none; }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-a {
+    flex: 1 1 auto; opacity: 1; visibility: visible; overflow-y: auto;
+    transition: opacity .35s ease .2s, visibility 0s;
+  }
+  .faqc.is-enhanced .faqc-a-inner { padding: 4px 28px 26px 68px; }
+  .faqc.is-enhanced .faqc-card.is-active .faqc-a-text { color: var(--color-bg); opacity: .85; }
+  @keyframes faqc-in { from { opacity: 0; } to { opacity: 1; } }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faqc-card, .faqc-a, .faqc-icon, .faqc-tab { transition: none !important; }
+  .faqc-q { animation: none !important; }
 }
