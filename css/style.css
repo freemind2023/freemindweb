@@ -3446,3 +3446,29 @@ html[data-theme] .logo-wall .section-subtitle { color: #1a1a1a; opacity: 1; }
   .kvr, .pm-cta-pulse, .koelai-call-pulse, .koelai-badge-dot, .pm-hook-dot,
   .pm-brand-publish, .pm-brand-match, .pm-brand-ai { animation: none !important; }
 }
+
+/* ── World map (home) ─────────────────────────────────────── */
+.worldmap .wm-head { max-width: 720px; margin-bottom: var(--spacing-xl, 40px); }
+.wm-stage { position: relative; width: 100%; }
+.wm-svg { display: block; width: 100%; height: auto; }
+.wm-land { fill: none; stroke: var(--color-text); stroke-opacity: 0.26; stroke-width: 6.5; stroke-linecap: round; }
+.wm-dot { fill: var(--color-text); }
+.wm-ring { fill: none; stroke: var(--color-text); stroke-width: 2; opacity: 0.5; transform-box: fill-box; transform-origin: center; }
+.wm-card {
+  position: absolute; transform: translate(14px, -50%);
+  display: flex; flex-direction: column; gap: 2px; white-space: nowrap;
+  padding: 10px 14px; background: var(--color-bg-card); border: 1px solid var(--color-border);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 12px 28px -12px rgba(0,0,0,0.28);
+}
+.wm-card-title { font-size: 14px; font-weight: 700; color: var(--color-text); }
+.wm-card-sub { font-size: 12px; color: var(--color-text-muted); }
+@media (prefers-reduced-motion: no-preference) {
+  .wm-ring { animation: wmPulse 3.2s var(--ease-out, ease-out) infinite; }
+  .wm-ring-2 { animation-delay: 1.6s; }
+  @keyframes wmPulse { from { transform: scale(0.5); opacity: 0.55; } to { transform: scale(3.2); opacity: 0; } }
+}
+@media (max-width: 640px) {
+  .wm-card { transform: translate(-50%, 14px); padding: 8px 10px; }
+  .wm-card-sub { display: none; }
+  .wm-land { stroke-width: 9; stroke-opacity: 0.42; }
+}
