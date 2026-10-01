@@ -1,0 +1,39 @@
+---
+name: google-operators-lead-gen
+description: Generate Google search operator queries (site:, intitle:, inurl:, exact match, -exclude, OR, AROUND, filetype:) to find prospects, decision-makers, directories, job posts and buying-intent signals. Use when the user wants lead-generation searches.
+---
+
+# Google Search Operators for Lead Generation
+From "100 Days of Marketing Engineering" - Day 8 - Free Mind Consultancy (freemindconsult.com)
+
+## How to use this file
+- Fastest: start a new Claude chat, paste this whole file as the first message, then answer the three questions below.
+- Or: save it as SKILL.md inside a folder named google-operators-lead-gen and upload the folder as a skill in Claude settings (Capabilities > Skills).
+
+## Cheat sheet
+site:            limit to one domain          site:linkedin.com/in "founder" "coaching institute" india
+intitle:         word must be in page title   intitle:"we're hiring" "content marketer"
+inurl:           word must be in the URL      inurl:careers "social media manager" india
+"exact phrase"   exact match                  "looking for a ghostwriter"
+-word            exclude a word or site       "content writer" hiring -jobs.com
+OR               either term (capitals)       "marketing manager" OR "growth manager" mumbai
+AROUND(n)        terms within n words         "founder" AROUND(3) "coaching institute"
+filetype:        file format                  filetype:pdf "request for proposal" "marketing services"
+
+## Ask the user
+1. Your business in one sentence.
+2. Your ideal customer: role, industry, location, company size.
+3. The signal to look for: hiring, launching, complaining, asking for recommendations, publishing a directory.
+
+## Steps
+1. Generate 10 queries that stack operators for that customer and signal. Vary the operator combinations.
+2. For each query add one line: what result it should surface.
+3. Flag any query likely to be too narrow (zero results) and give a looser version.
+4. Suggest using Google's Tools > Any time filter (past week/month) so leads are recent.
+5. Give a simple logging format: query | date run | leads found | quality note.
+
+## Rules
+- Search Google's public index only. Never suggest logging in to systems, scraping in bulk or bypassing terms of service. Do not bulk-scrape LinkedIn.
+- A match is a lead source, not permission to spam. Verify the person and role before outreach and personalise the message.
+- site: only reflects what Google has indexed from that site; results are a partial slice.
+- Do not invent people, companies or contact details.

@@ -1,0 +1,39 @@
+---
+name: google-ads-transparency-analyzer
+description: Analyze competitor ads collected from the Google Ads Transparency Center - ad variations, headlines, offers and landing page angles - and identify repeated messages that hint at what a competitor is testing or scaling. Use when the user pastes ad data from the Ads Transparency Center.
+---
+
+# Google Ads Transparency Analyzer
+From "100 Days of Marketing Engineering" - Day 11 - Free Mind Consultancy (freemindconsult.com)
+
+## How to use this file
+- Fastest: start a new Claude chat, paste this whole file as the first message, then paste your ad table (or upload screenshots).
+- Or: save it as SKILL.md inside a folder named google-ads-transparency-analyzer and upload the folder as a skill in Claude settings (Capabilities > Skills).
+
+## How the user collects data
+Open adstransparency.google.com, search each competitor by name or domain, and record one row per ad: competitor | headline | description | offer | angle | landing page URL | format | first seen | last seen.
+
+## What you need from the user
+1. Their business in one sentence.
+2. The ad table or screenshots.
+
+## Steps
+1. Clean and tabulate the ads. State how many you received and what is missing.
+2. Tag each ad with an angle: price, speed, trust, results, convenience, urgency, other.
+3. Count repeated headlines, phrases, offers and angles, per competitor and across competitors.
+4. Identify likely tests (near-identical ads with small changes) and likely core messages (repeated across many ads and landing pages). Label these as inferences.
+5. Review landing page angles: what the ad promises versus what the page URL suggests.
+6. Recommend 5 angles to test and 3 angles nobody uses, with a sample headline for each written fresh for the user's business.
+
+## Output format
+- Cleaned table
+- Repeat counts
+- Inferences (marked)
+- Landing page angles
+- Test plan
+- Limits
+
+## Rules
+- The tool shows ads, not spend, clicks or conversions. Do not guess results.
+- Search is only one channel; say so when drawing conclusions.
+- Do not copy competitor ad text. Write original copy.

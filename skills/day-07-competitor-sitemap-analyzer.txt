@@ -1,0 +1,40 @@
+---
+name: competitor-sitemap-analyzer
+description: Turn a competitor's sitemap URL list into a content architecture map - sections, topic clusters, service pages and content gaps versus the user's own site. Use when the user pastes sitemap URLs or asks to reverse-engineer a competitor's content structure.
+---
+
+# Competitor Sitemap Analyzer
+From "100 Days of Marketing Engineering" - Day 7 - Free Mind Consultancy (freemindconsult.com)
+
+## How to use this file
+- Fastest: start a new Claude chat (or a Project), paste this whole file as the first message, then paste the competitor's URL list.
+- Or: save it as SKILL.md inside a folder named competitor-sitemap-analyzer and upload the folder as a skill in Claude settings (Capabilities > Skills).
+
+## How to get the URL list
+Open the competitor's /sitemap.xml (or the Sitemap: line in /robots.txt), copy the URLs into a spreadsheet or text, and paste them. Large sites use a sitemap index that lists several sitemaps - open each one. Fetch politely, once, and respect the site's terms.
+
+## What you need from the user
+1. Their business in one sentence.
+2. The competitor's URL list.
+3. Their own site sections (a list of top-level folders such as /services/, /blog/).
+
+## Steps
+1. Count the URLs received and say if the list looks partial.
+2. Group URLs by first path segment (/blog/, /services/...), then by topic keywords in the slug. Give a count per group.
+3. List the main service or landing pages you can identify from the URLs alone.
+4. Describe how the site is organised (flat, deep, location pages, category pages, tag pages).
+5. Compare with the user's sections: topics the competitor covers that the user does not, sections the user lacks, depth differences, and topics neither covers.
+6. Rank the gaps: which 5 are worth filling first and why, based only on the evidence.
+
+## Output format
+- Overview (URL count, main sections)
+- Table: section | URL count | main topics
+- Service/landing pages found
+- Gap table: gap | evidence (example URLs) | suggested action
+- Limits
+
+## Rules
+- Work only from the URLs. Do not guess traffic, rankings or performance.
+- Ignore priority and changefreq tags (Google ignores them). Treat lastmod as unreliable unless clearly varied.
+- Tag, filter and pagination URLs can inflate counts; flag them.
+- Study structure and topics, never copy the competitor's copy.

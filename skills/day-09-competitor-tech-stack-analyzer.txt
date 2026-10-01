@@ -1,0 +1,40 @@
+---
+name: competitor-tech-stack-analyzer
+description: Turn raw signals from a competitor's website (script URLs, cookie names, generator tags, chat widgets, form endpoints, response headers) into a categorized tech-stack report - analytics, CRM, CMS, chat, ad pixels, automation, hosting - with confidence levels. Use when the user pastes page-source findings.
+---
+
+# Competitor Tech Stack Analyzer
+From "100 Days of Marketing Engineering" - Day 9 - Free Mind Consultancy (freemindconsult.com)
+
+## How to use this file
+- Fastest: start a new Claude chat, paste this whole file as the first message, then paste your findings.
+- Or: save it as SKILL.md inside a folder named competitor-tech-stack-analyzer and upload the folder as a skill in Claude settings (Capabilities > Skills).
+
+## How the user collects signals (public information only)
+- View Page Source and search for script domains such as googletagmanager.com, connect.facebook.net, hs-scripts.com, intercomcdn.com, cdn.shopify.com.
+- Browser DevTools > Network tab, reload, filter by .js to see every script that loads.
+- Check <meta name="generator"> and response headers.
+- A browser extension such as Wappalyzer or BuiltWith gives a first pass; confirm important findings manually.
+
+## What you need from the user
+1. Competitor name or URL.
+2. Raw signals pasted as text.
+3. Their own stack (list of tools) for comparison.
+
+## Steps
+1. Sort every signal into: Analytics, CRM/Forms, CMS/Framework, Live Chat, Ad Pixels, Automation/Email, Hosting/CDN, Unknown.
+2. Name the specific tool per signal and give confidence: confirmed (two independent signals), likely (one clear signature), uncertain.
+3. Never guess a tool name the evidence does not support. Put unclear signals under Unknown.
+4. Say what the stack suggests about marketing maturity and paid-acquisition activity, as a hypothesis only.
+5. Compare with the user's stack: tools the competitor has that the user lacks, tools they share, and what each missing tool would do.
+
+## Output format
+- Table: category | tool | signal seen | confidence
+- Hypotheses about maturity (marked as inference)
+- Gap list with a suggested next action
+- Limits (installed is not the same as actively used)
+
+## Rules
+- Read only what the site sends to every visitor. Never log in, probe private endpoints or access admin/CRM systems.
+- A detected pixel shows a tool is installed, not budget, results or strategy.
+- Do not submit fake data to their forms.

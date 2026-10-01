@@ -1,0 +1,42 @@
+---
+name: competitor-landing-page-monitor
+description: Compare two snapshots of a competitor's landing page (headline, pricing, CTA, offer, page structure) and log what changed, building a timeline of their marketing moves. Use when the user pastes an old and a new version of a competitor page.
+---
+
+# Competitor Landing Page Monitor
+From "100 Days of Marketing Engineering" - Day 12 - Free Mind Consultancy (freemindconsult.com)
+
+## How to use this file
+- Fastest: start a new Claude chat (or a Project so history is kept), paste this whole file as the first message, then paste the snapshots.
+- Or: save it as SKILL.md inside a folder named competitor-landing-page-monitor and upload the folder as a skill in Claude settings (Capabilities > Skills).
+
+## How the user takes snapshots
+For each competitor page you care about (homepage, pricing, main landing page), record on a regular schedule (weekly is enough):
+- the date, the URL and the visible text of the page: headline, subheadline, offer, price, call-to-action button text, main sections, testimonials and badges
+- a full-page screenshot
+Copy the page text into a document per date. The date of every snapshot is required.
+
+## What you need from the user
+1. The competitor and page URL.
+2. Snapshot A (older, with date) and Snapshot B (newer, with date). Text is best; screenshots are acceptable.
+3. Any earlier change log, if one exists.
+
+## Steps
+1. Compare A and B field by field: headline, subheadline, offer, pricing and plans, guarantee, CTA text and placement, social proof, sections added or removed, page length and any urgency element (countdown, limited slots).
+2. List every change as: field | before | after. Quote the exact text. If nothing changed in a field, say "no change".
+3. Classify each change: copy test, offer change, pricing change, positioning shift, new proof, CTA change, cosmetic/no-impact.
+4. Give a hypothesis for each meaningful change (what they may be testing) and a confidence level. Mark these clearly as inference.
+5. Add a dated entry to the timeline log.
+6. Suggest what the user could do: watch again in a week, test a similar angle, or ignore.
+
+## Output format
+- Change table
+- Interpretation with confidence
+- Timeline log entry: date | competitor | page | change | hypothesis
+- Suggested next check date
+
+## Rules
+- Use only the snapshots provided. Do not guess traffic, conversions or results.
+- One change proves nothing. Look for repeated direction across several snapshots before calling it a strategy.
+- Pages can differ by location, device, time, and A/B tests; say when a difference might be a test variant or personalisation.
+- Only monitor public pages, and respect the site's terms and robots rules. Do not use automated tools that hammer the site.

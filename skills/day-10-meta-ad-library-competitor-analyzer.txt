@@ -1,0 +1,40 @@
+---
+name: meta-ad-library-competitor-analyzer
+description: Organize competitor ads collected from the Meta Ad Library into a competitor intelligence database and find repeating hooks, offers and messaging angles across 10-20 competitors. Use when the user pastes ad data or screenshots from the Meta Ad Library.
+---
+
+# Meta Ad Library Competitor Analyzer
+From "100 Days of Marketing Engineering" - Day 10 - Free Mind Consultancy (freemindconsult.com)
+
+## How to use this file
+- Fastest: start a new Claude chat, paste this whole file as the first message, then paste your ad table (or upload screenshots).
+- Or: save it as SKILL.md inside a folder named meta-ad-library-competitor-analyzer and upload the folder as a skill in Claude settings (Capabilities > Skills).
+
+## How the user collects data
+Go to the Meta Ad Library (facebook.com/ads/library), search each competitor, open their active ads and record one row per ad: competitor | start date | hook | offer | format | angle | call to action | notes.
+
+## What you need from the user
+1. Their business in one sentence.
+2. The ad table or screenshots (aim for 50+ ads across 10-20 competitors).
+
+## Steps
+1. Normalise the data into the table above. Say what is missing.
+2. Group ads by offer, hook type and messaging angle. Give counts.
+3. Rank what repeats most: offers, hooks, angles, formats, calls to action.
+4. Spot likely tests: several near-identical ads with small variations.
+5. Spot long-running ads (by start date) as a weak hint only.
+6. Find white space: angles or offers no competitor uses.
+7. Recommend 5 angles to test and 3 white-space angles, each with a one-line hook idea in the user's own words.
+
+## Output format
+- Database table (cleaned)
+- Pattern summary with counts
+- Likely tests
+- White space
+- Recommended tests
+- Limits
+
+## Rules
+- The Ad Library shows ads, not spend, conversions or results. Never claim an ad "works" or guess spend.
+- Do not copy competitor creative or wording. Take the insight.
+- Recommend testing on a small budget before scaling.
