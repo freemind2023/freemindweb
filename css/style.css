@@ -1337,16 +1337,6 @@ p { line-height: 1.7; }
   margin-bottom: 24px;
 }
 
-.vm-hook-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #ef6224;
-  box-shadow: 0 0 6px #ef6224;
-  animation: pulseDot 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
 .vm-banner-logo {
   display: block;
   width: 120px;
@@ -1401,14 +1391,6 @@ p { line-height: 1.7; }
 .vm-banner-cta-primary:focus-visible {
   transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(239, 98, 36, 0.5);
-}
-
-.vm-cta-pulse {
-  position: absolute;
-  inset: 0;
-  border: 2px solid #ef6224;
-  opacity: 0;
-  animation: ctaPulse 2.2s ease-out infinite;
 }
 
 .vm-banner-cta-secondary {
@@ -3372,8 +3354,7 @@ html[data-theme] .logo-wall .section-subtitle { color: #1a1a1a; opacity: 1; }
 /* Decorative infinite pulses: off for reduced-motion users */
 @media (prefers-reduced-motion: reduce) {
   .pm-cta-pulse, .pm-hook-dot,
-  .pm-brand-publish, .pm-brand-match, .pm-brand-ai,
-  .vm-cta-pulse, .vm-hook-dot { animation: none !important; }
+  .pm-brand-publish, .pm-brand-match, .pm-brand-ai { animation: none !important; }
 }
 
 /* ── World map (home) ─────────────────────────────────────── */
