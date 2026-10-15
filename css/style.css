@@ -268,14 +268,14 @@ p { line-height: 1.7; }
 }
 
 .nav-logo img {
-  height: 40px;
-  width: 40px;
+  height: 52px;
+  width: 52px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .nav-logo-text {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
   letter-spacing: -0.01em;
@@ -284,7 +284,17 @@ p { line-height: 1.7; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 28px;
+}
+
+/* True-center the Menu/Products/Services group regardless of logo
+   and CTA width, so the bar doesn't read as lopsided/empty */
+@media (min-width: 769px) {
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .nav-links a {
@@ -690,7 +700,45 @@ p { line-height: 1.7; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-typewriter {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-display);
+  font-style: italic;
+  font-size: clamp(16px, 1.9vw, 21px);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  min-height: 1.5em;
   margin-bottom: var(--spacing-lg);
+}
+
+.hero-typewriter-text {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  margin-left: 0.35em;
+}
+
+.hero-typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 3px;
+  background: currentColor;
+  animation: hero-caret-blink 1s step-end infinite;
+}
+
+@keyframes hero-caret-blink {
+  0%, 50%  { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-typewriter-cursor {
+    animation: none;
+  }
 }
 
 .hero-headline {

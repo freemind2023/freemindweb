@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ── 5. Typewriter Effect ───────────────────────────────── */
   const typewriterEl = document.getElementById('typewriter-word');
-  const words = ['Change', 'Founders', 'Authors', 'Professors', 'Officers', 'Coaches'];
+  const words = ['Change', 'Founders', 'Authors', 'Professors', 'Govt. Officers', 'Coaches'];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
