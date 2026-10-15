@@ -1288,313 +1288,209 @@ p { line-height: 1.7; }
   .pm-stat-num { font-size: 24px; }
 }
 
-/* ── Koelai Section ───────────────────────────────────────── */
-.koelai-section {
+/* ── Vimarsh Banner ────────────────────────────────────────── */
+.vimarsh-banner {
+  position: relative;
   padding: 80px 0;
   overflow: hidden;
-  background: var(--color-bg);
+  background: #031d4a;
+  color: #fff;
 }
 
-.koelai-inner {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-/* ── Left: Circle + Rings ──────────────────────────────────── */
-.koelai-visual {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  min-height: 300px;
-  justify-content: center;
-}
-
-.koelai-voice-rings {
+.vm-banner-noise {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
   pointer-events: none;
 }
 
-.kvr {
+.vm-banner-glow {
   position: absolute;
-  border-radius: 50%;
-  border: 1.5px solid var(--color-border);
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  animation: voiceRing 3.2s ease-out infinite;
+  top: -120px;
+  right: -80px;
+  width: 440px;
+  height: 440px;
+  background: radial-gradient(circle, rgba(239, 98, 36, 0.35) 0%, rgba(239, 98, 36, 0) 70%);
+  pointer-events: none;
 }
 
-.kvr-1 { width: 260px; height: 260px; animation-delay: 0s; }
-.kvr-2 { width: 320px; height: 320px; animation-delay: 0.8s; }
-.kvr-3 { width: 380px; height: 380px; animation-delay: 1.6s; }
-.kvr-4 { width: 440px; height: 440px; animation-delay: 2.4s; }
-
-@keyframes voiceRing {
-  0%   { opacity: 0.7; transform: translate(-50%, -50%) scale(0.75); }
-  100% { opacity: 0;   transform: translate(-50%, -50%) scale(1); }
-}
-
-.koelai-circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid var(--color-border);
-  box-shadow: 0 0 0 10px rgba(255,255,255,0.03), 0 24px 64px rgba(0,0,0,0.5);
+.vm-banner-inner {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 64px;
+  align-items: center;
   position: relative;
-  z-index: 2;
-  flex-shrink: 0;
+  z-index: 1;
 }
 
-.koelai-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-
-.koelai-live-pill {
+.vm-hook-pill {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  font-size: 11px;
+  gap: 8px;
+  font-size: 12px;
   font-weight: var(--font-weight-medium);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  border: 1px solid var(--color-border);
-  padding: 6px 16px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 6px 14px;
   border-radius: 100px;
-  position: relative;
-  z-index: 2;
+  margin-bottom: 24px;
 }
 
-.koelai-badge-dot {
-  width: 7px;
-  height: 7px;
+.vm-hook-dot {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 6px #4ade80;
+  background: #ef6224;
+  box-shadow: 0 0 6px #ef6224;
   animation: pulseDot 2s ease-in-out infinite;
   flex-shrink: 0;
 }
 
-@keyframes pulseDot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.3; transform: scale(1.6); }
+.vm-banner-logo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 16px;
 }
 
-/* ── Right: Content ────────────────────────────────────────── */
-.koelai-content {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.koelai-heading {
-  font-size: clamp(34px, 4vw, 52px);
+.vm-banner-title {
+  font-size: clamp(26px, 3.2vw, 38px);
   font-weight: var(--font-weight-bold);
-  line-height: 1.1;
   letter-spacing: -0.025em;
-  color: var(--color-text);
-  margin: 0;
+  color: #fff;
+  margin: 0 0 14px;
+  line-height: 1.15;
 }
 
-.koelai-heading em {
-  font-style: italic;
+.vm-banner-desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.75;
+  margin: 0 0 28px;
+  max-width: 520px;
 }
 
-.koelai-sub {
-  font-size: 16px;
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text);
-  line-height: 1.5;
-  margin: 0;
-}
-
-.koelai-desc {
-  font-size: 14px;
-  color: var(--color-text-muted);
-  line-height: 1.8;
-  margin: 0;
-}
-
-.koelai-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.vm-banner-ctas {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.koelai-features li {
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  color: var(--color-text-muted);
-  line-height: 1.4;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
-.koelai-features li span {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--color-text);
-  flex-shrink: 0;
-}
-
-/* ── Animated Call Button ──────────────────────────────────── */
-.koelai-call-btn {
+.vm-banner-cta-primary {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  padding: 18px 28px;
-  background: var(--color-text);
-  color: var(--color-bg);
+  gap: 10px;
+  padding: 14px 28px;
+  background: #ef6224;
+  color: #fff;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.04em;
   text-decoration: none;
-  border-radius: 4px;
-  margin-top: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(239, 98, 36, 0.35);
   transition: transform 200ms ease, box-shadow 200ms ease;
-  overflow: hidden;
 }
 
-.koelai-call-btn:hover {
+.vm-banner-cta-primary:hover,
+.vm-banner-cta-primary:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 32px rgba(239, 98, 36, 0.5);
 }
 
-.koelai-call-btn:active {
-  transform: translateY(0);
-}
-
-/* Pulsing rings on the button */
-.koelai-call-pulse {
+.vm-cta-pulse {
   position: absolute;
   inset: 0;
-  border-radius: 4px;
-  border: 2px solid var(--color-text);
+  border: 2px solid #ef6224;
   opacity: 0;
-  animation: btnPulse 2.4s ease-out infinite;
+  animation: ctaPulse 2.2s ease-out infinite;
 }
 
-.koelai-call-pulse-2 {
-  animation-delay: 1.2s;
+.vm-banner-cta-secondary {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 2px;
+  transition: border-color 200ms ease, opacity 200ms ease;
 }
 
-@keyframes btnPulse {
-  0%   { opacity: 0.5; transform: scale(1); }
-  100% { opacity: 0;   transform: scale(1.08); }
+.vm-banner-cta-secondary:hover,
+.vm-banner-cta-secondary:focus-visible {
+  border-color: #fff;
+  opacity: 0.85;
 }
 
-.koelai-call-icon {
-  font-size: 22px;
-  line-height: 1;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 1;
+.vm-banner-note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
 }
 
-.koelai-call-text {
+.vm-banner-stats {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  position: relative;
-  z-index: 1;
+  gap: 28px;
+  text-align: right;
+  flex-shrink: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  padding-left: 40px;
 }
 
-.koelai-call-top {
-  font-size: 11px;
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0.7;
+.vm-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
-.koelai-call-num {
-  font-size: 20px;
+.vm-stat-num {
+  font-size: 32px;
   font-weight: var(--font-weight-bold);
-  letter-spacing: 0.02em;
-  line-height: 1.2;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
-/* ── Dark mode ─────────────────────────────────────────────── */
-[data-theme="dark"] .koelai-call-btn {
-  background: var(--color-white);
-  color: var(--color-black);
+.vm-stat-lbl {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-[data-theme="dark"] .koelai-call-pulse {
-  border-color: var(--color-white);
-}
-
-/* ── Tablet ─────────────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .koelai-inner {
+@media (max-width: 768px) {
+  .vm-banner-inner {
     grid-template-columns: 1fr;
-    gap: 48px;
-    text-align: center;
+    gap: 36px;
   }
 
-  .koelai-visual {
-    min-height: 260px;
+  .vm-banner-stats {
+    flex-direction: row;
+    text-align: left;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    padding-left: 0;
+    padding-top: 24px;
+    justify-content: space-between;
   }
 
-  .koelai-circle {
-    width: 170px;
-    height: 170px;
+  .vm-banner-ctas {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .kvr-1 { width: 200px; height: 200px; }
-  .kvr-2 { width: 250px; height: 250px; }
-  .kvr-3 { width: 300px; height: 300px; }
-  .kvr-4 { width: 350px; height: 350px; }
-
-  .koelai-features li {
-    justify-content: center;
-  }
-
-  .koelai-call-btn {
-    align-self: center;
-  }
-}
-
-/* ── Mobile ────────────────────────────────────────────────── */
-@media (max-width: 480px) {
-  .koelai-call-btn {
+  .vm-banner-cta-primary {
     width: 100%;
     justify-content: center;
   }
 
-  .koelai-call-num {
-    font-size: 16px;
-  }
-
-  /* Shrink voice rings so they don't overflow on small screens */
-  .kvr-1 { width: 150px; height: 150px; }
-  .kvr-2 { width: 190px; height: 190px; }
-  .kvr-3 { width: 230px; height: 230px; }
-  .kvr-4 { width: 270px; height: 270px; }
-
-  .koelai-visual {
-    min-height: 210px;
-  }
-
-  .koelai-circle {
-    width: 130px;
-    height: 130px;
-  }
+  .vm-stat-num { font-size: 24px; }
 }
 
 /* ── About Section ────────────────────────────────────────── */
@@ -3150,17 +3046,6 @@ p { line-height: 1.7; }
     height: 48px;
   }
 
-  /* ── Koelai call strip mobile fix ── */
-  .koelai-call-btn {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 16px 20px;
-  }
-
-  .koelai-call-num {
-    font-size: 18px;
-  }
-
   /* ── PublishMatch banner mobile ── */
   .pm-hook-pill {
     font-size: 11px;
@@ -3486,8 +3371,9 @@ html[data-theme] .logo-wall .section-subtitle { color: #1a1a1a; opacity: 1; }
 
 /* Decorative infinite pulses: off for reduced-motion users */
 @media (prefers-reduced-motion: reduce) {
-  .kvr, .pm-cta-pulse, .koelai-call-pulse, .koelai-badge-dot, .pm-hook-dot,
-  .pm-brand-publish, .pm-brand-match, .pm-brand-ai { animation: none !important; }
+  .pm-cta-pulse, .pm-hook-dot,
+  .pm-brand-publish, .pm-brand-match, .pm-brand-ai,
+  .vm-cta-pulse, .vm-hook-dot { animation: none !important; }
 }
 
 /* ── World map (home) ─────────────────────────────────────── */
