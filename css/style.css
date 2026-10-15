@@ -1140,16 +1140,6 @@ p { line-height: 1.7; }
   margin-bottom: 20px;
 }
 
-.pm-hook-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 6px #4ade80;
-  animation: pulseDot 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
 /* Brand Name (replaces logo) */
 .pm-banner-logo-wrap {
   margin-bottom: 20px;
@@ -3401,7 +3391,7 @@ html[data-theme] .logo-wall .section-subtitle { color: #1a1a1a; opacity: 1; }
 
 /* Decorative infinite pulses: off for reduced-motion users */
 @media (prefers-reduced-motion: reduce) {
-  .pm-cta-pulse, .pm-hook-dot,
+  .pm-cta-pulse,
   .pm-brand-publish, .pm-brand-match, .pm-brand-ai { animation: none !important; }
 }
 
@@ -3429,4 +3419,47 @@ html[data-theme] .logo-wall .section-subtitle { color: #1a1a1a; opacity: 1; }
   .wm-card { transform: translate(-50%, 14px); padding: 8px 10px; }
   .wm-card-sub { display: none; }
   .wm-land { stroke-width: 9; stroke-opacity: 0.42; }
+}
+
+/* ── Decorative moving wave accent (hero + world map) ────────
+   A thin animated line drifting left-to-right so the sections don't
+   read as static. Purely decorative, hidden from assistive tech. */
+.wave-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='32' viewBox='0 0 160 32'%3E%3Cpath d='M0 16 Q 20 2 40 16 T 80 16 T 120 16 T 160 16' stroke='%23ef6224' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 160px 32px;
+  opacity: 0.22;
+  pointer-events: none;
+  animation: wave-drift 14s linear infinite;
+}
+
+[data-theme="dark"] .wave-strip {
+  opacity: 0.3;
+}
+
+@keyframes wave-drift {
+  from { background-position-x: 0; }
+  to   { background-position-x: -160px; }
+}
+
+.hero .wave-strip {
+  bottom: 4px;
+  height: 24px;
+  background-size: 120px 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='24' viewBox='0 0 120 24'%3E%3Cpath d='M0 12 Q 15 1 30 12 T 60 12 T 90 12 T120 12' stroke='%23ef6224' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+}
+
+.wm-stage .wave-strip {
+  bottom: -18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave-strip {
+    animation: none;
+  }
 }

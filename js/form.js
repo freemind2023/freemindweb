@@ -28,7 +28,6 @@
   /* ── Service Options Per Category ──────────────────────── */
   const serviceOptions = {
     'Founder / Entrepreneur': [
-      'AI Calling Agent',
       'Business Automation',
       'Digital Marketing',
       'Website Development',
