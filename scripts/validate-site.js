@@ -4,7 +4,7 @@
  *
  * Zero dependencies (Node built-ins only: fs, path). Covers the
  * repo-wide/cross-file checks that scripts/optimizer/validation_engine.py
- * (in marketing_department/seo_agent) does NOT cover — that tool validates
+ * (in Marketing/seo_agent) does NOT cover — that tool validates
  * one HTML file's structure/schema/accessibility at a time; this script
  * checks things that only make sense across the whole site: broken internal
  * links, broken local assets, sitemap well-formedness, robots.txt presence,
