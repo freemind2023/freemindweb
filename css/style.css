@@ -478,6 +478,49 @@ p { line-height: 1.7; }
   font-weight: var(--font-weight-medium);
 }
 
+/* Vimarsh entry in the Products mega-menu — decorative card treatment
+   to set the cross-promoted product apart from the plain text links */
+.mega-product-vimarsh {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 8px !important;
+  padding: 8px !important;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(3, 29, 74, 0.05), rgba(239, 98, 36, 0.06));
+  border: 1px solid rgba(3, 29, 74, 0.1);
+  transition: background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.mega-product-vimarsh:hover {
+  background: linear-gradient(135deg, rgba(3, 29, 74, 0.08), rgba(239, 98, 36, 0.1));
+  border-color: rgba(239, 98, 36, 0.35);
+  transform: translateY(-1px);
+}
+
+.mega-product-icon {
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.mega-product-info {
+  display: block;
+  min-width: 0;
+}
+
+.mega-product-tag {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 9px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c94b12;
+  background: rgba(239, 98, 36, 0.14);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
 /* Nav Right */
 .nav-right {
   display: flex;
