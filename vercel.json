@@ -1,6 +1,15 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/products/koelai-ai", "destination": "/services/ai-agent-development", "permanent": true },
+    { "source": "/products/koelai-ai.html", "destination": "/services/ai-agent-development", "permanent": true },
+    { "source": "/services/ai-calling-agent-india", "destination": "/services/ai-agent-development", "permanent": true },
+    { "source": "/blog/ai-calling-agent-india", "destination": "/services/ai-agent-development", "permanent": true },
+    { "source": "/blog/ai-calling-agent-for-startups-india", "destination": "/services/ai-agent-development", "permanent": true },
+    { "source": "/blog/ai-agent-vs-human-receptionist-india", "destination": "/services/ai-agent-development", "permanent": true },
+    { "source": "/clinic-automation/ai-receptionist-clinic-india", "destination": "/clinic-automation", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
