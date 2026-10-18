@@ -50,7 +50,7 @@ clip-path var(--motion-slow) var(--ease-cine) calc(var(--i, 0) * var(--motion-st
 .motion-on .m-hide[data-motion="reveal"]     { opacity: 0; transform: scale(1.05); clip-path: inset(8% 8% 8% 8% round 4px); }
 .motion-on .m-in { clip-path: inset(0 0 0 0 round 0); }
 .motion-on .mw {
-opacity: clamp(0.4, calc(var(--p, 1) * (var(--n, 1) + 1) - var(--i, 0)), 1);
+opacity: clamp(0.5, calc(var(--p, 1) * (var(--n, 1) + 1) - var(--i, 0)), 1);
 }
 .motion-on [data-motion="scene-out"] .hero-content,
 .motion-on [data-motion="scene-out"] > .container {
