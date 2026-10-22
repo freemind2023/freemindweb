@@ -1238,7 +1238,7 @@ Join a free WhatsApp community where Indian authors discover verified internatio
 <li style="font-size:13px;color:var(--color-text-muted);display:flex;gap:8px;align-items:flex-start;"><span style="color:var(--color-text);font-weight:600;flex-shrink:0;">—</span> Open to All Levels of Writers</li>
 </ul>
 <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
-<a class="btn btn-primary" href="https://chat.whatsapp.com/ECPoSWbHN20GSaMfc0z5nt" onclick="if(typeof gtag!=='undefined'){gtag('event','join_community_click',{event_category:'Community',event_label:'Homepage Banner'});}if(typeof fbq!=='undefined'){fbq('track','Lead',{content_name:'Indian Authors Community',content_category:'WhatsApp Community'});}" rel="noopener noreferrer" style="font-size:14px;" target="_blank">
+<a class="btn btn-primary" href="https://chat.whatsapp.com/ECPoSWbHN20GSaMfc0z5nt" onclick="if(typeof gtag==='function'){gtag('event','join_community_click',{event_category:'Community',event_label:'Homepage Banner'});}var fmEventId=(window.crypto&&window.crypto.randomUUID)?window.crypto.randomUUID():'fm-'+Date.now();if(typeof fbq==='function'){fbq('track','Lead',{content_name:'Indian Authors Community',content_category:'WhatsApp Community'},{eventID:fmEventId});}fetch('/api/capi-event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({eventName:'Lead',eventId:fmEventId,eventSourceUrl:window.location.href})}).catch(function(){});" rel="noopener noreferrer" style="font-size:14px;" target="_blank">
 Join the Free Community
 </a>
 <a class="btn btn-outline" href="community/" style="font-size:14px;">Join Indian Authors Community</a>

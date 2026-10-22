@@ -1,6 +1,17 @@
 (function () {
   'use strict';
-  if (typeof gtag !== 'function') return;
+
+  // Fires the browser pixel event and the matching server-side CAPI call
+  // with the same eventId, so Meta can dedup the two.
+  function trackContact(method) {
+    var eventId = (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : 'fm-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
+    if (typeof fbq === 'function') fbq('track', 'Contact', { method: method }, { eventID: eventId });
+    fetch('/api/capi-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ eventName: 'Contact', eventId: eventId, eventSourceUrl: window.location.href })
+    }).catch(function () {});
+  }
 
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href]');
@@ -8,25 +19,25 @@
     var href = link.getAttribute('href') || '';
 
     if (href.indexOf('wa.me') !== -1) {
-      gtag('event', 'contact', {
+      if (typeof gtag === 'function') gtag('event', 'contact', {
         event_category: 'WhatsApp',
         event_label: window.location.pathname,
         method: 'whatsapp'
       });
-      if (typeof fbq === 'function') fbq('track', 'Contact', { method: 'whatsapp' });
+      trackContact('whatsapp');
     }
 
     if (href.indexOf('tel:') === 0) {
-      gtag('event', 'contact', {
+      if (typeof gtag === 'function') gtag('event', 'contact', {
         event_category: 'Phone Call',
         event_label: href.replace('tel:', ''),
         method: 'phone'
       });
-      if (typeof fbq === 'function') fbq('track', 'Contact', { method: 'phone' });
+      trackContact('phone');
     }
 
     if (href.indexOf('mailto:') === 0) {
-      gtag('event', 'contact', {
+      if (typeof gtag === 'function') gtag('event', 'contact', {
         event_category: 'Email',
         event_label: href.replace('mailto:', ''),
         method: 'email'
@@ -38,12 +49,13 @@
     // fires separately on actual form submission in js/form.js).
     if (link.classList.contains('btn-primary') && href.indexOf('#contact') !== -1) {
       var placement = link.closest('header') ? 'nav' : (link.closest('section[id]') || {}).id || 'body';
-      gtag('event', 'service_cta_click', {
+      if (typeof gtag === 'function') gtag('event', 'service_cta_click', {
         event_category: 'CTA',
         cta_text: (link.textContent || '').trim(),
         placement: placement,
         page_path: window.location.pathname
       });
+      trackContact('consultation_cta');
     }
   });
 })();

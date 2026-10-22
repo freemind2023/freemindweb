@@ -234,7 +234,18 @@
           fbq && fbq('track', 'Lead', {
             content_name: templateParams.service_interest || templateParams.category,
             content_category: templateParams.category
-          });
+          }, { eventID: templateParams.lead_id });
+          fetch('/api/capi-event', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              eventName: 'Lead',
+              eventId: templateParams.lead_id,
+              eventSourceUrl: window.location.href,
+              email: templateParams.from_email,
+              phone: templateParams.from_phone
+            })
+          }).catch(function () {});
         }
       } else {
         if (formError) formError.style.display = 'block';
