@@ -148,6 +148,7 @@ A: Yes. Free Mind Consultancy serves clients across 11 countries, primarily for 
 
 ## Blog (AI-Readable Summaries)
 
+- https://www.freemindconsult.com/blog/self-publishing-options-india-compared — Compares Amazon KDP, IngramSpark, Notion Press, and full-service publishing for Indian authors: KDP is free with a 30–35% retail cut; IngramSpark charges a ~Rs.2,500 one-time title setup fee for wider bookstore/library distribution; Notion Press offers India-based INR-priced packages; full-service publishing costs Rs.18,000–Rs.2,50,000+ for end-to-end editing, design, and launch support.
 - https://www.freemindconsult.com/blog/isbn-registration-india — How to get a free ISBN in India. The government issues ISBNs free of charge via isbnindiaebooks.gov.in. Processing time: 7 to 14 working days.
 - https://www.freemindconsult.com/blog/book-publishing-cost-india — Full cost of publishing a book in India in 2026: editing (Rs.5,000–Rs.20,000), cover design (Rs.3,000–Rs.10,000), formatting (Rs.2,000–Rs.5,000), ISBN (free), printing (Rs.50–Rs.120 per copy), Amazon KDP (free to upload).
 - https://www.freemindconsult.com/blog/ai-calling-agent-india — Koelai AI automates phone calls for Indian businesses. Use cases: appointment reminders, lead follow-up, outbound sales, missed call callbacks.
